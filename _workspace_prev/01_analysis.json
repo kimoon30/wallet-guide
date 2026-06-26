@@ -1,0 +1,200 @@
+{
+  "title": "웹3 지갑·플랫폼 학습 보고서",
+  "purpose": "MetaMask·Phantom·Galxe·D'CENT·MyB 등 주요 웹3 지갑·플랫폼을 개념·기능·보안·커스터디 구조 측면에서 비교 분석하고, 학습에 필요한 핵심 용어와 차이점을 정리한 리서치 보고서이다.",
+  "doc_purpose": "리포트",
+  "expected_audience": "웹3 지갑·블록체인 서비스를 학습하려는 기획자·실무자·입문 학습자. 개념 이해와 서비스 비교, 핵심 용어 습득이 주요 관심사이다.",
+  "info_density": "높음",
+  "layout_recommendation": "report",
+  "layout_reason": "분석·비교·데이터 중심의 긴 설명형 문서로 표 다수(15개+)·전체 단어 수 1500 초과·섹션당 평균 단어 수 200 초과이며 목적이 '발표'가 아니므로 PPT형 4개 조건을 충족하지 못해 리포트형이 기본값이다.",
+  "selected_sections": [
+    {
+      "id": "B",
+      "title": "서비스별 상세 분석 (B-1 MetaMask ~ B-5 MyB)",
+      "learning_value": "high",
+      "reason": "각 서비스의 정의·커스터디·키 복구·보안·네트워크를 항목별로 설명해 개념 이해와 서비스 비교의 핵심 학습 자료다. (B-6 코키지는 식별 보류라 제외)",
+      "include": true
+    },
+    {
+      "id": "C",
+      "title": "전체 비교표",
+      "learning_value": "high",
+      "reason": "유형·키 관리·기능·고객·수익모델을 한눈에 대조해 서비스 간 차이를 빠르게 학습할 수 있다.",
+      "include": true
+    },
+    {
+      "id": "D",
+      "title": "서비스 간 관계도",
+      "learning_value": "medium",
+      "reason": "지갑·플랫폼·하드웨어의 생태계 역할 관계를 도식·설명으로 제시해 구조적 이해를 돕는다. ASCII 도식은 시각화 보완 여지가 있다.",
+      "include": true
+    },
+    {
+      "id": "E",
+      "title": "핵심 차이점",
+      "learning_value": "high",
+      "reason": "경쟁 관계, 소프트웨어 vs 하드웨어 지갑, 키 저장 위치 등 학습의 핵심 변별 포인트를 압축 정리한다.",
+      "include": true
+    },
+    {
+      "id": "G",
+      "title": "서비스 기획자 관점의 체크포인트",
+      "learning_value": "medium",
+      "reason": "커스터디·복구·가스비·서명 UX·규제 매핑 등 개념을 실무 관점으로 심화해 응용 학습에 유용하다.",
+      "include": true
+    },
+    {
+      "id": "H",
+      "title": "경영진 보고용 5줄 요약",
+      "learning_value": "medium",
+      "reason": "전체 내용을 5문장으로 압축해 학습 복습·핵심 정리에 효과적이다.",
+      "include": true
+    },
+    {
+      "id": "I",
+      "title": "추가 학습 용어 10개",
+      "learning_value": "high",
+      "reason": "개인키·니모닉·커스터디·핫/콜드월렛·EVM·디앱·가스·토큰승인·SBT·MPC 등 핵심 용어를 쉬운 설명과 함께 정의한 순수 학습 자료다.",
+      "include": true
+    }
+  ],
+  "excluded_sections": [
+    {
+      "id": "A",
+      "title": "조사 대상 식별 결과",
+      "reason": "조사 대상 식별·오기 가능성 등 행정적 메타 정보이며 코키지 식별 보류 등 학습 우선순위가 낮은 내용을 포함한다."
+    },
+    {
+      "id": "F",
+      "title": "사업 및 제휴 관점의 시사점",
+      "reason": "비즈니스 제휴·사업 기회 중심으로, 특별 지침상 학습 우선순위가 낮다."
+    },
+    {
+      "id": "J",
+      "title": "출처 목록",
+      "reason": "참고문헌·링크 목록으로 개념 학습에 직접 기여하지 않아 특별 지침상 제외 대상이다."
+    }
+  ],
+  "structure": {
+    "h1_count": 11,
+    "h2_count": 14,
+    "paragraph_count": 70,
+    "list_count": 30,
+    "table_count": 16,
+    "code_block_count": 1,
+    "image_count": 0
+  },
+  "gaps": [
+    {
+      "id": "gap-1",
+      "type": "출처불명",
+      "location": "B-4 D'CENT / C-1 비교표",
+      "description": "D'CENT 지원 네트워크 수가 '73개 이상·3,800개 자산'과 '100개·4,900개'로 상이하게 표기됨. 학습 정확성을 위해 최신 정확한 수치 보완 필요.",
+      "priority": "medium"
+    },
+    {
+      "id": "gap-2",
+      "type": "정의없음",
+      "location": "B-5 MyB / C-1 비교표",
+      "description": "MyB의 커스터디 구조(비커스터디 vs 암호화 백업형)가 '확인 필요'로 미확정. 커스터디는 핵심 학습 개념이므로 니모닉 클라우드 보관 방식의 의미를 명확히 보완하면 학습 가치가 높아진다.",
+      "priority": "high"
+    },
+    {
+      "id": "gap-3",
+      "type": "정의없음",
+      "location": "I 추가 학습 용어 (MPC·계정 추상화·영지식증명)",
+      "description": "MPC·계정 추상화·영지식증명 등 고급 용어가 표에서 한 줄로만 정의됨. 입문 학습자를 위한 예시·비유 보완 시 이해도가 향상된다.",
+      "priority": "medium"
+    },
+    {
+      "id": "gap-4",
+      "type": "alt없음",
+      "location": "D 서비스 간 관계도",
+      "description": "관계도가 코드블록 ASCII 아트로만 제공되어 접근성·시각 가독성이 낮음. HTML 변환 시 시각적 다이어그램과 대체 텍스트 보완 권장.",
+      "priority": "low"
+    }
+  ],
+  "key_concepts": [
+    "개인키(Private Key)",
+    "시드·니모닉·SRP(비밀 복구 문구)",
+    "커스터디·비커스터디(셀프커스터디)",
+    "핫월렛·콜드월렛",
+    "소프트웨어 지갑 vs 하드웨어 지갑",
+    "EVM·사용자 지정 RPC",
+    "디앱·WalletConnect",
+    "가스비·브리지",
+    "토큰 승인·블라인드 서명",
+    "SBT(이전 불가 자격증명)·영지식증명",
+    "계정 추상화·MPC·소셜 복구",
+    "웹3 성장·퀘스트·신원 플랫폼(Galxe형)",
+    "지갑 기반 리워드·온체인 데이터(MyB형)",
+    "트래블룰·KYC·가상자산이용자보호법"
+  ],
+  "sections": [
+    {
+      "heading": "B. 서비스별 상세 분석",
+      "content_summary": "MetaMask·Phantom·Galxe·D'CENT·MyB 5개 서비스를 정의·운영사·기능·네트워크·커스터디·키복구·보안·KYC·최근현황 20개 항목으로 분석한다.",
+      "key_points": [
+        "MetaMask·Phantom은 비커스터디 소프트웨어 핫월렛",
+        "D'CENT는 지문인증형 하드웨어 콜드월렛",
+        "Galxe는 지갑이 아닌 성장·신원 플랫폼",
+        "MyB는 니모닉 클라우드 보관형 리워드 지갑"
+      ]
+    },
+    {
+      "heading": "C. 전체 비교표",
+      "content_summary": "유형·키관리·기능·고객·수익모델·경쟁사를 표로 대조한다.",
+      "key_points": [
+        "커스터디·하드웨어 보유 여부 비교",
+        "지원 네트워크·NFT·스왑·디앱 연결 기능 비교",
+        "보안성은 키 노출면·복구구조 종합 판단"
+      ]
+    },
+    {
+      "heading": "D. 서비스 간 관계도",
+      "content_summary": "프로젝트·광고주, 지갑, 하드웨어, 거래소 간 생태계 역할 관계를 도식화한다.",
+      "key_points": [
+        "지갑은 사용자-블록체인 인터페이스",
+        "Galxe·MyB는 사용자 유입·데이터 계층",
+        "D'CENT는 키 보호 계층"
+      ]
+    },
+    {
+      "heading": "E. 핵심 차이점",
+      "content_summary": "직접 경쟁 관계, MetaMask·Phantom·D'CENT 3자 비교, 소프트웨어·하드웨어 지갑 차이를 정리한다.",
+      "key_points": [
+        "MetaMask↔Phantom 직접 경쟁",
+        "출발점·키저장위치·복구부담 비교",
+        "일상거래/장기보관/캠페인 용도 분리 권장"
+      ]
+    },
+    {
+      "heading": "G. 서비스 기획자 관점의 체크포인트",
+      "content_summary": "복구 가능 상태, 커스터디 스펙트럼, 체인·토큰 검증, 서명 UX, 가스비, 규제 매핑 등 10개 실무 체크포인트.",
+      "key_points": [
+        "'복구 가능 상태'를 핵심 전환으로",
+        "커스터디는 이분법이 아닌 스펙트럼",
+        "규제를 기능 단위로 매핑"
+      ]
+    },
+    {
+      "heading": "H. 경영진 보고용 5줄 요약",
+      "content_summary": "5개 서비스의 포지션과 사업 기회를 5문장으로 압축한다.",
+      "key_points": [
+        "MetaMask=EVM, Phantom=Solana 강점",
+        "D'CENT=하드웨어 보안",
+        "Galxe=성장 인프라, MyB=국내 리워드"
+      ]
+    },
+    {
+      "heading": "I. 추가 학습 용어 10개",
+      "content_summary": "개인키부터 계정 추상화·MPC까지 핵심 용어 10개를 쉬운 설명·선정 이유와 함께 정의한다.",
+      "key_points": [
+        "지갑 보안·소유권 기본 용어",
+        "체인 접속·디앱 연결 용어",
+        "신원·복구 최신 기술 용어"
+      ]
+    }
+  ],
+  "total_sections": 10,
+  "selected_count": 7
+}

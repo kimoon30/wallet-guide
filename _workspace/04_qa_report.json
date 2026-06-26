@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "score": 96,
+  "checks": {
+    "content_completeness": {
+      "pass": true,
+      "issues": [],
+      "verified": [
+        "원본 MD의 핵심 섹션이 모두 반영됨: 1부(한 문장 정의·열쇠꾸러미 비유·왜 필요한가·금융앱과 차이·핵심 용어·확인할 세 가지·복습) + 2부(다섯 키워드 개요·MetaMask·Phantom·갤럭시·D'CENT·마이비·전체 구도)",
+        "채팅 잔여물 완전 제거 확인(grep 무매치): '22s 동안 생각함', 'Q3. … MetaMask부터 살펴볼까요?', '그 내가 물어본 각 키워드…', AI 응답 잔재, 중복 '확인 기준일' 제거",
+        "학습용 Q1·Q2 유지(s-review, details 토글 예시 답안 포함)",
+        "5개 서비스 비교 표 포함(s-overview, 키워드/한 문장 설명/서비스 유형 3열)",
+        "서비스 분류 트리 포함(s-map, monospace 코드블록으로 4유형 복원)",
+        "금융앱 비교 6항목 3열 표, 열쇠꾸러미 비유 2열 표 복원"
+      ]
+    },
+    "enrichment_applied": {
+      "pass": true,
+      "issues": [],
+      "verified": [
+        "G1 NIST 출처: s-why에 NISTIR 8301(2021)/ISO 22739:2020 정의 + 각주1 링크 반영",
+        "G2 MetaMask·Phantom 지원체인: s-metamask(각주2)·s-phantom(각주3)에 2026-06 기준 체인 목록 반영",
+        "G3 갤럭시 한국 지원 '추가 확인 필요' 배지: s-galaxy 헤딩 badge-verify + warn alert(한국 정식 지원 여부) 반영",
+        "G4 마이비 키관리 '추가 확인 필요' 배지: s-myb 헤딩 badge-verify + warn alert(커스터디 주체·복구·출금) 반영",
+        "G5 용어 사전: s-glossary에 EVM·Web3·XPLA·콜드월렛·NFC·임베디드월렛·SBT·셀프커스터디·Snaps 9개 정의",
+        "G6 채팅 잔여물 제거: 완료 확인",
+        "보완 내용은 모두 '보완' 배지(badge-enrich) + 별도 callout(.enriched) + 출처/조회일 표기로 원문과 시각적으로 구분됨"
+      ]
+    },
+    "accessibility": {
+      "pass": true,
+      "issues": [
+        "표(table)에 <caption> 요소 및 <th scope> 속성 미적용 — 각 표 앞 명확한 h3 제목으로 맥락은 제공되나, 스크린리더 표 탐색 보강 여지(warning)",
+        "개념 아이콘 이모지(🔌👻📱🔐🎁)에 aria-hidden 미지정 — 장식 목적이므로 보강 권장(info)"
+      ],
+      "verified": [
+        "lang=\"ko\" 속성 적용",
+        "시맨틱 태그 사용: header, nav(aria-label='목차'), main, section, footer",
+        "<img> 태그 자체가 없음 → alt 누락 이슈 해당 없음(이미지는 이모지+설명 텍스트로 대체)",
+        "헤딩 계층 정상: H1(문서 제목) → H2(1부/2부/용어사전/출처) → H3(번호 섹션) → H4(하위 항목)",
+        "shadcn 중립 색조 기반 텍스트-배경 대비 양호(본문 foreground hsl 3.9% on 흰 배경)"
+      ]
+    },
+    "responsive": {
+      "pass": true,
+      "issues": [],
+      "verified": [
+        "max-width:900px(.wrap) 설정",
+        "@media (max-width:768px) 브레이크포인트: TOC 상단 이동, grid 1열 전환, 폰트 축소",
+        "표 overflow-x:auto 적용(.table-scroll, 표 min-width:520px이 컨테이너 내부 스크롤로 처리되어 375px 페이지 가로 스크롤 미발생)",
+        "@media print 정의(TOC 숨김, 코드블록 흑백, break-inside avoid)"
+      ]
+    },
+    "standalone": {
+      "pass": true,
+      "issues": [],
+      "verified": [
+        "외부 CDN/폰트/스크립트 의존성 없음 확인(grep 무매치: <link>, 외부 <script src>, @import, googleapis/fonts 없음)",
+        "모든 스타일은 <style> 태그 내 인라인, JS는 <script> 인라인",
+        "외부 https 링크는 출처 각주(content citation)에 한정되며 로드 의존성 아님",
+        "파일 크기 약 38KB, 단일 .html 독립 실행"
+      ]
+    }
+  },
+  "warnings": [
+    "표에 <caption>/<th scope> 미적용 — 접근성 보강 여지(현 상태도 h3 제목으로 맥락 제공되어 통과)",
+    "개념 아이콘 이모지에 aria-hidden 미지정 — 장식 요소 보강 권장",
+    "build_log의 accessibility.semantic_tags에 'table thead/th scope'로 기재되어 있으나 실제 HTML에는 scope 속성이 없음(기록-실물 불일치, 경미)"
+  ],
+  "critical_issues": [],
+  "summary": "내용 완전성·보완 반영(G1~G6)·접근성·반응형·독립형 5개 항목 모두 통과. critical 이슈 없음. 채팅 잔여물 완전 제거 및 외부 의존성 부재를 grep으로 확인. 표 caption/th scope 등 경미한 접근성 보강 여지만 warning으로 기록(score 96)."
+}

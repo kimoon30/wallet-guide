@@ -1,0 +1,63 @@
+{
+  "output_file": "output/002_wallet_guide.html",
+  "built_at": "2026-06-26",
+  "layout": "report",
+  "layout_reason": "md-analyzer 추천(report). 개념·용어 설명 중심 학습 가이드로 단어 수 1500+ , 섹션당 본문이 길고 표·비교·트리가 많아 PPT형 조건을 충족하지 못함.",
+  "style": "shadcn (clean, minimal, sans-serif, 흰 배경, 카드/경계선/중립 색조)",
+  "standalone": true,
+  "external_dependencies": "none (인라인 CSS + 인라인 JS, CDN 없음)",
+  "sections_built": [
+    { "id": "header", "title": "디지털 월렛 입문 가이드: 1단계 요약 정리", "note": "제목/부제/메타 배지(기준일·대상·레이아웃)" },
+    { "id": "toc", "title": "목차", "note": "sticky 사이드바 TOC + IntersectionObserver 활성 하이라이트, 모바일에서 상단 고정 해제" },
+    { "id": "part1", "title": "1부: 디지털 월렛이란 무엇인가", "note": "리드 문단 + 6개 하위 섹션" },
+    { "id": "s-def", "title": "1. 한 문장 정의", "note": "핵심 포인트 alert" },
+    { "id": "s-analogy", "title": "2. 열쇠 꾸러미 비유", "note": "비유→실제개념 2열 표로 재구성" },
+    { "id": "s-why", "title": "3. 왜 필요한가", "note": "4대 기능 카드 그리드 + G1 NIST 출처 보완 callout(각주1)" },
+    { "id": "s-vs", "title": "4. 금융 앱과의 차이", "note": "6항목 3열 비교표(overflow-x auto)" },
+    { "id": "s-terms", "title": "5. 핵심 용어", "note": "정의 리스트 + 시드/개인키 보안 경고 alert" },
+    { "id": "s-check", "title": "6. 확인할 세 가지", "note": "번호 목록" },
+    { "id": "s-review", "title": "복습·확인 문제", "note": "복습 카드 + 다음 과제 + Q1·Q2 유지(details 토글 예시 답안). Q3 및 채팅 잔여물 제거" },
+    { "id": "part2", "title": "2부: 다섯 키워드 한눈에 보기", "note": "구분선 + 리드 문단으로 자연스러운 전환" },
+    { "id": "s-overview", "title": "다섯 키워드 개요", "note": "5개 서비스 3열 비교표" },
+    { "id": "s-metamask", "title": "1. MetaMask", "note": "개념 아이콘+alt, G2 지원 체인 보완(각주2)" },
+    { "id": "s-phantom", "title": "2. Phantom", "note": "개념 아이콘, G2 지원 체인 보완(각주3)" },
+    { "id": "s-galaxy", "title": "3. 갤럭시", "note": "G3 비교 환경 범위 보완(각주4) + '추가 확인 필요' 배지(한국 지원 여부)" },
+    { "id": "s-dcent", "title": "4. D'CENT", "note": "하드웨어 콜드 월렛 설명" },
+    { "id": "s-myb", "title": "5. 마이비(MyB)", "note": "G4 확인된 사실 보완(각주5) + '추가 확인 필요' 배지(키관리·복구·출금)" },
+    { "id": "s-map", "title": "전체 구도", "note": "4유형 분류 트리를 monospace 코드블록으로 복원 + 분석 원칙 alert" },
+    { "id": "s-glossary", "title": "용어 사전", "note": "G5: EVM·Web3·XPLA·콜드월렛·NFC·임베디드월렛·SBT·셀프커스터디·Snaps 9개 정의" },
+    { "id": "sources", "title": "출처", "note": "각주 1~5 footer, 외부 링크 target=_blank rel=noopener, ↩ 백링크, colophon" }
+  ],
+  "gaps_applied": [
+    { "id": "G1", "where": "s-why", "how": "NIST NISTIR 8301(2021) 정의 + 출처 링크 각주1" },
+    { "id": "G2", "where": "s-metamask / s-phantom", "how": "2026-06 기준 MetaMask·Phantom 지원 체인 목록 보완, 각주2·3" },
+    { "id": "G3", "where": "s-galaxy", "how": "Samsung Wallet/Blockchain Wallet 환경 범위 명시(partial), 추가확인 배지 + 각주4" },
+    { "id": "G4", "where": "s-myb", "how": "원셀프월드·XPLA 온보딩 등 확인 사실 보완(partial), 미확정 항목 추가확인 배지 + 각주5" },
+    { "id": "G5", "where": "s-glossary", "how": "9개 전문 용어 glossary 섹션 신설" },
+    { "id": "G6", "where": "s-review / 전체", "how": "채팅 잔여물(Q3, '그 내가 물어본…', '22s 동안 생각함', AI 응답 잔재, 중복 기준일) 전면 제거. Q1·Q2 학습 확인 문제로 유지" },
+    { "id": "G7", "where": "각 서비스", "how": "핵심 이미지 라벨을 개념 아이콘(이모지)+설명+alt 텍스트로 대체" },
+    { "id": "G8", "where": "전체", "how": "평문 표 2개→HTML 표, 평문 트리→코드블록, 헤딩 레벨(H1/H2/H3) 구조 복원" }
+  ],
+  "gaps_skipped": [],
+  "unresolved_flagged": [
+    "G4-세부: 마이비 개인키 커스터디 주체·복구 방식·외부 출금 범위 — '추가 확인 필요' 배지로 명시",
+    "G3-세부: 한국 내 Samsung Blockchain Wallet 정식 지원 여부 — '추가 확인 필요' 배지로 명시",
+    "G7: 실제 제품 이미지 미확보 — 아이콘/alt로 대체"
+  ],
+  "removed_content": [
+    "Q3. … 다음 단계에서 MetaMask부터 살펴볼까요?",
+    "그 내가 물어본 각 키워드에 대한 설명은 없지않아?",
+    "맞습니다. 앞 답변은 1단계만 설명했고… (AI 응답 잔여물)",
+    "22s 동안 생각함",
+    "맞습니다. 앞 답변은 디지털 월렛의 공통 개념만… (AI 응답 잔여물)",
+    "중복된 두 번째 '확인 기준일: 2026년 6월 26일'"
+  ],
+  "accessibility": {
+    "lang": "ko",
+    "semantic_tags": ["header", "nav", "main", "section", "footer", "figure-less concept rows with alt text", "dl/dt/dd", "table thead/th scope"],
+    "responsive": "max-width 900px, 768px 브레이크포인트에서 TOC 상단 이동·그리드 1열, 모바일 375px 대응",
+    "print": "@media print: TOC 숨김, 코드블록 흑백, break-inside avoid, 토글 답안 숨김"
+  },
+  "file_size_kb": 38,
+  "build_status": "success"
+}

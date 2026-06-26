@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>디지털 월렛 입문 가이드: 1단계 요약 정리</title>
+<style>
+  :root{
+    --background:hsl(0 0% 100%);
+    --foreground:hsl(240 10% 3.9%);
+    --card:hsl(0 0% 100%);
+    --muted:hsl(240 4.8% 95.9%);
+    --muted-foreground:hsl(240 3.8% 46.1%);
+    --border:hsl(240 5.9% 90%);
+    --primary:hsl(240 5.9% 10%);
+    --primary-foreground:hsl(0 0% 98%);
+    --accent:hsl(38 92% 50%);
+    --destructive:hsl(0 72% 51%);
+    --radius:0.5rem;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--background);
+    color:var(--foreground);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',system-ui,sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
+
+  /* Header */
+  header.page{margin-bottom:2.5rem;}
+  .eyebrow{
+    display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--muted-foreground);margin-bottom:.75rem;
+  }
+  h1{font-size:2rem;line-height:1.25;font-weight:700;letter-spacing:-.02em;margin:0 0 .75rem;}
+  .subtitle{color:var(--muted-foreground);font-size:1rem;margin:0;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;}
+
+  /* Layout with TOC */
+  .layout{display:grid;grid-template-columns:200px 1fr;gap:2.5rem;align-items:start;}
+  nav.toc{position:sticky;top:1.5rem;font-size:.875rem;}
+  nav.toc p.toc-title{font-weight:600;margin:0 0 .6rem;color:var(--foreground);}
+  nav.toc a{display:block;color:var(--muted-foreground);text-decoration:none;padding:.2rem 0;border-left:2px solid transparent;padding-left:.6rem;transition:color .15s,border-color .15s;}
+  nav.toc a:hover{color:var(--foreground);border-left-color:var(--border);}
+  nav.toc a.sub{padding-left:1.4rem;font-size:.82rem;}
+
+  main{min-width:0;}
+
+  /* Sections */
+  section{margin-bottom:2.75rem;scroll-margin-top:1.5rem;}
+  h2{font-size:1.5rem;font-weight:600;letter-spacing:-.01em;margin:0 0 1rem;padding-bottom:.5rem;}
+  h3{font-size:1.25rem;font-weight:600;margin:1.75rem 0 .75rem;}
+  h4{font-size:1rem;font-weight:600;margin:1.25rem 0 .5rem;}
+  p{margin:0 0 1rem;}
+  .lead{font-size:1.05rem;}
+  a{color:var(--primary);text-underline-offset:3px;}
+
+  .part-divider{
+    border:0;border-top:1px solid var(--border);margin:3rem 0 2.5rem;
+  }
+  .part-label{
+    display:inline-block;background:var(--primary);color:var(--primary-foreground);
+    font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+    padding:.25rem .7rem;border-radius:999px;margin-bottom:.75rem;
+  }
+
+  /* Cards */
+  .card{
+    border:1px solid var(--border);border-radius:var(--radius);background:var(--card);
+    padding:1.5rem;box-shadow:0 1px 2px rgba(0,0,0,.04);margin-bottom:1.25rem;
+  }
+  .card h4{margin-top:0;}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  .grid-2 .card{margin-bottom:0;}
+
+  /* Lists */
+  ul,ol{margin:0 0 1rem;padding-left:1.4rem;}
+  li{margin-bottom:.4rem;}
+  ul.feature{list-style:none;padding-left:0;}
+  ul.feature li{position:relative;padding-left:1.4rem;}
+  ul.feature li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--accent);}
+
+  dl.def{margin:0;}
+  dl.def dt{font-weight:600;margin-top:1rem;}
+  dl.def dd{margin:.25rem 0 0;color:var(--muted-foreground);}
+
+  /* Badges */
+  .badge{display:inline-flex;align-items:center;gap:.3rem;border-radius:999px;padding:.2rem .6rem;font-size:.72rem;font-weight:600;line-height:1.4;white-space:nowrap;}
+  .badge-default{background:var(--primary);color:var(--primary-foreground);}
+  .badge-outline{border:1px solid var(--border);color:var(--foreground);}
+  .badge-muted{background:var(--muted);color:var(--muted-foreground);}
+  .badge-enrich{background:var(--accent);color:#3a2a00;}
+  .badge-verify{background:hsl(0 80% 96%);color:var(--destructive);border:1px solid hsl(0 72% 85%);}
+
+  /* Tables */
+  .table-scroll{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:1.25rem;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:520px;}
+  thead{background:var(--muted);}
+  th{text-align:left;font-weight:600;color:var(--muted-foreground);padding:.7rem .9rem;white-space:nowrap;}
+  td{padding:.7rem .9rem;border-top:1px solid var(--border);vertical-align:top;}
+  tbody tr:hover{background:hsl(240 4.8% 97.5%);}
+  td.key{font-weight:600;white-space:nowrap;}
+
+  /* Alert / note */
+  .alert{border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;background:var(--muted);margin-bottom:1.25rem;}
+  .alert .alert-title{font-weight:600;margin-bottom:.25rem;display:flex;align-items:center;gap:.45rem;}
+  .alert p{margin:0;font-size:.92rem;color:var(--muted-foreground);}
+  .alert.warn{background:hsl(38 92% 96%);border-color:hsl(38 70% 80%);}
+  .alert.warn .alert-title{color:#7a5300;}
+
+  /* Enriched callout */
+  .enriched{border-left:3px solid var(--accent);background:hsl(38 92% 97%);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.1rem;margin-bottom:1.25rem;}
+  .enriched .e-head{display:flex;align-items:center;gap:.5rem;font-weight:600;font-size:.9rem;margin-bottom:.5rem;}
+  .enriched p{margin:0 0 .5rem;font-size:.92rem;}
+  .enriched .src{font-size:.78rem;color:var(--muted-foreground);margin:0;}
+
+  /* Quiz */
+  .quiz{border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.4rem;background:var(--card);}
+  .quiz .q{font-weight:600;margin-bottom:.4rem;}
+  details.answer{margin:.25rem 0 1.1rem;}
+  details.answer summary{cursor:pointer;font-size:.85rem;color:var(--muted-foreground);user-select:none;}
+  details.answer[open] summary{margin-bottom:.4rem;}
+  details.answer p{font-size:.92rem;margin:0;}
+
+  /* Concept icon row */
+  .concept{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:var(--muted-foreground);background:var(--muted);border-radius:var(--radius);padding:.7rem .9rem;margin-bottom:1rem;}
+  .concept .ico{font-size:1.4rem;line-height:1;}
+
+  /* Code / tree */
+  pre{background:hsl(240 6% 10%);color:hsl(0 0% 92%);border-radius:var(--radius);padding:1.25rem;overflow-x:auto;font-size:.85rem;line-height:1.6;margin:0 0 1.25rem;}
+  code{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;}
+  :not(pre)>code{background:var(--muted);padding:.1rem .35rem;border-radius:4px;font-size:.85em;}
+
+  /* Footer / sources */
+  footer.sources{margin-top:3rem;border-top:1px solid var(--border);padding-top:2rem;}
+  footer.sources h2{font-size:1.25rem;}
+  ol.srclist{font-size:.85rem;color:var(--muted-foreground);padding-left:1.2rem;}
+  ol.srclist li{margin-bottom:.6rem;word-break:break-word;}
+  ol.srclist a{color:var(--muted-foreground);}
+  .footnote-back{font-size:.78rem;}
+  .colophon{margin-top:2rem;font-size:.78rem;color:var(--muted-foreground);}
+
+  sup.fn a{text-decoration:none;font-weight:600;color:var(--accent);}
+
+  /* Responsive */
+  @media (max-width:768px){
+    .layout{grid-template-columns:1fr;gap:1.5rem;}
+    nav.toc{position:static;border-bottom:1px solid var(--border);padding-bottom:1rem;}
+    nav.toc a{border-left:none;padding-left:0;}
+    nav.toc a.sub{padding-left:.8rem;}
+    .grid-2{grid-template-columns:1fr;}
+    h1{font-size:1.6rem;}
+    h2{font-size:1.3rem;}
+    .wrap{padding:1.5rem 1rem 3rem;}
+  }
+
+  /* Print */
+  @media print{
+    body{font-size:12pt;}
+    .wrap{max-width:none;padding:0;}
+    .layout{grid-template-columns:1fr;}
+    nav.toc{display:none;}
+    .card,.alert,.enriched,.quiz,.table-scroll{break-inside:avoid;box-shadow:none;}
+    pre{white-space:pre-wrap;border:1px solid #ccc;background:#f5f5f5;color:#000;}
+    a{color:#000;text-decoration:none;}
+    details.answer{display:none;}
+    .badge{border:1px solid #999;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page">
+    <span class="eyebrow">디지털 월렛 입문 시리즈 · 1단계</span>
+    <h1>디지털 월렛 입문 가이드: 1단계 요약 정리</h1>
+    <p class="subtitle">월렛의 기본 개념과 핵심 용어를 정리하고, 대표 월렛 5종의 성격을 유형별로 분류해 비교의 기준을 잡는 학습 가이드입니다.</p>
+    <div class="meta-row">
+      <span class="badge badge-outline">확인 기준일 2026-06-26</span>
+      <span class="badge badge-muted">대상: 블록체인 월렛 입문자</span>
+      <span class="badge badge-muted">리포트형</span>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="목차">
+      <p class="toc-title">목차</p>
+      <a href="#part1">1부 · 디지털 월렛이란</a>
+      <a href="#s-def" class="sub">1. 한 문장 정의</a>
+      <a href="#s-analogy" class="sub">2. 열쇠 꾸러미 비유</a>
+      <a href="#s-why" class="sub">3. 왜 필요한가</a>
+      <a href="#s-vs" class="sub">4. 금융 앱과의 차이</a>
+      <a href="#s-terms" class="sub">5. 핵심 용어</a>
+      <a href="#s-check" class="sub">6. 확인할 세 가지</a>
+      <a href="#s-review" class="sub">복습 · 확인 문제</a>
+      <a href="#part2">2부 · 다섯 키워드</a>
+      <a href="#s-overview" class="sub">한눈에 보기</a>
+      <a href="#s-metamask" class="sub">1. MetaMask</a>
+      <a href="#s-phantom" class="sub">2. Phantom</a>
+      <a href="#s-galaxy" class="sub">3. 갤럭시</a>
+      <a href="#s-dcent" class="sub">4. D'CENT</a>
+      <a href="#s-myb" class="sub">5. 마이비(MyB)</a>
+      <a href="#s-map" class="sub">전체 구도</a>
+      <a href="#s-glossary">용어 사전</a>
+      <a href="#sources">출처</a>
+    </nav>
+
+    <main>
+
+      <!-- ===================== PART 1 ===================== -->
+      <span class="part-label" id="part1">1부</span>
+      <h2 style="margin-top:0">디지털 월렛이란 무엇인가</h2>
+      <p class="lead">월렛은 코인을 담는 '주머니'가 아니라, 블록체인에 기록된 자산을 움직일 권한(키)을 관리하는 도구입니다. 먼저 이 핵심 발상부터 잡고 시작합니다.</p>
+
+      <section id="s-def">
+        <h3>1. 한 문장 정의</h3>
+        <p>디지털 월렛은 블록체인에 기록된 내 디지털 자산을 <strong>확인·전송·사용</strong>할 수 있도록 '암호학적 열쇠'를 관리하는 도구입니다.</p>
+        <div class="alert">
+          <div class="alert-title">핵심 포인트</div>
+          <p>코인이나 NFT가 월렛 앱 안에 파일처럼 저장되는 것이 아닙니다. 자산과 거래 내역은 블록체인에 기록되고, 월렛은 그 자산을 움직일 권한인 <strong>개인키</strong>를 관리합니다.</p>
+        </div>
+      </section>
+
+      <section id="s-analogy">
+        <h3>2. 쉬운 비유: 월렛은 지갑보다 '열쇠 꾸러미'에 가깝다</h3>
+        <p>아파트를 생각해 보겠습니다.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>비유</th><th>실제 개념</th></tr></thead>
+            <tbody>
+              <tr><td class="key">공동 장부</td><td>블록체인 — 모든 집과 소유·이동 기록이 적힌 장부</td></tr>
+              <tr><td class="key">우리 집 공개 주소</td><td>지갑 주소 — 남에게 알려줘도 되는 식별값</td></tr>
+              <tr><td class="key">문을 여는 비밀 열쇠</td><td>개인키 — 거래에 서명하는 권한</td></tr>
+              <tr><td class="key">열쇠 꾸러미·도어록 앱</td><td>디지털 월렛 — 주소와 열쇠를 관리</td></tr>
+              <tr><td class="key">장부상 보유 자산</td><td>코인·토큰·NFT</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>누군가 내 지갑 주소를 아는 것은 집 주소를 아는 것과 비슷합니다. 주소만으로는 자산을 이동시킬 수 없습니다. 하지만 <strong>개인키를 가진 사람</strong>은 거래에 디지털 서명을 할 수 있으므로, 사실상 그 지갑을 통제합니다.</p>
+      </section>
+
+      <section id="s-why">
+        <h3>3. 디지털 월렛은 왜 필요한가</h3>
+        <p>대표적으로 다음 일을 합니다.</p>
+        <div class="grid-2">
+          <div class="card"><h4>자산 확인</h4><p style="margin:0;color:var(--muted-foreground);font-size:.92rem">내 주소가 보유한 코인·토큰·NFT를 조회합니다.</p></div>
+          <div class="card"><h4>자산 수신</h4><p style="margin:0;color:var(--muted-foreground);font-size:.92rem">상대방에게 지갑 주소를 알려주고 자산을 받습니다.</p></div>
+          <div class="card"><h4>자산 전송</h4><p style="margin:0;color:var(--muted-foreground);font-size:.92rem">받는 주소와 수량을 입력한 뒤 개인키로 거래에 서명합니다.</p></div>
+          <div class="card"><h4>블록체인 서비스 이용</h4><p style="margin:0;color:var(--muted-foreground);font-size:.92rem">거래소·게임·NFT 서비스 등에 연결해 로그인하거나 거래를 승인합니다.</p></div>
+        </div>
+        <p>월렛은 단순한 자산 목록 화면이 아니라, 블록체인에 특정 행동을 요청하고 그 요청에 <strong>서명하는 인터페이스</strong>입니다.</p>
+
+        <div class="enriched">
+          <div class="e-head"><span class="badge badge-enrich">보완</span> NIST의 월렛 정의 (출처 보강)</div>
+          <p>NIST의 블록체인 간행물 <strong>NISTIR 8301</strong> <em>"Blockchain Networks: Token Design and Management Overview"</em>(2021)는 ISO 22739:2020 표준 정의를 인용해, 월렛을 <strong>"개인키와 공개키를 생성·관리·보관·사용하는 애플리케이션"</strong>(an application used to generate, manage, store or use private and public keys)으로 설명합니다.<sup class="fn"><a href="#fn1" id="ref1">[1]</a></sup></p>
+          <p class="src">출처: NIST (미국 국립표준기술연구소), NISTIR 8301 (2021) · ISO 22739:2020 인용 · 확인 2026-06-26</p>
+        </div>
+      </section>
+
+      <section id="s-vs">
+        <h3>4. 일반 금융 앱과 무엇이 다른가</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>구분</th><th>은행·금융 앱</th><th>일반적인 블록체인 월렛</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="key">자산 기록 장소</td><td>은행·금융회사 서버</td><td>블록체인 네트워크</td></tr>
+              <tr><td class="key">계좌 통제 방식</td><td>금융회사가 계좌를 운영</td><td>개인키 보유자가 거래를 승인</td></tr>
+              <tr><td class="key">사용자 식별</td><td>이름·휴대전화·신분증 등</td><td>지갑 주소와 암호학적 서명</td></tr>
+              <tr><td class="key">비밀번호 분실</td><td>본인 확인 후 재설정 가능</td><td>개인키·복구 수단을 잃으면 복구가 어려울 수 있음</td></tr>
+              <tr><td class="key">잘못된 송금</td><td>기관을 통한 조치 가능성</td><td>중앙기관이 없어 되돌리기 어려운 경우가 많음</td></tr>
+              <tr><td class="key">서비스 연결</td><td>해당 금융회사 기능 중심</td><td>여러 블록체인 앱에 연결 가능</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>다만 모든 디지털 월렛이 사용자가 직접 개인키를 관리하는 것은 아닙니다. 회사가 대신 관리하는 월렛도 있습니다. 이 차이를 <strong>커스터디(Custodial)</strong>와 <strong>논커스터디(Non-custodial)</strong>라고 합니다.</p>
+      </section>
+
+      <section id="s-terms">
+        <h3>5. 지금 알아야 할 핵심 용어</h3>
+        <dl class="def">
+          <dt>블록체인</dt>
+          <dd>여러 참여자가 함께 유지하는 거래 장부. 한 회사의 중앙 서버만 믿는 대신, 네트워크가 정해진 규칙에 따라 거래의 유효성을 확인하고 기록합니다.</dd>
+          <dt>네트워크 · 체인</dt>
+          <dd>각자 다른 규칙과 장부를 가진 블록체인 시스템. 한 월렛이 모든 블록체인을 자동 지원하는 것은 아니므로, 월렛을 분석할 때는 어떤 체인을 지원하는지 확인해야 합니다.</dd>
+          <dt>지갑 주소</dt>
+          <dd>자산을 받을 때 상대방에게 알려주는 공개 식별값. 은행 계좌번호와 비슷하지만 주소 형식·사용 규칙은 블록체인마다 다를 수 있습니다.</dd>
+          <dt>공개키와 개인키</dt>
+          <dd><strong>공개키</strong>는 주소를 만들고 서명을 검증하는 공개 정보, <strong>개인키</strong>는 거래에 서명하고 자산 통제 권한을 증명하는 비밀 정보입니다. 개인키는 단순한 로그인 수단이 아니라 '자산을 움직일 권한' 자체에 가깝습니다.</dd>
+          <dt>시드 문구</dt>
+          <dd>여러 단어로 이루어진 지갑 복구 정보. 개인키들을 다시 만들어내는 출발점이므로, 노출되면 지갑 통제권을 잃을 수 있습니다.</dd>
+          <dt>커스터디와 논커스터디</dt>
+          <dd><strong>커스터디 월렛</strong>은 회사·서비스가 사용자의 개인키를 대신 관리(은행 금고에 맡기는 방식), <strong>논커스터디 월렛</strong>은 사용자가 개인키 또는 복구 권한을 직접 관리(집 금고 열쇠를 직접 보관)합니다. 논커스터디는 통제권이 크지만 복구 정보 관리 책임도 커집니다.</dd>
+        </dl>
+        <div class="alert warn">
+          <div class="alert-title">⚠ 보안 경고</div>
+          <p>지갑 주소는 공개해도 되지만, <strong>개인키와 시드 문구는 누구에게도 알려주면 안 됩니다.</strong> 노출되는 순간 지갑 통제권을 잃을 수 있습니다.</p>
+        </div>
+      </section>
+
+      <section id="s-check">
+        <h3>6. 월렛 서비스를 처음 볼 때 확인할 세 가지</h3>
+        <p>제품 화면보다 먼저 다음 질문을 확인해야 합니다.</p>
+        <ol>
+          <li><strong>개인키를 누가 관리하는가?</strong> — 사용자, 서비스 회사, 또는 여러 주체가 나누어 관리하는지 확인합니다.</li>
+          <li><strong>어떤 블록체인을 지원하는가?</strong> — 지원 체인에 따라 이용할 수 있는 코인·NFT·서비스가 달라집니다.</li>
+          <li><strong>휴대전화를 잃거나 비밀번호를 잊었을 때 어떻게 복구하는가?</strong> — 시드 문구·클라우드 백업·하드웨어 장치·소셜 복구 등 방식이 다릅니다.</li>
+        </ol>
+        <p>이 세 가지가 이후 <strong>MetaMask · Phantom · 갤럭시 월렛 · D'CENT · 마이비</strong>를 비교하는 기본 축이 됩니다.</p>
+      </section>
+
+      <section id="s-review">
+        <h3>오늘의 복습 · 확인 문제</h3>
+        <div class="card">
+          <h4 style="margin-top:0">오늘의 복습</h4>
+          <ul class="feature">
+            <li>월렛 안에 코인이 직접 들어 있는 것은 아니다.</li>
+            <li>자산 기록은 블록체인에 있고, 월렛은 자산을 움직이기 위한 키와 서명을 관리한다.</li>
+            <li>지갑 주소는 공개해도 되지만 개인키와 시드 문구는 공개하면 안 된다.</li>
+            <li>월렛 분석의 출발점은 지원 체인, 키 관리 주체, 복구 방식이다.</li>
+          </ul>
+        </div>
+
+        <div class="alert">
+          <div class="alert-title">다음 과제</div>
+          <p>아래 상황을 한 문장으로 설명해 보세요. <strong>"휴대전화를 잃어버렸지만 시드 문구는 안전하게 보관하고 있다."</strong> — 핵심은 자산이 사라진 것인지, 아니면 다른 기기에서 지갑을 복구할 수 있는지 구분하는 것입니다.</p>
+        </div>
+
+        <div class="quiz">
+          <p class="q">Q1. 디지털 월렛 안에 코인이 직접 저장되는 것이 아니라면, 실제 자산 기록은 어디에 있나요?</p>
+          <details class="answer"><summary>예시 답안 보기</summary><p>자산 기록은 <strong>블록체인 네트워크</strong>에 있습니다. 월렛은 그 자산을 움직일 권한인 키와 서명만 관리합니다.</p></details>
+
+          <p class="q">Q2. 지갑 주소와 개인키 중 다른 사람에게 알려줘도 되는 것은 무엇인가요?</p>
+          <details class="answer"><summary>예시 답안 보기</summary><p><strong>지갑 주소</strong>는 자산을 받기 위해 공개해도 됩니다. <strong>개인키(및 시드 문구)</strong>는 절대 공개하면 안 됩니다.</p></details>
+        </div>
+      </section>
+
+      <!-- ===================== PART 2 ===================== -->
+      <hr class="part-divider">
+      <span class="part-label" id="part2">2부</span>
+      <h2 style="margin-top:0">다섯 키워드 한눈에 보기</h2>
+      <p class="lead">앞의 1부는 모든 월렛에 공통된 개념이었습니다. 이제 자주 언급되는 다섯 키워드가 각각 <strong>어떤 유형의 서비스</strong>인지 지도를 그려봅니다. 이들은 같은 종류의 경쟁 서비스가 아니라는 점이 핵심입니다.</p>
+
+      <section id="s-overview">
+        <h3>다섯 키워드 개요</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>키워드</th><th>한 문장 설명</th><th>서비스 유형</th></tr></thead>
+            <tbody>
+              <tr><td class="key">MetaMask</td><td>사용자가 개인키 통제권을 가지면서 여러 블록체인·Web3 서비스에 연결하는 월렛</td><td>소프트웨어 · 셀프 커스터디</td></tr>
+              <tr><td class="key">Phantom</td><td>솔라나 생태계에서 출발해 여러 블록체인으로 확장한 사용성 중심 월렛</td><td>소프트웨어 · 셀프 커스터디</td></tr>
+              <tr><td class="key">갤럭시</td><td>삼성 갤럭시 기기에서 결제·신분증·디지털 키와 블록체인 기능을 제공하는 월렛 생태계</td><td>단말 · 플랫폼 기반</td></tr>
+              <tr><td class="key">D'CENT</td><td>개인키를 별도 기기·카드에 보관해 보안을 강화하는 하드웨어 중심 월렛</td><td>하드웨어 · 콜드 월렛</td></tr>
+              <tr><td class="key">마이비(MyB)</td><td>활동으로 리워드를 얻고 XPLA 블록체인 기능을 접목한 앱테크 서비스</td><td>리워드 앱 · 임베디드 Web3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="s-metamask">
+        <h3>1. MetaMask</h3>
+        <div class="concept"><span class="ico">🔌</span><span>Web3 서비스에 연결하는 범용 소프트웨어 월렛 <span style="opacity:.7">(개념도 · alt: Web3 범용 소프트웨어 월렛)</span></span></div>
+        <p><strong>쉬운 비유:</strong> 여러 Web3 서비스에 들어갈 때 사용하는 로그인 수단이자 개인 금고 열쇠 앱입니다.</p>
+        <p>브라우저 확장 프로그램과 모바일 앱으로 제공되며, 사용자가 자신의 자산과 접근 권한을 통제하는 <strong>셀프 커스터디</strong> 월렛입니다.</p>
+        <h4>주요 목적</h4>
+        <ul class="feature">
+          <li>코인·토큰 보관·전송</li>
+          <li>탈중앙화 거래소·NFT 마켓 등 Web3 서비스 연결</li>
+          <li>거래와 스마트 계약 요청에 서명</li>
+        </ul>
+        <div class="enriched">
+          <div class="e-head"><span class="badge badge-enrich">보완</span> 지원 체인 최신 정보 (2026-06 기준)</div>
+          <p>MetaMask 공식 자료에 따르면 네이티브로 <strong>Ethereum, Linea, Base, Polygon, BNB Chain, Arbitrum, OP Mainnet, Avalanche, zkSync Era, Sei, Bitcoin, Solana, TRON</strong> 등을 지원합니다. Solana 네이티브 지원은 2025년 7월, Bitcoin 네이티브 지원은 2025년 12월에 추가되었습니다(이전에는 <code>Snaps</code> 확장으로만 가능).</p>
+          <p class="src">출처: MetaMask 공식 FAQ / Help Center<sup class="fn"><a href="#fn2" id="ref2">[2]</a></sup> · 지원 체인은 수시로 변경되므로 분석 시점에 공식 페이지 재확인 필요</p>
+        </div>
+      </section>
+
+      <section id="s-phantom">
+        <h3>2. Phantom</h3>
+        <div class="concept"><span class="ico">👻</span><span>솔라나에서 출발해 멀티체인으로 확장한 사용성 중심 월렛</span></div>
+        <p><strong>쉬운 비유:</strong> MetaMask와 비슷한 열쇠 앱이지만, 처음에는 솔라나 전용 출입증에 가까웠고 지금은 여러 건물에 들어갈 수 있도록 확장된 형태입니다.</p>
+        <p>Phantom은 사용자가 자산 통제권을 가지는 <strong>셀프 커스터디 방식의 멀티체인 월렛</strong>입니다.</p>
+        <h4>주요 목적</h4>
+        <ul class="feature">
+          <li>코인·토큰 관리</li>
+          <li>NFT 확인 및 관리</li>
+          <li>Web3 앱 연결</li>
+          <li>월렛 안에서 자산 전송·교환</li>
+        </ul>
+        <h4>MetaMask와의 기본 차이</h4>
+        <ul>
+          <li>MetaMask는 <strong>이더리움·EVM 생태계</strong>에서 강하게 성장</li>
+          <li>Phantom은 <strong>솔라나 생태계</strong>에서 강하게 성장</li>
+          <li>현재는 둘 다 멀티체인 방향으로 확장 중</li>
+        </ul>
+        <div class="enriched">
+          <div class="e-head"><span class="badge badge-enrich">보완</span> 지원 체인 최신 정보 (2026-06 기준)</div>
+          <p>Phantom 공식 헬프센터(2026-06-09 갱신) 기준 지원 네트워크는 <strong>Solana, Ethereum, Base, Polygon, Sui, Monad, Bitcoin(Native SegWit/Taproot), HyperEVM</strong>이며, BSC·Arbitrum·Optimism·Avalanche·Linea 등은 미지원입니다.</p>
+          <p class="src">출처: Phantom 공식 Help Center<sup class="fn"><a href="#fn3" id="ref3">[3]</a></sup> · 지원 체인은 수시로 변경될 수 있음</p>
+        </div>
+      </section>
+
+      <section id="s-galaxy">
+        <h3>3. 갤럭시 월렛 관련 <span class="badge badge-verify">추가 확인 필요</span></h3>
+        <div class="concept"><span class="ico">📱</span><span>스마트폰 제조사가 기기 보안과 결합해 제공하는 월렛 생태계</span></div>
+        <div class="alert">
+          <div class="alert-title">가정</div>
+          <p>여기서 '갤럭시'는 삼성의 Samsung Wallet, Samsung Blockchain Wallet 및 갤럭시 기기 내 보안 기능을 통칭합니다. 하나의 앱만을 뜻하지 않습니다.</p>
+        </div>
+        <h4>Samsung Wallet</h4>
+        <p>결제 카드·멤버십·신분증·탑승권·자동차/주택 디지털 키 등을 한곳에서 관리하는 <strong>생활형 디지털 월렛</strong>입니다. 일반 암호화폐 월렛보다 범위가 넓으며, 2026년에도 삼성은 결제·여행·디지털 키 기능을 확장하고 있습니다.</p>
+        <h4>Samsung Blockchain Wallet</h4>
+        <p>블록체인 자산을 확인·거래할 수 있도록 갤럭시 기기와 연결된 암호화폐 월렛 기능입니다.</p>
+        <div class="enriched">
+          <div class="e-head"><span class="badge badge-enrich">보완</span> 비교 환경 범위 명시 (부분 보완)</div>
+          <p><strong>(1) Samsung Wallet</strong>은 갤럭시 기기 기반으로 국가별 단계적 제공되며 결제·여행·디지털 키 영역이 확장 중입니다. <strong>(2) Samsung Blockchain Wallet</strong>은 공식 지원 문서 기준 Galaxy S10 시리즈 이후의 S/Note/Fold/Z Flip 시리즈와 일부 A 시리즈(2020년 이후)에서 동작하며, <strong>미국(Verizon 제외)·유럽 12개국·싱가포르·필리핀·호주 등 제한된 국가</strong>에서만 제공됩니다.</p>
+          <p>따라서 비교 기준은 <strong>'특정 갤럭시 단말 + 지원 국가 + 해당 OS 버전'</strong> 환경으로 한정해야 합니다.</p>
+          <p class="src">출처: Samsung 공식 지원 페이지(미국/싱가포르)<sup class="fn"><a href="#fn4" id="ref4">[4]</a></sup></p>
+        </div>
+        <div class="alert warn">
+          <div class="alert-title">⚠ 추가 확인 필요</div>
+          <p>한국 내 Samsung Blockchain Wallet의 정식 지원 여부와 잔존 기능 범위는 Samsung 공식 한국 페이지에서 별도 확인이 필요합니다.</p>
+        </div>
+      </section>
+
+      <section id="s-dcent">
+        <h3>4. D'CENT</h3>
+        <div class="concept"><span class="ico">🔐</span><span>인터넷과 분리된 하드웨어 콜드 월렛</span></div>
+        <p><strong>쉬운 비유:</strong> MetaMask·Phantom이 휴대전화 안의 열쇠 앱이라면, D'CENT는 중요한 열쇠를 별도의 전자 금고나 보안 카드에 넣어두는 방식입니다.</p>
+        <p>D'CENT는 지문 인증 하드웨어 월렛, NFC 카드형 월렛, 모바일 앱 월렛을 제공합니다. 모바일 앱은 자산 현황을 보여주고 하드웨어 기기·카드와 연결하는 인터페이스 역할을 합니다.</p>
+        <h4>주요 목적</h4>
+        <ul class="feature">
+          <li>개인키를 인터넷과 분리된 장치에서 보호</li>
+          <li>큰 금액·장기 보유 자산 관리</li>
+          <li>하드웨어 장치에서 거래 확인·서명</li>
+          <li>모바일 앱에서 자산 조회와 서비스 이용</li>
+        </ul>
+        <h4>MetaMask·Phantom과의 기본 차이</h4>
+        <ul>
+          <li>MetaMask·Phantom: 앱 중심의 편리한 사용</li>
+          <li>D'CENT: 별도 하드웨어를 통한 키 보호가 핵심</li>
+          <li>편의성은 앱 월렛이, 물리적 분리 보안은 하드웨어 월렛이 강점</li>
+        </ul>
+      </section>
+
+      <section id="s-myb">
+        <h3>5. 마이비(MyB) <span class="badge badge-verify">추가 확인 필요</span></h3>
+        <div class="concept"><span class="ico">🎁</span><span>블록체인을 의식하지 않아도 되는 리워드 내장형 임베디드 월렛</span></div>
+        <p><strong>쉬운 비유:</strong> 블록체인 월렛 자체라기보다, 퀴즈·걷기·쇼핑 등으로 포인트를 모으는 리워드 앱에 블록체인 지갑 기능을 연결한 서비스에 가깝습니다.</p>
+        <p>그래서 MetaMask·Phantom 같은 범용 Web3 월렛과 동일하게 보면 안 됩니다.</p>
+        <ul>
+          <li>MetaMask·Phantom: <strong>월렛이 중심</strong></li>
+          <li>마이비: <strong>리워드 서비스가 중심</strong>이고 블록체인이 내부 기능으로 결합</li>
+        </ul>
+        <div class="enriched">
+          <div class="e-head"><span class="badge badge-enrich">보완</span> 확인된 사실 (부분 보완)</div>
+          <p>마이비(MyB)는 블록체인 스타트업 <strong>원셀프월드(1Self.World)</strong>가 운영하는 리워드(앱테크) 서비스로, <strong>2025년 1월 XPLA 메인넷에 온보딩</strong>되었습니다. 모든 트랜잭션, <code>SBT</code>(소울바운드 토큰) 발행, 디지털 지갑 관리는 XPLA 네트워크에서 처리됩니다. 출시 6개월 만에 가입자 55만 명을 기록했고, 퀴즈·만보기·게임·쇼핑·설문으로 포인트를 적립해 현금화하는 구조입니다.</p>
+          <p class="src">출처: ZDNet Korea, 디지털투데이, 마이비 공식 사이트<sup class="fn"><a href="#fn5" id="ref5">[5]</a></sup></p>
+        </div>
+        <div class="alert warn">
+          <div class="alert-title">⚠ 추가 확인 필요 (공개 자료로 확정 불가)</div>
+          <p>마이비의 ① 개인키 커스터디 주체(사용자/원셀프월드/XPLA 중 누가 보관하는지), ② 구체적 지갑 복구 방식(시드 문구·소셜 복구 등), ③ 외부 지갑으로의 자산 이동(출금) 허용 범위는 공개 자료만으로 확정하기 어렵습니다.</p>
+        </div>
+      </section>
+
+      <section id="s-map">
+        <h3>전체 구도</h3>
+        <p>다섯 키워드는 같은 종류의 경쟁 서비스가 <strong>아닙니다.</strong> 유형별로 분류하면 다음과 같습니다.</p>
+        <pre><code>범용 소프트웨어 월렛
+ ├─ MetaMask
+ └─ Phantom
+
+하드웨어 중심 월렛
+ └─ D'CENT
+
+단말·생활 플랫폼 월렛
+ └─ 갤럭시 / Samsung Wallet 생태계
+
+리워드 서비스 내장형 Web3
+ └─ 마이비(MyB)</code></pre>
+        <div class="alert">
+          <div class="alert-title">분석 원칙</div>
+          <p>유사 서비스 분석에서도 단순히 <strong>기능 수를 비교하면 안 됩니다.</strong> 먼저 '개인키를 누가 관리하는가 · 어떤 체인을 지원하는가 · 어떻게 복구하는가'라는 질문으로 서비스의 <strong>정체성(유형)</strong>을 구분해야 합니다.</p>
+        </div>
+      </section>
+
+      <!-- ===================== GLOSSARY ===================== -->
+      <hr class="part-divider">
+      <section id="s-glossary">
+        <h2 style="margin-top:0">용어 사전</h2>
+        <p class="subtitle" style="margin-bottom:1.25rem">본문에 등장한 약어·전문 용어 풀이입니다.</p>
+        <dl class="def">
+          <dt>EVM (Ethereum Virtual Machine)</dt>
+          <dd>스마트 계약을 실행하는 이더리움의 표준 실행 환경. 이를 호환하는 체인(Polygon, BNB Chain 등)을 'EVM 계열'이라 부릅니다. MetaMask가 강점을 가진 생태계입니다.</dd>
+          <dt>Web3</dt>
+          <dd>블록체인·암호화폐 기반의 탈중앙화 인터넷. 사용자가 중앙 서버 대신 자신의 지갑(키)으로 신원을 증명하고 자산을 직접 통제하는 서비스 환경을 뜻합니다.</dd>
+          <dt>XPLA (엑스플라)</dt>
+          <dd>컴투스홀딩스 진영이 주도하는 글로벌 블록체인 메인넷. 게임·콘텐츠·리워드 등 다양한 dApp이 온보딩되어 있으며, 마이비(MyB)의 트랜잭션과 지갑 관리가 이 네트워크에서 처리됩니다.</dd>
+          <dt>콜드 월렛 (Cold Wallet)</dt>
+          <dd>개인키를 인터넷과 분리된 오프라인 환경(전용 하드웨어·보안 카드 등)에 보관하는 월렛. 온라인 '핫 월렛'보다 해킹 노출이 적습니다. D'CENT가 대표 예입니다.</dd>
+          <dt>NFC (Near Field Communication)</dt>
+          <dd>기기를 가까이 대면 데이터를 주고받는 근거리 무선 통신 기술. D'CENT의 카드형 월렛이나 비접촉 결제에 사용됩니다.</dd>
+          <dt>임베디드 월렛 (Embedded Wallet)</dt>
+          <dd>사용자가 시드 문구·개인키 같은 블록체인 개념을 직접 다루지 않아도 앱 내부에 자동으로 내장·연동되는 지갑. 마이비처럼 리워드 앱 안에 블록체인 기능이 숨어 있는 형태입니다.</dd>
+          <dt>SBT (소울바운드 토큰)</dt>
+          <dd>양도·복제가 불가능하도록 특정 지갑에 귀속된 토큰. 마이비는 퀴즈 등으로 발급되는 '취향 뱃지'를 SBT로 발행합니다.</dd>
+          <dt>셀프 커스터디 (Self-Custody)</dt>
+          <dd>사용자가 자신의 개인키 또는 복구 권한을 직접 보관·관리하는 방식. 논커스터디와 같은 의미로 쓰이며 MetaMask·Phantom이 해당합니다.</dd>
+          <dt>Snaps</dt>
+          <dd>MetaMask의 확장 기능 시스템. 코어가 네이티브로 지원하지 않는 체인(NEAR, Cosmos, Tezos, Cardano 등)을 서드파티 플러그인으로 추가 연결할 수 있게 합니다.</dd>
+        </dl>
+      </section>
+
+      <!-- ===================== SOURCES ===================== -->
+      <footer class="sources" id="sources">
+        <h2>출처</h2>
+        <ol class="srclist">
+          <li id="fn1">NIST, <em>NISTIR 8301: Blockchain Networks — Token Design and Management Overview</em> (2021), ISO 22739:2020 정의 인용. <a href="https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8301.pdf" target="_blank" rel="noopener noreferrer">nvlpubs.nist.gov</a> <a href="#ref1" class="footnote-back">↩</a></li>
+          <li id="fn2">MetaMask 공식 FAQ / Help Center. <a href="https://metamask.io/faqs" target="_blank" rel="noopener noreferrer">metamask.io/faqs</a> · <a href="https://support.metamask.io/configure/networks/" target="_blank" rel="noopener noreferrer">support.metamask.io</a> <a href="#ref2" class="footnote-back">↩</a></li>
+          <li id="fn3">Phantom 공식 Help Center, "Supported networks/chains in Phantom" (2026-06-09 갱신). <a href="https://help.phantom.com/hc/en-us/articles/41372840389651-Supported-networks-chains-in-Phantom" target="_blank" rel="noopener noreferrer">help.phantom.com</a> <a href="#ref3" class="footnote-back">↩</a></li>
+          <li id="fn4">Samsung 공식 지원 페이지. <a href="https://www.samsung.com/us/support/owners/app/samsung-blockchain" target="_blank" rel="noopener noreferrer">samsung.com/us</a> · <a href="https://www.samsung.com/sg/support/apps-services/what-devices-support-the-samsung-blockchain-wallet/" target="_blank" rel="noopener noreferrer">samsung.com/sg</a> <a href="#ref4" class="footnote-back">↩</a></li>
+          <li id="fn5">ZDNet Korea · 디지털투데이 · 마이비 공식 사이트. <a href="https://zdnet.co.kr/view/?no=20250107171159" target="_blank" rel="noopener noreferrer">zdnet.co.kr</a> · <a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=548696" target="_blank" rel="noopener noreferrer">digitaltoday.co.kr</a> · <a href="https://myb.im/" target="_blank" rel="noopener noreferrer">myb.im</a> <a href="#ref5" class="footnote-back">↩</a></li>
+        </ol>
+        <p class="colophon">확인 기준일 2026-06-26 · 지원 체인·국가별 가용성 등은 수시로 변경될 수 있으므로 분석 시점에 각 서비스 공식 페이지를 재확인하시기 바랍니다. 본 문서는 원본 학습 노트를 정리·보완해 재구성한 것이며, '보완' 배지가 붙은 내용은 외부 공식 자료로 보강한 부분입니다.</p>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // TOC active highlight on scroll
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    var map = {};
+    links.forEach(function(a){
+      var id = a.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if(el) map[id] = a;
+    });
+    var targets = Object.keys(map).map(function(id){return document.getElementById(id);});
+    if(!('IntersectionObserver' in window) || targets.length===0) return;
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){a.style.color='';a.style.fontWeight='';});
+          var a = map[en.target.id];
+          if(a){a.style.color='hsl(240 10% 3.9%)';a.style.fontWeight='600';}
+        }
+      });
+    },{rootMargin:'0px 0px -75% 0px',threshold:0});
+    targets.forEach(function(t){obs.observe(t);});
+  })();
+</script>
+</body>
+</html>

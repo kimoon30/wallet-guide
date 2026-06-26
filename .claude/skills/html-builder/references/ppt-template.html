@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: #f8f9fa;
+    }
+
+    /* 슬라이드 컨테이너 */
+    .slide-container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 5vh 8vw;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* 슬라이드 종류 */
+    .slide.title-slide {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    }
+
+    .slide.content-slide {
+      background: #16213e;
+    }
+
+    .slide.section-divider {
+      background: #0f3460;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* 타이포그래피 */
+    h1 { font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+    h2 { font-size: clamp(1.4rem, 4vw, 2.5rem); font-weight: 600; margin-bottom: 1.5rem; color: #e2e8f0; }
+    h3 { font-size: clamp(1.1rem, 3vw, 1.8rem); font-weight: 600; margin-bottom: 1rem; color: #a0aec0; }
+    p { font-size: clamp(0.95rem, 2.5vw, 1.2rem); line-height: 1.7; margin-bottom: 1rem; max-width: 70ch; }
+
+    /* 부제목 */
+    .subtitle { font-size: clamp(1rem, 3vw, 1.5rem); color: #a0aec0; margin-top: 0.5rem; }
+
+    /* 메타 (날짜, 발표자) */
+    .meta { font-size: 0.9rem; color: #718096; margin-top: 1.5rem; }
+
+    /* 목록 */
+    ul, ol { padding-left: 1.5rem; font-size: clamp(0.95rem, 2.5vw, 1.2rem); }
+    li { margin-bottom: 0.75rem; line-height: 1.6; }
+
+    /* 강조 카드 (핵심 메시지) */
+    .highlight-card {
+      background: rgba(255,255,255,0.08);
+      border-left: 4px solid #e94560;
+      padding: 1rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1rem 0;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 500;
+    }
+
+    /* 2열 레이아웃 */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    /* 보완 내용 */
+    .enriched-note {
+      background: rgba(240, 180, 41, 0.15);
+      border-left: 3px solid #f0b429;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85em;
+      border-radius: 0 4px 4px 0;
+    }
+    .source { font-size: 0.7em; color: #a0aec0; margin-left: 0.5rem; }
+
+    /* 이미지 */
+    img { max-width: 100%; max-height: 50vh; object-fit: contain; border-radius: 6px; }
+
+    /* 진행 표시기 */
+    .progress-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background: #e94560;
+      transition: width 0.3s ease;
+      z-index: 100;
+    }
+
+    /* 슬라이드 번호 */
+    .slide-number {
+      position: fixed;
+      bottom: 1rem;
+      right: 1.5rem;
+      font-size: 0.8rem;
+      color: #718096;
+      z-index: 100;
+    }
+
+    /* 네비게이션 힌트 */
+    .nav-hint {
+      position: fixed;
+      bottom: 1rem;
+      left: 1.5rem;
+      font-size: 0.75rem;
+      color: #4a5568;
+      z-index: 100;
+    }
+
+    /* 표 */
+    .table-wrapper { overflow-x: auto; width: 100%; margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: rgba(255,255,255,0.15); padding: 0.6rem 1rem; text-align: left; }
+    td { padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+    /* 코드 */
+    pre { background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 4px; overflow-x: auto; font-size: 0.85rem; max-height: 40vh; }
+    code { font-family: 'Courier New', monospace; }
+
+    @media (max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; }
+      .slide { padding: 4vh 5vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-container">
+
+    <!-- 슬라이드 1: 타이틀 -->
+    <div class="slide title-slide active" id="slide-1">
+      <h1>{{TITLE}}</h1>
+      <p class="subtitle">{{SUBTITLE}}</p>
+      <p class="meta">{{DATE}} · {{PRESENTER}}</p>
+    </div>
+
+    <!-- 슬라이드 2+: 내용 (반복 패턴) -->
+    <div class="slide content-slide" id="slide-2">
+      <h2>{{SECTION_TITLE}}</h2>
+      <p>{{KEY_MESSAGE}}</p>
+      <ul>
+        <li>{{POINT_1}}</li>
+        <li>{{POINT_2}}</li>
+        <li>{{POINT_3}}</li>
+      </ul>
+    </div>
+
+    <!-- 구분 슬라이드 (선택적) -->
+    <div class="slide section-divider" id="slide-divider">
+      <h2>{{DIVIDER_TITLE}}</h2>
+    </div>
+
+  </div>
+
+  <!-- UI 요소 -->
+  <div class="progress-bar" id="progress"></div>
+  <div class="slide-number" id="slide-num">1 / N</div>
+  <div class="nav-hint">← → 키 또는 클릭으로 이동</div>
+
+  <script>
+    (function() {
+      var slides = document.querySelectorAll('.slide');
+      var total = slides.length;
+      var current = 0;
+
+      function show(idx) {
+        slides[current].classList.remove('active');
+        current = (idx + total) % total;
+        slides[current].classList.add('active');
+        document.getElementById('progress').style.width = ((current + 1) / total * 100) + '%';
+        document.getElementById('slide-num').textContent = (current + 1) + ' / ' + total;
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') show(current + 1);
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') show(current - 1);
+      });
+
+      document.querySelector('.slide-container').addEventListener('click', function(e) {
+        if (e.clientX > window.innerWidth / 2) show(current + 1);
+        else show(current - 1);
+      });
+
+      show(0);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{
+  "source_file": "prompt/work/002.요약정리.md",
+  "enriched_at": "2026-06-26",
+  "enriched_sections": [
+    {
+      "gap_id": "G1",
+      "status": "resolved",
+      "location": "3. 디지털 월렛은 왜 필요한가",
+      "original_text": "NIST도 월렛을 공개키와 개인키를 생성·관리·보관·사용하는 애플리케이션으로 정의합니다.",
+      "enriched_text": "NIST의 블록체인 간행물 NISTIR 8301 'Blockchain Networks: Token Design and Management Overview'(2021)는 ISO 22739:2020 표준 정의를 인용해 월렛(wallet)을 '개인키와 공개키를 생성·관리·보관·사용하는 애플리케이션(an application used to generate, manage, store or use private and public keys)'으로 설명합니다.",
+      "source": "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8301.pdf",
+      "source_org": "NIST (미국 국립표준기술연구소), NISTIR 8301 (2021), ISO 22739:2020 인용",
+      "retrieved_date": "2026-06-26",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G2",
+      "status": "resolved",
+      "location": "1. MetaMask / 2. Phantom",
+      "original_text": "현재 공식 문서는 이더리움뿐 아니라 솔라나, 비트코인 등 여러 블록체인의 키를 관리하는 월렛으로 설명합니다. / 공식 설명도 Phantom을 사용하기 쉬운 멀티체인 월렛으로 정의하고 있으며, 지원 체인은 계속 변경·확장될 수 있습니다.",
+      "enriched_text": "[MetaMask] 2026년 6월 기준 MetaMask 공식 자료에 따르면 네이티브로 Ethereum, Linea, Base, Polygon, BNB Chain, Arbitrum, OP Mainnet, Avalanche, zkSync Era, Sei, Bitcoin, Solana, TRON 등을 지원합니다. Solana 네이티브 지원은 2025년 7월, Bitcoin 네이티브 지원은 2025년 12월에 추가되었습니다(이전에는 Snaps 확장으로만 가능). [Phantom] Phantom 공식 헬프센터(2026-06-09 갱신) 기준 지원 네트워크는 Solana, Ethereum, Base, Polygon, Sui, Monad, Bitcoin(Native SegWit/Taproot), HyperEVM이며, BSC·Arbitrum·Optimism·Avalanche·Linea 등은 미지원입니다. (지원 체인 목록은 양 서비스 모두 수시로 변경될 수 있으므로 분석 시점에 공식 페이지 재확인 필요)",
+      "source": "https://metamask.io/faqs ; https://support.metamask.io/configure/networks/ ; https://help.phantom.com/hc/en-us/articles/41372840389651-Supported-networks-chains-in-Phantom",
+      "source_org": "MetaMask 공식 FAQ/Help Center, Phantom 공식 Help Center",
+      "retrieved_date": "2026-06-26",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G3",
+      "status": "partial",
+      "location": "3. 갤럭시 월렛 관련",
+      "original_text": "다만 현재 이용 가능 여부와 기능은 국가·단말·소프트웨어 버전에 따라 다를 수 있으므로 실제 분석 시 별도 확인이 필요합니다.",
+      "enriched_text": "비교 환경 범위를 다음과 같이 명시할 수 있습니다. (1) Samsung Wallet(생활형 디지털 월렛: 결제·멤버십·신분증·탑승권·자동차/주택 디지털 키)은 갤럭시 기기 기반으로 국가별로 단계적 제공되며 2026년에도 결제·여행·디지털 키 영역이 확장 중입니다. (2) Samsung Blockchain Wallet(암호화폐 키 관리 기능)은 Samsung 공식 지원 문서 기준 Galaxy S10 시리즈 이후의 S/Note/Fold/Z Flip 시리즈와 일부 A 시리즈(2020년 이후 출시)에서 동작하며, 미국(Verizon 제외)·유럽 12개국(영국·독일·스위스·스페인·포르투갈·스웨덴·오스트리아·핀란드·덴마크·노르웨이·아이슬란드·루마니아)·싱가포르·필리핀·호주 등 제한된 국가에서만 제공됩니다. 따라서 비교 기준은 '특정 갤럭시 단말 + 지원 국가 + 해당 OS 버전' 환경으로 한정해야 하며, 한국 내 Samsung Blockchain Wallet 정식 지원 여부와 잔존 기능 범위는 공식 확인 필요.",
+      "source": "https://www.samsung.com/us/support/owners/app/samsung-blockchain ; https://www.samsung.com/sg/support/apps-services/what-devices-support-the-samsung-blockchain-wallet/",
+      "source_org": "Samsung 공식 지원 페이지(미국/싱가포르)",
+      "retrieved_date": "2026-06-26",
+      "confidence": "medium"
+    },
+    {
+      "gap_id": "G4",
+      "status": "partial",
+      "location": "5. 마이비(MyB)",
+      "original_text": "확실치 않음: 현재 마이비의 정확한 개인키 관리 주체, 지갑 복구 방식, 외부 지갑으로의 전체 자산 이동 범위는 공개 자료만으로 확정하기 어렵습니다.",
+      "enriched_text": "확인된 사실: 마이비(MyB)는 블록체인 스타트업 원셀프월드(1Self.World)가 운영하는 리워드(앱테크) 서비스로, 2025년 1월 XPLA 메인넷에 온보딩되었습니다. 마이비에서 발생하는 모든 트랜잭션, 소울바운드 토큰(SBT, 양도·복제 불가한 취향 뱃지) 발행, 디지털 지갑 관리는 XPLA 네트워크에서 처리됩니다. 출시 6개월 만에 가입자 55만 명을 기록했고, 퀴즈·만보기·게임·쇼핑·설문 등으로 포인트를 적립해 현금화하는 구조입니다. 추가 확인 필요(미해결): 개인키를 사용자/원셀프월드/XPLA 중 누가 보관하는지(커스터디 주체), 시드 문구·소셜 복구 등 구체적 지갑 복구 방식, 외부 지갑으로의 자산 이동(출금) 허용 범위는 공개 자료로 확정 불가하여 원문의 '확실치 않음' 표시를 유지합니다.",
+      "source": "https://zdnet.co.kr/view/?no=20250107171159 ; https://www.digitaltoday.co.kr/news/articleView.html?idxno=548696 ; https://myb.im/",
+      "source_org": "ZDNet Korea, 디지털투데이, 마이비 공식 사이트(myb.im)",
+      "retrieved_date": "2026-06-26",
+      "confidence": "medium"
+    },
+    {
+      "gap_id": "G5",
+      "status": "resolved",
+      "location": "다섯 키워드 한눈에 보기 / 본문 전반",
+      "original_text": "EVM, Web3, 콜드 월렛, XPLA, NFC, 임베디드 월렛 등 약어·전문 용어가 정의 없이 사용됨",
+      "enriched_text": "본문에 사용된 전문 용어에 간단한 풀이를 추가함(term_definitions 항목 참조).",
+      "source": "term_definitions 참조",
+      "source_org": "용어 풀이(편집 보강)",
+      "retrieved_date": "2026-06-26",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G6",
+      "status": "resolved",
+      "location": "오늘의 복습 이후 ~ Q3, '그 내가 물어본…', '22s 동안 생각함'",
+      "original_text": "Q3. 위 과제와 Q1·Q2에 답하면 다음 단계에서 MetaMask부터 살펴볼까요? / 그 내가 물어본 각 키워드에 대한 설명은 없지않아? / 맞습니다. 앞 답변은 1단계만 설명했고... / 22s 동안 생각함 / 맞습니다. 앞 답변은 디지털 월렛의 공통 개념만 설명했고...",
+      "enriched_text": "채팅 대화 잔여물(대화형 진행 문구, AI 응답 메타텍스트, '22s 동안 생각함' 등)을 제거함. 학습 흐름상 의미 있는 Q1·Q2(복습 질문)는 유지하되, 다음 단계 진행 의사를 묻는 대화형 문장(Q3)과 사용자/AI 간 잡담은 정식 문서에서 삭제 처리. 1부와 2부('다섯 키워드 한눈에 보기')는 자연스러운 섹션 전환 문구로 연결.",
+      "source": "편집 처리(제거)",
+      "source_org": "removed_content 참조",
+      "retrieved_date": "2026-06-26",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G7",
+      "status": "partial",
+      "location": "각 서비스의 '핵심 이미지:' 항목",
+      "original_text": "핵심 이미지: (설명 문구만 존재, 실제 이미지·alt 없음)",
+      "enriched_text": "실제 이미지 소스가 없으므로 각 '핵심 이미지:' 설명을 개념 아이콘(이모지) + alt 텍스트로 대체 제안. 예: MetaMask → '🔌 Web3 서비스에 연결하는 범용 소프트웨어 월렛'(alt: Web3 범용 소프트웨어 월렛 개념도), 갤럭시 → '📱 기기 보안과 결합된 월렛 생태계'(alt: 스마트폰 제조사 월렛 생태계), D'CENT → '🔐 인터넷과 분리된 하드웨어 콜드 월렛'(alt: 하드웨어 콜드 월렛), 마이비 → '🎁 블록체인을 의식하지 않는 임베디드 월렛'(alt: 리워드 내장형 임베디드 월렛). 실제 제품 이미지는 라이선스 확인 필요.",
+      "source": "alt 텍스트 대체 제안(편집)",
+      "source_org": "편집 보강",
+      "retrieved_date": "2026-06-26",
+      "confidence": "low"
+    },
+    {
+      "gap_id": "G8",
+      "status": "resolved",
+      "location": "원문 전체 서식",
+      "original_text": "원문이 평문 형태(탭 구분 표, 평문 트리)로 Markdown 문법 미사용",
+      "enriched_text": "HTML 변환 시 복원할 구조를 명시: (1) '4. 일반 금융 앱과 무엇이 다른가'의 6항목 비교 → 3열(구분/은행·금융 앱/블록체인 월렛) 마크다운 테이블, (2) '다섯 키워드 한눈에 보기' → 3열(키워드/한 문장 설명/서비스 유형) 마크다운 테이블, (3) '전체 구도'의 분류 트리 → 코드블록(monospace) 또는 4그룹 계층 리스트로 복원. 헤딩 레벨은 H1='1단계: 디지털 월렛이란 무엇인가' 및 H1='다섯 키워드 한눈에 보기', H2=각 번호 섹션으로 정리.",
+      "source": "구조 복원 지침(편집)",
+      "source_org": "편집 보강",
+      "retrieved_date": "2026-06-26",
+      "confidence": "high"
+    }
+  ],
+  "removed_content": [
+    "Q3. 위 과제와 Q1·Q2에 답하면 다음 단계에서 MetaMask부터 살펴볼까요? (대화형 진행 문구)",
+    "그 내가 물어본 각 키워드에 대한 설명은 없지않아? (사용자 채팅 발화)",
+    "맞습니다. 앞 답변은 1단계만 설명했고, 요청하신 다섯 키워드의 개요가 빠졌습니다. 각 서비스의 정확한 명칭과 현재 성격을 공식 자료 기준으로 확인해 바로 보완하겠습니다. (AI 응답 잔여물)",
+    "22s 동안 생각함 (AI 사고 시간 메타텍스트)",
+    "맞습니다. 앞 답변은 디지털 월렛의 공통 개념만 설명했고, 요청하신 다섯 키워드가 어떤 서비스인지 보여주는 전체 지도가 빠졌습니다. 먼저 아래처럼 구분했어야 합니다. (AI 응답 잔여물)",
+    "중복 표기된 두 번째 '확인 기준일: 2026년 6월 26일' (1부 도입과 중복)"
+  ],
+  "term_definitions": {
+    "EVM": "Ethereum Virtual Machine(이더리움 가상머신). 스마트 계약을 실행하는 이더리움의 표준 실행 환경으로, 이를 호환하는 체인(Polygon, BNB Chain 등)을 'EVM 계열'이라 부른다. MetaMask가 강점을 가진 생태계.",
+    "Web3": "블록체인·암호화폐 기반의 탈중앙화 인터넷을 가리키는 용어. 사용자가 중앙 서버 대신 자신의 지갑(키)으로 신원을 증명하고 자산을 직접 통제하는 서비스 환경을 뜻한다.",
+    "XPLA": "엑스플라. 컴투스홀딩스 진영이 주도하는 글로벌 블록체인 메인넷(네트워크)으로, 게임·콘텐츠·리워드 등 다양한 dApp이 온보딩되어 있다. 마이비(MyB)의 트랜잭션과 지갑 관리가 이 네트워크에서 처리된다.",
+    "콜드 월렛(Cold Wallet)": "개인키를 인터넷과 분리된 오프라인 환경(전용 하드웨어 기기·보안 카드 등)에 보관하는 월렛. 온라인에 연결된 '핫 월렛'보다 해킹 노출이 적어 보안이 강하다. D'CENT가 대표 예.",
+    "NFC": "Near Field Communication(근거리 무선 통신). 기기를 가까이 대면 데이터를 주고받는 기술로, D'CENT의 카드형 월렛이나 비접촉 결제에 사용된다.",
+    "임베디드 월렛(Embedded Wallet)": "사용자가 시드 문구·개인키 같은 블록체인 개념을 직접 다루지 않아도 앱 내부에 자동으로 내장·연동되는 지갑. 마이비처럼 리워드 앱 안에 블록체인 기능이 숨어 있는 형태가 이에 해당.",
+    "SBT(소울바운드 토큰)": "양도·복제가 불가능하도록 특정 지갑에 귀속된 토큰. 마이비는 퀴즈 등으로 발급되는 '취향 뱃지'를 SBT로 발행한다.",
+    "셀프 커스터디(Self-Custody)": "사용자가 자신의 개인키 또는 복구 권한을 직접 보관·관리하는 방식. 논커스터디와 같은 의미로 쓰이며 MetaMask·Phantom이 해당.",
+    "Snaps": "MetaMask의 확장 기능 시스템. 코어가 네이티브로 지원하지 않는 체인(NEAR, Cosmos, Tezos, Cardano 등)을 서드파티 플러그인으로 추가 연결할 수 있게 한다."
+  },
+  "unresolved_gaps": [
+    "G4-세부: 마이비(MyB)의 개인키 커스터디 주체, 구체적 지갑 복구 방식, 외부 지갑 자산 출금 허용 범위 — 공개 자료로 확정 불가(추가 확인 필요)",
+    "G3-세부: 한국 내 Samsung Blockchain Wallet 정식 지원 여부 및 잔존 기능 범위 — Samsung 공식 한국 페이지 별도 확인 필요",
+    "G7: 각 서비스 실제 제품 이미지 — 라이선스 확보 전까지 아이콘/alt 텍스트로 대체"
+  ],
+  "summary": "8개 갭 중 G1·G2·G5·G6·G8을 공식 출처·편집으로 해결(resolved), G3·G4·G7은 부분 보완(partial)했으며, 마이비 키 관리·복구 범위 등 공개 자료로 확정 불가한 세부 항목은 '추가 확인 필요'로 명확히 표시했다."
+}

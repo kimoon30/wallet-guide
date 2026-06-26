@@ -1,0 +1,38 @@
+{
+  "output_file": "output/001.검색결과.html",
+  "layout": "report",
+  "layout_reason": "01_analysis.json의 layout_recommendation이 'report'. 표 16개·단어 수 1500 초과·섹션당 평균 200단어 초과의 분석·비교 중심 문서로 PPT 조건 미충족. 리포트형 확정.",
+  "sections_included": ["H", "I", "C(C-1,C-2,C-3)", "D", "E(E-1,E-2,E-3)", "B(B-1~B-5)", "G"],
+  "sections_excluded": ["A", "F", "J", "검증수준", "B-6코키지"],
+  "section_order": ["H(개요 최상단)", "I(기본 용어)", "C(비교표)", "D(관계도)", "E(차이점)", "B(서비스 심층)", "G(체크포인트)"],
+  "sections_processed": [
+    {"heading": "H. 경영진 보고용 5줄 요약", "action": "그대로", "note": "ol 글머리 5개로 최상단 배치"},
+    {"heading": "I. 추가 학습 용어 10개", "action": "표전환+카드화", "note": "용어 10개는 원본 표 유지, 고급 용어(MPC/계정추상화/ZKP)는 gap-3 보완 카드로 분리"},
+    {"heading": "C. 전체 비교표", "action": "그대로", "note": "C-1/C-2/C-3 표 유지, '코키지' 열 제거(식별 보류). overflow-x 래퍼 적용"},
+    {"heading": "D. 서비스 간 관계도", "action": "카드화", "note": "gap-4 보완 — ASCII를 4계층 HTML 다이어그램(aria-label 대체텍스트)으로 재구성, 원본 ASCII는 details로 접음"},
+    {"heading": "E. 핵심 차이점", "action": "그대로", "note": "E-1 리스트, E-2 표, E-3 카드 분리"},
+    {"heading": "B. 서비스별 상세 분석", "action": "분리+표전환", "note": "B-1~B-5 각 서비스 카드(.svc)로 분리, 20개 항목을 핵심 항목 표로 압축해 500단어 집중 방지. B-6 제외"},
+    {"heading": "G. 기획자 체크포인트", "action": "카드화", "note": "10개 포인트를 카드/소제목+리스트로 그룹화, 7개 초과 연속 글머리 방지"}
+  ],
+  "enrichments_applied": [
+    "gap-1 (D'CENT 네트워크 수치 불일치) → B-4 보완 카드, C-1 표에 '73개 이상(정확한 수 확인 필요)' 반영, 신뢰도 medium",
+    "gap-2 (MyB 커스터디 분류) → B-5 보완 카드 + C-1 '혼합형 가능성·확인 필요' 반영, 웹 검색 출처 표기, 신뢰도 medium",
+    "gap-3 (MPC/계정추상화/영지식증명 예시·비유) → I 섹션 보완 카드, 신뢰도 high",
+    "gap-4 (관계도 alt·시각화) → D 섹션 4계층 다이어그램+aria-label, 신뢰도 high"
+  ],
+  "enriched_count": 4,
+  "unanswered_gap_count": 2,
+  "unanswered_gaps": [
+    "MyB 니모닉 암호화·키분할·단독복호화 여부(정확한 커스터디 분류)",
+    "D'CENT 지원 메인넷·자산 최신 정확 수치"
+  ],
+  "design": {
+    "theme": "모던 라이트 + 웹3 다크 네이비 액센트(#16213e/#0f3460/#e94560)",
+    "navigation": "좌측 sticky TOC 사이드바(모바일 토글), H2/H3 anchor 자동 링크",
+    "enriched_marker": "[보완] 노란 뱃지 + .enriched 블록 + cite.source 출처",
+    "responsive": "375px 모바일(TOC 토글, 단일 컬럼)·1280px 데스크톱 모두 대응, 표 overflow-x",
+    "standalone": "외부 CSS/JS/CDN 없음, 인라인 <style>·<script>만 사용"
+  },
+  "warnings": [],
+  "file_size_kb": 52.2
+}

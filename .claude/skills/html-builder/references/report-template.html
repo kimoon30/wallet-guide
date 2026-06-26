@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f8f9fa;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 3rem 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    /* 헤딩 */
+    h1 { font-size: 2rem; font-weight: 700; color: #0f3460; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; font-weight: 600; color: #0f3460; margin: 3rem 0 1rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+    h4 { font-size: 1.1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+
+    /* 문단 */
+    p { margin-bottom: 1.5rem; }
+
+    /* 목차 */
+    nav.toc {
+      background: #f0f4f8;
+      border-left: 4px solid #0f3460;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    nav.toc h2 { font-size: 1rem; margin: 0 0 0.5rem; border: none; padding: 0; }
+    nav.toc ol { padding-left: 1.5rem; }
+    nav.toc li { margin: 0.25rem 0; }
+    nav.toc a { color: #0f3460; text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+
+    /* 카드 */
+    .card {
+      border-left: 4px solid #0f3460;
+      padding: 1rem 1.5rem;
+      background: #f0f4f8;
+      border-radius: 0 4px 4px 0;
+      margin: 1rem 0;
+    }
+
+    /* 목록 */
+    ul, ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+
+    /* 표 */
+    .table-wrapper { overflow-x: auto; margin: 1.5rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th { background: #0f3460; color: white; padding: 0.75rem 1rem; text-align: left; }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid #dee2e6; }
+    tr:nth-child(even) td { background: #f8f9fa; }
+
+    /* 코드 */
+    pre {
+      background: #1a1a2e;
+      color: #f8f9fa;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 1.5rem 0;
+    }
+    code { font-family: 'Courier New', monospace; }
+    p code { background: #e9ecef; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9rem; }
+
+    /* 인용 */
+    blockquote {
+      border-left: 4px solid #dee2e6;
+      padding: 0.75rem 1.25rem;
+      color: #555;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    /* 이미지 */
+    img { max-width: 100%; height: auto; border-radius: 4px; }
+    figure { margin: 1.5rem 0; }
+    figcaption { font-size: 0.8rem; color: #666; margin-top: 0.4rem; text-align: center; }
+
+    /* 보완 내용 */
+    .enriched-note {
+      background: #fffbe6;
+      border-left: 3px solid #f0b429;
+      padding: 0.5rem 0.75rem;
+      margin: 0.5rem 0;
+      display: block;
+      border-radius: 0 4px 4px 0;
+    }
+    .source { font-size: 0.75rem; color: #666; margin-left: 0.5rem; }
+
+    /* 각주 */
+    .footnotes {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dee2e6;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* 헤더 메타 */
+    .doc-meta { font-size: 0.85rem; color: #888; margin-top: 0.25rem; }
+
+    /* 접기 가능한 코드 */
+    details summary { cursor: pointer; color: #0f3460; font-size: 0.9rem; margin: 1rem 0 0.5rem; }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
+      body { padding: 0.5rem; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 문서 헤더 -->
+    <header>
+      <h1>{{TITLE}}</h1>
+      <p class="doc-meta">{{DATE}} | {{AUDIENCE}}</p>
+    </header>
+
+    <!-- 목차 (H2 섹션 자동 생성) -->
+    <nav class="toc" aria-label="목차">
+      <h2>목차</h2>
+      <ol>
+        <!-- js로 자동 생성 -->
+      </ol>
+    </nav>
+
+    <!-- 본문 섹션 (반복) -->
+    <section id="section-1">
+      <h2>{{SECTION_TITLE}}</h2>
+      <p>{{CONTENT}}</p>
+    </section>
+
+    <!-- 각주 -->
+    <footer class="footnotes">
+      <strong>출처</strong>
+      <ol>
+        <!-- 보완 출처 목록 -->
+      </ol>
+    </footer>
+
+  </div>
+
+  <script>
+    // 목차 자동 생성
+    (function() {
+      const toc = document.querySelector('nav.toc ol');
+      if (!toc) return;
+      document.querySelectorAll('section[id] h2').forEach(function(h) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.closest('section').id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        toc.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>
