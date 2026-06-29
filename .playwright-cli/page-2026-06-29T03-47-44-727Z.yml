@@ -1,0 +1,1658 @@
+- generic [active] [ref=e1]:
+  - button "목차 열기" [ref=e2] [cursor=pointer]: ☰
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7]: 👛
+          - generic [ref=e8]:
+            - generic [ref=e9]: 월렛 가이드
+            - generic [ref=e10]: "@wallet_guide_2026"
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - generic [ref=e13]: Digital Wallet
+            - generic [ref=e14]:
+              - text: 입문 가이드
+              - text: "2026"
+          - button "Share" [ref=e15] [cursor=pointer]
+        - generic [ref=e16]: "My Visit #2"
+      - generic [ref=e17]:
+        - textbox "섹션 검색…" [ref=e18]
+        - generic [ref=e19]:
+          - button "전체" [ref=e20] [cursor=pointer]
+          - button "초급" [ref=e21] [cursor=pointer]
+          - button "중급" [ref=e22] [cursor=pointer]
+          - button "고급" [ref=e23] [cursor=pointer]
+      - generic [ref=e27]: 01 / 20
+      - navigation [ref=e28]:
+        - generic [ref=e29]: 시작
+        - generic [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: "00"
+          - generic [ref=e32]: 소개
+          - generic [ref=e33]: ✓
+          - generic [ref=e34]: ☆
+        - generic [ref=e35]: A부 · 디지털 월렛 기본
+        - generic [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: A
+          - generic [ref=e38]: A부 · 기본 개념
+          - generic [ref=e39]: ✓
+          - generic [ref=e40]: ☆
+        - generic [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: "01"
+          - generic [ref=e43]: 시작 전 가드레일
+          - generic [ref=e44]: ✓
+          - generic [ref=e45]: ☆
+        - generic [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: "02"
+          - generic [ref=e48]: 디지털 월렛이란
+          - generic [ref=e49]: ✓
+          - generic [ref=e50]: ☆
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: "03"
+          - generic [ref=e53]: 핵심 용어
+          - generic [ref=e54]: ✓
+          - generic [ref=e55]: ☆
+        - generic [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: "04"
+          - generic [ref=e58]: 작동 시나리오
+          - generic [ref=e59]: ✓
+          - generic [ref=e60]: ☆
+        - generic [ref=e61] [cursor=pointer]:
+          - generic [ref=e62]: "05"
+          - generic [ref=e63]: 안전 체크리스트
+          - generic [ref=e64]: ✓
+          - generic [ref=e65]: ☆
+        - generic [ref=e66]: B부 · 서비스 비교
+        - generic [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: B
+          - generic [ref=e69]: B부 · 서비스 비교
+          - generic [ref=e70]: ✓
+          - generic [ref=e71]: ☆
+        - generic [ref=e72] [cursor=pointer]:
+          - generic [ref=e73]: "06"
+          - generic [ref=e74]: 유형부터 구분
+          - generic [ref=e75]: ✓
+          - generic [ref=e76]: ☆
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]: "07"
+          - generic [ref=e79]: 대표 서비스 6종
+          - generic [ref=e80]: ✓
+          - generic [ref=e81]: ☆
+        - generic [ref=e82] [cursor=pointer]:
+          - generic [ref=e83]: "08"
+          - generic [ref=e84]: 선택 · 이전 · 제도
+          - generic [ref=e85]: ✓
+          - generic [ref=e86]: ☆
+        - generic [ref=e87]: C부 · 리워드 앱 시장
+        - generic [ref=e88] [cursor=pointer]:
+          - generic [ref=e89]: C
+          - generic [ref=e90]: C부 · 리워드 시장
+          - generic [ref=e91]: ✓
+          - generic [ref=e92]: ☆
+        - generic [ref=e93] [cursor=pointer]:
+          - generic [ref=e94]: "09"
+          - generic [ref=e95]: 리워드 앱이란
+          - generic [ref=e96]: ✓
+          - generic [ref=e97]: ☆
+        - generic [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: "10"
+          - generic [ref=e100]: 유형·수익·지표
+          - generic [ref=e101]: ✓
+          - generic [ref=e102]: ☆
+        - generic [ref=e103] [cursor=pointer]:
+          - generic [ref=e104]: "11"
+          - generic [ref=e105]: 비교 · 기업 사례
+          - generic [ref=e106]: ✓
+          - generic [ref=e107]: ☆
+        - generic [ref=e108] [cursor=pointer]:
+          - generic [ref=e109]: "12"
+          - generic [ref=e110]: 마이비 분석
+          - generic [ref=e111]: ✓
+          - generic [ref=e112]: ☆
+        - generic [ref=e113]: 마무리
+        - generic [ref=e114] [cursor=pointer]:
+          - generic [ref=e115]: ★
+          - generic [ref=e116]: 최종 요약
+          - generic [ref=e117]: ✓
+          - generic [ref=e118]: ☆
+        - generic [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: ✓
+          - generic [ref=e121]: 실행 체크리스트
+          - generic [ref=e122]: ✓
+          - generic [ref=e123]: ☆
+        - generic [ref=e124] [cursor=pointer]:
+          - generic [ref=e125]: ＃
+          - generic [ref=e126]: 용어 사전
+          - generic [ref=e127]: ✓
+          - generic [ref=e128]: ☆
+        - generic [ref=e129] [cursor=pointer]:
+          - generic [ref=e130]: §
+          - generic [ref=e131]: 출처
+          - generic [ref=e132]: ✓
+          - generic [ref=e133]: ☆
+    - main [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]: 2026 Edition — June Update
+        - heading "디지털 월렛 입문 가이드" [level=1] [ref=e138]:
+          - text: 디지털 월렛
+          - text: 입문 가이드
+          - img [ref=e139]
+        - paragraph [ref=e147]: 코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 열쇠(키)를 관리하는 도구입니다. 이 한 가지 관점으로 핵심 개념, 대표 서비스 6종, 그리고 그 배경이 되는 리워드 앱 시장까지 한 번에 정리합니다.
+        - generic [ref=e148]:
+          - generic [ref=e149]: 확인 기준일 2026-06-29
+          - generic [ref=e150]: 대상 · 블록체인·월렛 입문자
+          - generic [ref=e151]: 난이도 · 초급 → 중급 → 고급
+          - generic [ref=e152]: 형식 · 학습 리포트
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: "12"
+            - generic [ref=e156]: 핵심 섹션
+          - generic [ref=e157]:
+            - generic [ref=e158]: "6"
+            - generic [ref=e159]: 대표 월렛
+          - generic [ref=e160]:
+            - generic [ref=e161]: "7"
+            - generic [ref=e162]: 리워드 사례
+          - generic [ref=e163]:
+            - generic [ref=e164]: "19"
+            - generic [ref=e165]: 검증 출처
+          - generic [ref=e166]:
+            - generic [ref=e167]: "3"
+            - generic [ref=e168]: 학습 파트
+        - generic [ref=e169]:
+          - heading "이 가이드를 읽는 법 — 3부 구성" [level=4] [ref=e170]
+          - paragraph [ref=e171]: 개념을 먼저 잡고, 서비스 유형을 구분한 뒤, 그 배경 시장까지 들어갑니다. 파트별로 난이도가 올라갑니다.
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - generic [ref=e174]: A부 · 기본 개념
+              - generic [ref=e175]: 초급
+            - generic [ref=e176]:
+              - generic [ref=e177]: B부 · 서비스 비교
+              - generic [ref=e178]: 중급
+            - generic [ref=e179]:
+              - generic [ref=e180]: C부 · 리워드 시장
+              - generic [ref=e181]: 중급–고급
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - generic [ref=e184]: 📌
+            - text: 참고
+          - paragraph [ref=e185]: 이 문서는 개념 이해와 서비스 구분을 위한 입문 가이드입니다. 특정 코인·NFT·예측시장의 투자 가치를 보장하지 않으며, 실제 자산 이동 전에는 각 서비스 공식 안내를 다시 확인해야 합니다.
+        - heading "핵심 포인트 4가지 — 먼저 이것만" [level=3] [ref=e186]
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - text: "01"
+            - heading "월렛은 보관함이 아니라 ‘리모컨’" [level=4] [ref=e189]
+            - paragraph [ref=e190]: 코인은 앱 안이 아니라 블록체인 장부의 내 주소 항목에 있고, 월렛은 그것을 움직이는 키와 서명을 관리합니다.
+          - generic [ref=e191]:
+            - text: "02"
+            - heading "주소는 공개, 키는 비공개" [level=4] [ref=e192]
+            - paragraph [ref=e193]: 지갑 주소는 공개해도 되지만, 개인키·시드 문구는 누구에게도 알려주면 안 됩니다. 노출되는 순간 통제권을 잃습니다.
+          - generic [ref=e194]:
+            - text: "03"
+            - heading "기능이 아니라 ‘유형’으로 구분" [level=4] [ref=e195]
+            - paragraph [ref=e196]: ① 키를 누가 관리하나 ② 어떤 체인을 지원하나 ③ 어떻게 복구하나 ④(dApp이라면) 어떤 권한·지역 제한이 있나.
+          - generic [ref=e197]:
+            - text: "04"
+            - heading "리워드 앱은 ‘공헌이익’이 본질" [level=4] [ref=e198]
+            - paragraph [ref=e199]: 성패는 다운로드 수가 아니라 보상 지급 후 남는 공헌이익입니다. 매출이 늘어도 보상비가 더 빨리 늘면 적자입니다.
+      - separator [ref=e200]
+      - generic [ref=e201]:
+        - generic [ref=e202]:
+          - generic [ref=e203]: Part A
+          - heading "디지털 월렛의 기본 개념" [level=2] [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]: 🟦
+            - text: 비전공자는 먼저 세 가지만
+          - list [ref=e208]:
+            - listitem [ref=e209]: 월렛은 보관함이 아니라 리모컨입니다. 블록체인 장부에 있는 내 자산을 움직이는 역할을 합니다.
+            - listitem [ref=e210]: 지갑 주소는 계좌번호처럼 알려줄 수 있습니다. 개인키·시드 문구는 금고 열쇠처럼 숨겨야 합니다.
+            - listitem [ref=e211]: 고를 때는 기능 수보다 키 관리 주체, 지원 체인, 복구 방식을 먼저 봅니다.
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: "01"
+          - generic [ref=e215]:
+            - heading "시작 전 가드레일 초급" [level=2] [ref=e216]:
+              - text: 시작 전 가드레일
+              - generic [ref=e217]: 초급
+            - generic [ref=e218]: Guardrails Before You Start
+        - paragraph [ref=e219]: 핵심 메시지 · 개념을 이해하는 것과 실제 자산을 옮기는 것은 다릅니다. 실습은 ‘잃어도 되는 소액’으로 시작합니다.
+        - paragraph [ref=e220]: 이 문서를 읽고 할 수 있게 되는 것과 아직 조심할 것을 먼저 구분합니다.
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - heading "✓ 읽고 나면 할 수 있는 것" [level=4] [ref=e223]
+            - list [ref=e224]:
+              - listitem [ref=e225]:
+                - generic [ref=e226]: ✓
+                - text: 월렛이 코인을 담는 앱이 아니라 키를 관리하는 도구임을 설명
+              - listitem [ref=e227]:
+                - generic [ref=e228]: ✓
+                - text: 지갑 주소·개인키·시드 문구·가스비·커스터디 차이 구분
+              - listitem [ref=e229]:
+                - generic [ref=e230]: ✓
+                - text: 대표 서비스 6종의 유형 차이 읽기
+              - listitem [ref=e231]:
+                - generic [ref=e232]: ✓
+                - text: 거래 승인 팝업에서 주소·수량·수수료·권한 확인
+          - generic [ref=e233]:
+            - heading "✕ 아직 조심해야 할 것" [level=4] [ref=e234]
+            - list [ref=e235]:
+              - listitem [ref=e236]: 큰 금액을 바로 전송하거나, 처음 보는 사이트에 지갑 연결
+              - listitem [ref=e238]: 시드 문구를 클라우드·메신저·고객센터·웹 입력창에 입력
+              - listitem [ref=e240]: 지원 체인·복구 방식·수수료 코인·지역 제한 확인 없이 이동
+              - listitem [ref=e242]: 내용이 불분명한 서명 요청을 습관적으로 승인
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - generic [ref=e246]: ⚠️
+            - text: 처음 실습할 때의 원칙
+          - paragraph [ref=e247]:
+            - text: 처음에는 학습 비용으로 감당할 수 있는 소액만 사용합니다. 본 거래 전 같은 네트워크에서 소액 테스트 전송을 먼저 해봅니다. Ethereum.org도 지갑을 “블록체인 계정에 접근하는 도구”로 설명하며, 사용자가 거래 승인과 복구 정보를 스스로 관리해야 한다고 안내합니다.
+            - superscript [ref=e248]:
+              - link "출처 6" [ref=e249] [cursor=pointer]:
+                - /url: "#src-6"
+                - text: "[6]"
+        - generic [ref=e250]:
+          - generic [ref=e251]: 챕터 요약
+          - paragraph [ref=e252]: 입문 단계의 목표는 ‘큰 거래’가 아니라 ‘안전하게 구분하고 확인하는 습관’입니다.
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - generic [ref=e255]: "02"
+          - generic [ref=e256]:
+            - heading "디지털 월렛이란 무엇인가 초급" [level=2] [ref=e257]:
+              - text: 디지털 월렛이란 무엇인가
+              - generic [ref=e258]: 초급
+            - generic [ref=e259]: What a Digital Wallet Actually Is
+        - paragraph [ref=e260]: 핵심 메시지 · 월렛은 자산을 저장하는 곳이 아니라, 자산을 움직일 권한(개인키)을 관리하는 도구입니다.
+        - heading "한 문장 정의" [level=3] [ref=e261]
+        - paragraph [ref=e262]: 디지털 월렛은 블록체인에 기록된 내 디지털 자산을 확인·전송·사용할 수 있도록 ‘암호학적 열쇠’를 관리하는 도구입니다. 코인·NFT가 앱 안에 파일처럼 저장되는 것이 아니라, 자산과 거래 내역은 블록체인에 기록되고 월렛은 그 자산을 움직일 개인키를 관리합니다.
+        - heading "쉬운 비유 — 월렛은 ‘열쇠 꾸러미’에 가깝다" [level=3] [ref=e263]
+        - generic [ref=e264]:
+          - button "표 넓게 보기" [ref=e265] [cursor=pointer]: 넓게 보기
+          - table [ref=e266]:
+            - rowgroup [ref=e267]:
+              - row "비유 실제 개념" [ref=e268]:
+                - columnheader "비유" [ref=e269]
+                - columnheader "실제 개념" [ref=e270]
+            - rowgroup [ref=e271]:
+              - row "공동 장부 블록체인 — 모든 소유·이동 기록이 적힌 장부" [ref=e272]:
+                - cell "공동 장부" [ref=e273]
+                - cell "블록체인 — 모든 소유·이동 기록이 적힌 장부" [ref=e274]
+              - row "우리 집 공개 주소 지갑 주소 — 남에게 알려줘도 되는 식별값" [ref=e275]:
+                - cell "우리 집 공개 주소" [ref=e276]
+                - cell "지갑 주소 — 남에게 알려줘도 되는 식별값" [ref=e277]
+              - row "문을 여는 비밀 열쇠 개인키 — 거래에 서명하는 권한" [ref=e278]:
+                - cell "문을 여는 비밀 열쇠" [ref=e279]
+                - cell "개인키 — 거래에 서명하는 권한" [ref=e280]
+              - row "열쇠 꾸러미·도어록 앱 디지털 월렛 — 주소와 열쇠를 관리" [ref=e281]:
+                - cell "열쇠 꾸러미·도어록 앱" [ref=e282]
+                - cell "디지털 월렛 — 주소와 열쇠를 관리" [ref=e283]
+              - row "장부상 보유 자산 코인·토큰·NFT" [ref=e284]:
+                - cell "장부상 보유 자산" [ref=e285]
+                - cell "코인·토큰·NFT" [ref=e286]
+        - paragraph [ref=e287]: 주소를 아는 것은 ‘집 주소를 아는 것’과 비슷합니다. 주소만으로는 자산을 옮길 수 없지만, 개인키를 가진 사람은 거래에 서명할 수 있으므로 사실상 그 지갑을 통제합니다.
+        - heading "일반 금융 앱과 무엇이 다른가" [level=3] [ref=e288]
+        - generic [ref=e289]:
+          - button "표 넓게 보기" [ref=e290] [cursor=pointer]: 넓게 보기
+          - table [ref=e291]:
+            - rowgroup [ref=e292]:
+              - row "구분 은행·금융 앱 일반적인 블록체인 월렛" [ref=e293]:
+                - columnheader "구분" [ref=e294]
+                - columnheader "은행·금융 앱" [ref=e295]
+                - columnheader "일반적인 블록체인 월렛" [ref=e296]
+            - rowgroup [ref=e297]:
+              - row "자산 기록 장소 금융회사 서버 블록체인 네트워크" [ref=e298]:
+                - cell "자산 기록 장소" [ref=e299]
+                - cell "금융회사 서버" [ref=e300]
+                - cell "블록체인 네트워크" [ref=e301]
+              - row "계좌 통제 금융회사가 운영 개인키 보유자가 거래 승인" [ref=e302]:
+                - cell "계좌 통제" [ref=e303]
+                - cell "금융회사가 운영" [ref=e304]
+                - cell "개인키 보유자가 거래 승인" [ref=e305]
+              - row "비밀번호 분실 본인 확인 후 재설정 개인키·복구 수단 분실 시 복구 어려움" [ref=e306]:
+                - cell "비밀번호 분실" [ref=e307]
+                - cell "본인 확인 후 재설정" [ref=e308]
+                - cell "개인키·복구 수단 분실 시 복구 어려움" [ref=e309]
+              - row "잘못된 송금 기관을 통한 조치 가능성 중앙기관이 없어 되돌리기 어려운 경우 많음" [ref=e310]:
+                - cell "잘못된 송금" [ref=e311]
+                - cell "기관을 통한 조치 가능성" [ref=e312]
+                - cell "중앙기관이 없어 되돌리기 어려운 경우 많음" [ref=e313]
+        - paragraph [ref=e314]: 단, 모든 월렛에서 사용자가 키를 직접 관리하는 것은 아닙니다. 회사가 대신 관리하는 월렛도 있으며, 이 차이가 커스터디 / 논커스터디입니다(03장).
+        - generic [ref=e315]:
+          - generic [ref=e316]:
+            - generic [ref=e317]: 📌
+            - text: NIST의 월렛 정의 (출처 보강)
+          - paragraph [ref=e318]:
+            - text: NIST의
+            - emphasis [ref=e319]: NISTIR 8301
+            - text: (2021)은 ISO 22739:2020 정의를 인용해, 월렛을 “개인키와 공개키를 생성·관리·보관·사용하는 애플리케이션”으로 설명합니다.
+            - superscript [ref=e320]:
+              - link "출처 1" [ref=e321] [cursor=pointer]:
+                - /url: "#src-1"
+                - text: "[1]"
+        - generic [ref=e322]:
+          - generic [ref=e323]: 챕터 요약
+          - paragraph [ref=e324]: “자산은 블록체인에, 권한은 월렛에.” 이 한 줄이 이후 모든 내용의 기준점입니다.
+      - generic [ref=e325]:
+        - generic [ref=e326]:
+          - generic [ref=e327]: "03"
+          - generic [ref=e328]:
+            - heading "꼭 알아야 할 핵심 용어 초급–중급" [level=2] [ref=e329]:
+              - text: 꼭 알아야 할 핵심 용어
+              - generic [ref=e330]: 초급–중급
+            - generic [ref=e331]: Core Terminology
+        - paragraph [ref=e332]: 핵심 메시지 · 모두 외울 필요 없습니다. “어디에 기록되나(블록체인) → 어떤 자산인가(코인/토큰/NFT) → 누가 승인하나(개인키/시드 문구)” 순서로 이해합니다.
+        - heading "블록체인 · 네트워크(체인)" [level=3] [ref=e333]
+        - list [ref=e334]:
+          - listitem [ref=e335]: 블록체인 — 여러 컴퓨터(노드)가 함께 보관하는 분산 거래 장부. 거래를 묶은 ‘블록’이 이전 블록의 해시로 연결돼 변조가 매우 어렵습니다. 은행은 ‘은행을 믿어서’, 블록체인은 ‘규칙과 다수 합의로’ 신뢰가 성립합니다.
+          - listitem [ref=e336]: 네트워크(체인) — 블록체인은 하나가 아닙니다. 비트코인(가치 저장), 이더리움(스마트 계약), 솔라나(빠르고 저렴) 등 각자 규칙·수수료가 다른 독립 네트워크입니다. 각 체인의 자산은 기본적으로 다른 체인으로 바로 이동할 수 없습니다 → 월렛이 어떤 체인을 지원하는지 꼭 확인해야 하는 이유.
+        - heading "코인 / 토큰 / NFT" [level=3] [ref=e337]
+        - generic [ref=e338]:
+          - button "표 넓게 보기" [ref=e339] [cursor=pointer]: 넓게 보기
+          - table [ref=e340]:
+            - rowgroup [ref=e341]:
+              - row "구분 코인 토큰 NFT" [ref=e342]:
+                - columnheader "구분" [ref=e343]
+                - columnheader "코인" [ref=e344]
+                - columnheader "토큰" [ref=e345]
+                - columnheader "NFT" [ref=e346]
+            - rowgroup [ref=e347]:
+              - row "발행 주체 블록체인 프로토콜 스마트 계약(발행사) 스마트 계약(창작자·게임사)" [ref=e348]:
+                - cell "발행 주체" [ref=e349]
+                - cell "블록체인 프로토콜" [ref=e350]
+                - cell "스마트 계약(발행사)" [ref=e351]
+                - cell "스마트 계약(창작자·게임사)" [ref=e352]
+              - row "대체 가능 가능(1개=1개 동일) 가능(1개=1개 동일) 불가(각각 고유)" [ref=e353]:
+                - cell "대체 가능" [ref=e354]
+                - cell "가능(1개=1개 동일)" [ref=e355]
+                - cell "가능(1개=1개 동일)" [ref=e356]
+                - cell "불가(각각 고유)" [ref=e357]
+              - row "예시 ETH, SOL, BTC USDT, USDC, DeFi 토큰 디지털 아트, 게임 아이템" [ref=e358]:
+                - cell "예시" [ref=e359]
+                - cell "ETH, SOL, BTC" [ref=e360]
+                - cell "USDT, USDC, DeFi 토큰" [ref=e361]
+                - cell "디지털 아트, 게임 아이템" [ref=e362]
+              - row "수수료 결제 직접 사용 코인으로 납부 코인으로 납부" [ref=e363]:
+                - cell "수수료 결제" [ref=e364]
+                - cell "직접 사용" [ref=e365]
+                - cell "코인으로 납부" [ref=e366]
+                - cell "코인으로 납부" [ref=e367]
+        - paragraph [ref=e368]: 한 줄 정리 — 코인은 네트워크의 연료, 토큰은 그 위에서 발행된 자산, NFT는 고유성이 보장된 토큰.
+        - heading "스마트 계약" [level=3] [ref=e369]
+        - paragraph [ref=e370]: 조건이 충족되면 중개자 없이 자동 실행되는 블록체인 프로그램입니다(자판기 비유). 토큰·NFT 발행, DeFi 대출, 탈중앙화 거래소(DEX)가 모두 이 위에서 작동합니다. 월렛의 “서명 요청” 팝업이 바로 스마트 계약과 상호작용하는 순간입니다.
+        - generic [ref=e371]:
+          - generic [ref=e372]:
+            - generic [ref=e373]: ⚠️
+            - text: 주의
+          - paragraph [ref=e374]: 스마트 계약은 코드이므로 버그·악의적 설계가 있을 수 있습니다. 내용을 확인하지 않고 서명하면 자산 인출 권한을 악성 계약에 넘겨줄 수 있습니다.
+        - heading "가스비(트랜잭션 수수료)" [level=3] [ref=e375]
+        - paragraph [ref=e376]: 거래를 블록체인에 기록해 달라고 내는 네트워크 이용료이며, 해당 네트워크의 코인으로만 냅니다.
+        - generic [ref=e377]:
+          - button "표 넓게 보기" [ref=e378] [cursor=pointer]: 넓게 보기
+          - table [ref=e379]:
+            - rowgroup [ref=e380]:
+              - row "네트워크 수수료 코인 수수료 수준 특징" [ref=e381]:
+                - columnheader "네트워크" [ref=e382]
+                - columnheader "수수료 코인" [ref=e383]
+                - columnheader "수수료 수준" [ref=e384]
+                - columnheader "특징" [ref=e385]
+            - rowgroup [ref=e386]:
+              - row "이더리움 ETH 높고 변동 큼 혼잡할수록 급등" [ref=e387]:
+                - cell "이더리움" [ref=e388]
+                - cell "ETH" [ref=e389]:
+                  - code [ref=e390]: ETH
+                - cell "높고 변동 큼" [ref=e391]
+                - cell "혼잡할수록 급등" [ref=e392]
+              - row "솔라나 SOL 매우 낮음 거래당 수 원 수준" [ref=e393]:
+                - cell "솔라나" [ref=e394]
+                - cell "SOL" [ref=e395]:
+                  - code [ref=e396]: SOL
+                - cell "매우 낮음" [ref=e397]
+                - cell "거래당 수 원 수준" [ref=e398]
+              - row "비트코인 BTC 변동 mempool 대기 영향" [ref=e399]:
+                - cell "비트코인" [ref=e400]
+                - cell "BTC" [ref=e401]:
+                  - code [ref=e402]: BTC
+                - cell "변동" [ref=e403]
+                - cell "mempool 대기 영향" [ref=e404]
+              - row "XPLA XPLA 낮음 마이비 트랜잭션 처리" [ref=e405]:
+                - cell "XPLA" [ref=e406]
+                - cell "XPLA" [ref=e407]:
+                  - code [ref=e408]: XPLA
+                - cell "낮음" [ref=e409]
+                - cell "마이비 트랜잭션 처리" [ref=e410]
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - generic [ref=e413]: 💡
+            - text: 핵심 팁
+          - paragraph [ref=e414]: 입문자가 가장 자주 겪는 상황 — USDT(토큰)는 있는데 ETH(코인)가 없어 전송 못 함. 토큰을 옮길 때도 수수료는 코인으로 내기 때문입니다. (임베디드 월렛인 마이비 등은 앱이 수수료를 대신 처리)
+        - heading "지갑 주소 · 공개키/개인키 · 시드 문구" [level=3] [ref=e415]
+        - list [ref=e416]:
+          - listitem [ref=e417]:
+            - text: 지갑 주소 — 자산을 받을 때 알려주는 공개 식별값(계좌번호 격). 체인마다 형식이 다릅니다(이더리움
+            - code [ref=e418]: 0x…
+            - text: 42자리, 솔라나 Base58).
+          - listitem [ref=e419]: 개인키 → 공개키 → 지갑 주소 순서로 파생되며 역방향은 불가합니다. 개인키는 거래에 서명하는 권한이고, 잃으면 “찾아주는 기관”이 없습니다.
+          - listitem [ref=e420]: 시드 문구 — BIP-39 표준의 12·24개 단어로 된 마스터키. 하나로 수백 개의 개인키를 복원할 수 있어 기기를 잃어도 복구 가능하지만, 남에게 보이면 전 자산을 잃습니다. 종이에 적어 오프라인 보관, 스크린샷·클라우드 금지.
+        - heading "커스터디 / 논커스터디(셀프 커스터디)" [level=3] [ref=e421]
+        - generic [ref=e422]:
+          - button "표 넓게 보기" [ref=e423] [cursor=pointer]: 넓게 보기
+          - table [ref=e424]:
+            - rowgroup [ref=e425]:
+              - row "구분 커스터디 논커스터디(셀프 커스터디)" [ref=e426]:
+                - columnheader "구분" [ref=e427]
+                - columnheader "커스터디" [ref=e428]
+                - columnheader "논커스터디(셀프 커스터디)" [ref=e429]
+            - rowgroup [ref=e430]:
+              - row "키 관리 주체 서비스 회사 사용자 본인" [ref=e431]:
+                - cell "키 관리 주체" [ref=e432]
+                - cell "서비스 회사" [ref=e433]
+                - cell "사용자 본인" [ref=e434]
+              - row "비밀번호 분실 시 본인 확인 후 재설정 시드 문구로만 복구" [ref=e435]:
+                - cell "비밀번호 분실 시" [ref=e436]
+                - cell "본인 확인 후 재설정" [ref=e437]
+                - cell "시드 문구로만 복구" [ref=e438]
+              - row "서비스 종료 시 자산 접근 어려울 수 있음 시드 문구로 다른 앱에서 복원" [ref=e439]:
+                - cell "서비스 종료 시" [ref=e440]
+                - cell "자산 접근 어려울 수 있음" [ref=e441]
+                - cell "시드 문구로 다른 앱에서 복원" [ref=e442]
+              - row "대표 사례 업비트, 빗썸, 코인베이스 MetaMask, Phantom, D'CENT" [ref=e443]:
+                - cell "대표 사례" [ref=e444]
+                - cell "업비트, 빗썸, 코인베이스" [ref=e445]
+                - cell "MetaMask, Phantom, D'CENT" [ref=e446]
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - generic [ref=e449]: ⚠️
+            - text: 보안 경고
+          - paragraph [ref=e450]: 지갑 주소는 공개해도 되지만 개인키와 시드 문구는 누구에게도 알려주면 안 됩니다. 노출되는 순간 통제권을 잃습니다.
+        - generic [ref=e451]:
+          - generic [ref=e452]: 챕터 요약
+          - paragraph [ref=e453]: 기록 위치(체인) → 자산 종류(코인/토큰/NFT) → 승인 권한(키/시드)의 3단 구조만 잡으면 나머지 용어는 따라옵니다.
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - generic [ref=e456]: "04"
+          - generic [ref=e457]:
+            - heading "월렛은 실제로 어떻게 작동하나 중급" [level=2] [ref=e458]:
+              - text: 월렛은 실제로 어떻게 작동하나
+              - generic [ref=e459]: 중급
+            - generic [ref=e460]: How It Works — Scenarios
+        - paragraph [ref=e461]: 핵심 메시지 · 모든 거래는 ‘주소 확인 → 수량/수수료 확인 → 개인키 서명 → 네트워크 기록’이라는 같은 골격을 따릅니다.
+        - heading "시나리오 A — MetaMask로 ETH 보내기" [level=3] [ref=e462]
+        - list [ref=e463]:
+          - listitem [ref=e464]:
+            - text: 받는 주소 입력 —
+            - code [ref=e465]: 0x…
+            - text: . 한 글자만 틀려도 자산이 사라질 수 있어 복사·붙여넣기 사용.
+          - listitem [ref=e466]: 수량 입력
+          - listitem [ref=e467]: 가스비 확인 — 수수료(ETH) 표시. 낼 ETH가 없으면 전송 불가.
+          - listitem [ref=e468]: 확인(서명) — 이 순간 개인키로 거래에 디지털 서명.
+          - listitem [ref=e469]: 네트워크 전파 → 노드 검증 → 블록 기록 — 상대 주소 잔액이 장부에서 증가.
+        - generic [ref=e470]:
+          - button "Copy" [ref=e471] [cursor=pointer]
+          - generic [ref=e472]: 내 지갑 주소 → 개인키로 서명 → 네트워크 전파 → 노드 검증 → 블록 기록 → 상대 잔액 증가
+        - paragraph [ref=e473]:
+          - emphasis [ref=e474]: 핵심
+          - text: — MetaMask는 서명 도구, 네트워크는 장부, 개인키는 권한 증명. 코인은 지갑 ‘안’이 아니라 블록체인 장부의 내 주소 항목에 있습니다.
+        - heading "시나리오 B — NFT 마켓에서 NFT 구매하기" [level=3] [ref=e475]
+        - list [ref=e476]:
+          - listitem [ref=e477]: 월렛 연결 — 주소만 사이트에 공개됩니다. 개인키는 절대 전달되지 않습니다.
+          - listitem [ref=e478]: "NFT 선택(예: 0.05 ETH)"
+          - listitem [ref=e479]: "거래 승인 팝업 — NFT 가격 + 가스비 합계 확인(예: 0.053 ETH 필요)."
+          - listitem [ref=e480]: 서명 및 전송 — 스마트 계약이 ① 내 ETH를 판매자에게 전송 ② NFT 소유권을 내 주소로 이전.
+          - listitem [ref=e481]: 소유권 기록 — 장부의 소유자가 내 주소로 변경.
+        - generic [ref=e482]:
+          - button "Copy" [ref=e483] [cursor=pointer]
+          - generic [ref=e484]: 지갑 연결(주소 공개) → 구매 승인(개인키 서명) → 스마트 계약 실행 → NFT 소유권 이전
+        - generic [ref=e485]:
+          - generic [ref=e486]:
+            - generic [ref=e487]: ⚠️
+            - text: 피싱 주의
+          - paragraph [ref=e488]: 지갑 연결 ≠ 개인키 전달입니다. 다만 정상 서비스는 서명 팝업에 구체적 거래 내용을 표시합니다. “이 메시지에 서명하세요”처럼 내용이 불분명한 요청은 반드시 거절합니다. 서명 한 번으로 전 자산을 탈취하는 공격이 실제로 존재합니다.
+        - generic [ref=e489]:
+          - generic [ref=e490]: 챕터 요약
+          - paragraph [ref=e491]: 거래 구조를 한 번 이해하면 송금·구매·dApp 이용이 모두 같은 골격임을 알 수 있습니다. 멈춰서 확인할 지점은 항상 ‘서명 직전’입니다.
+      - generic [ref=e492]:
+        - generic [ref=e493]:
+          - generic [ref=e494]: "05"
+          - generic [ref=e495]:
+            - heading "실사용 안전 체크리스트와 문제 대응 초급–중급" [level=2] [ref=e496]:
+              - text: 실사용 안전 체크리스트와 문제 대응
+              - generic [ref=e497]: 초급–중급
+            - generic [ref=e498]: Safety Checklist & Incident Response
+        - paragraph [ref=e499]: 핵심 메시지 · 보안은 어려운 기술이 아니라 반복 가능한 확인 절차에서 시작됩니다.
+        - heading "단계별 안전 체크리스트" [level=3] [ref=e500]
+        - generic [ref=e501]:
+          - button "표 넓게 보기" [ref=e502] [cursor=pointer]: 넓게 보기
+          - table [ref=e503]:
+            - rowgroup [ref=e504]:
+              - row "단계 확인할 것 흔한 실수" [ref=e505]:
+                - columnheader "단계" [ref=e506]
+                - columnheader "확인할 것" [ref=e507]
+                - columnheader "흔한 실수" [ref=e508]
+            - rowgroup [ref=e509]:
+              - row "설치 전 공식 사이트·공식 앱스토어 링크인지 검색 광고·SNS 링크로 가짜 앱 설치" [ref=e510]:
+                - cell "설치 전" [ref=e511]
+                - cell "공식 사이트·공식 앱스토어 링크인지" [ref=e512]
+                - cell "검색 광고·SNS 링크로 가짜 앱 설치" [ref=e513]
+              - row "생성 직후 시드 문구 오프라인 기록(사진·클라우드 금지) 메신저·이메일·메모 앱에 저장" [ref=e514]:
+                - cell "생성 직후" [ref=e515]
+                - cell "시드 문구 오프라인 기록(사진·클라우드 금지)" [ref=e516]
+                - cell "메신저·이메일·메모 앱에 저장" [ref=e517]
+              - row "수신 전 받을 자산의 네트워크·주소 형식 일치 같은 USDT라도 다른 네트워크 혼동" [ref=e518]:
+                - cell "수신 전" [ref=e519]
+                - cell "받을 자산의 네트워크·주소 형식 일치" [ref=e520]
+                - cell "같은 USDT라도 다른 네트워크 혼동" [ref=e521]
+              - row "전송 전 주소 앞뒤 글자·네트워크·수량·가스비 재확인 복사 주소가 악성코드로 바뀐 것 못 봄" [ref=e522]:
+                - cell "전송 전" [ref=e523]
+                - cell "주소 앞뒤 글자·네트워크·수량·가스비 재확인" [ref=e524]
+                - cell "복사 주소가 악성코드로 바뀐 것 못 봄" [ref=e525]
+              - row "연결 전 사이트 주소·평판·연결 목적 무료 에어드롭 링크에 지갑 연결" [ref=e526]:
+                - cell "연결 전" [ref=e527]
+                - cell "사이트 주소·평판·연결 목적" [ref=e528]
+                - cell "무료 에어드롭 링크에 지갑 연결" [ref=e529]
+              - row "서명 전 팝업의 거래 내용·권한 요청 읽기 “서명만”이라 여기고 자산 이동 권한 승인" [ref=e530]:
+                - cell "서명 전" [ref=e531]
+                - cell "팝업의 거래 내용·권한 요청 읽기" [ref=e532]
+                - cell "“서명만”이라 여기고 자산 이동 권한 승인" [ref=e533]
+              - row "사용 후 안 쓰는 dApp 연결·토큰 승인 정리 연결 해제와 승인 취소를 같은 것으로 착각" [ref=e534]:
+                - cell "사용 후" [ref=e535]
+                - cell "안 쓰는 dApp 연결·토큰 승인 정리" [ref=e536]
+                - cell "연결 해제와 승인 취소를 같은 것으로 착각" [ref=e537]
+        - generic [ref=e538]:
+          - generic [ref=e539]:
+            - generic [ref=e540]: ⚠️
+            - text: 시드 문구는 어떤 상황에서도 입력하지 않습니다
+          - paragraph [ref=e541]:
+            - text: 고객센터·에어드롭·오류 복구·지갑 동기화라는 말이 붙어도 시드 문구를 요구하면 피싱입니다. Phantom도 복구 문구를 누구와도 공유하지 말고 공식 앱·사이트만 쓰라고 안내합니다.
+            - superscript [ref=e542]:
+              - link "출처 8" [ref=e543] [cursor=pointer]:
+                - /url: "#src-8"
+                - text: "[8]"
+        - heading "연결 해제 ≠ 승인 취소" [level=3] [ref=e544]
+        - generic [ref=e545]:
+          - button "표 넓게 보기" [ref=e546] [cursor=pointer]: 넓게 보기
+          - table [ref=e547]:
+            - rowgroup [ref=e548]:
+              - row "구분 무엇을 허용하나 취소 방법" [ref=e549]:
+                - columnheader "구분" [ref=e550]
+                - columnheader "무엇을 허용하나" [ref=e551]
+                - columnheader "취소 방법" [ref=e552]
+            - rowgroup [ref=e553]:
+              - row "dApp 연결 사이트가 내 공개 주소를 보고 서명 요청 가능 월렛의 연결 사이트 목록에서 해제" [ref=e554]:
+                - cell "dApp 연결" [ref=e555]
+                - cell "사이트가 내 공개 주소를 보고 서명 요청 가능" [ref=e556]
+                - cell "월렛의 연결 사이트 목록에서 해제" [ref=e557]
+              - row "토큰 승인 스마트 계약이 내 토큰을 한도 내 이동 가능 온체인 취소 거래 실행(수수료 발생 가능)" [ref=e558]:
+                - cell "토큰 승인" [ref=e559]
+                - cell "스마트 계약이 내 토큰을 한도 내 이동 가능" [ref=e560]
+                - cell "온체인 취소 거래 실행(수수료 발생 가능)" [ref=e561]
+        - heading "문제 상황 대응표" [level=3] [ref=e562]
+        - generic [ref=e563]:
+          - button "표 넓게 보기" [ref=e564] [cursor=pointer]: 넓게 보기
+          - table [ref=e565]:
+            - rowgroup [ref=e566]:
+              - row "상황 먼저 할 일 기억할 점" [ref=e567]:
+                - columnheader "상황" [ref=e568]
+                - columnheader "먼저 할 일" [ref=e569]
+                - columnheader "기억할 점" [ref=e570]
+            - rowgroup [ref=e571]:
+              - row "휴대폰 분실, 시드 문구는 안전 새 기기에서 복구, 기존 기기 접근 차단 자산은 기기가 아니라 블록체인에 있음" [ref=e572]:
+                - cell "휴대폰 분실, 시드 문구는 안전" [ref=e573]
+                - cell "새 기기에서 복구, 기존 기기 접근 차단" [ref=e574]
+                - cell "자산은 기기가 아니라 블록체인에 있음" [ref=e575]
+              - row "시드 문구 분실 접근 가능하면 즉시 새 월렛으로 자산 이동 기기·앱까지 잃으면 복구 불가" [ref=e576]:
+                - cell "시드 문구 분실" [ref=e577]
+                - cell "접근 가능하면 즉시 새 월렛으로 자산 이동" [ref=e578]
+                - cell "기기·앱까지 잃으면 복구 불가" [ref=e579]
+              - row "시드 문구를 노출·입력함 새 월렛 만들고 남은 자산 즉시 이동 노출된 지갑은 다시 안전해지지 않음" [ref=e580]:
+                - cell "시드 문구를 노출·입력함" [ref=e581]
+                - cell "새 월렛 만들고 남은 자산 즉시 이동" [ref=e582]
+                - cell "노출된 지갑은 다시 안전해지지 않음" [ref=e583]
+              - row "모르는 사이트에 서명함 거래·토큰 승인 확인, 의심 승인 취소 단순 로그인일 수도, 권한 부여일 수도" [ref=e584]:
+                - cell "모르는 사이트에 서명함" [ref=e585]
+                - cell "거래·토큰 승인 확인, 의심 승인 취소" [ref=e586]
+                - cell "단순 로그인일 수도, 권한 부여일 수도" [ref=e587]
+              - row "잘못된 주소/네트워크 전송 거래 해시 확인, 거래소면 지원팀 문의 개인 지갑 오송금은 되돌리기 어려움" [ref=e588]:
+                - cell "잘못된 주소/네트워크 전송" [ref=e589]
+                - cell "거래 해시 확인, 거래소면 지원팀 문의" [ref=e590]
+                - cell "개인 지갑 오송금은 되돌리기 어려움" [ref=e591]
+              - row "모르는 토큰/NFT가 보임 클릭·판매 말고 숨김·무시 스팸 토큰 조작이 악성 사이트로 유도" [ref=e592]:
+                - cell "모르는 토큰/NFT가 보임" [ref=e593]
+                - cell "클릭·판매 말고 숨김·무시" [ref=e594]
+                - cell "스팸 토큰 조작이 악성 사이트로 유도" [ref=e595]
+        - generic [ref=e596]:
+          - generic [ref=e597]:
+            - generic [ref=e598]: 💡
+            - text: 입문자 최우선 판단
+          - paragraph [ref=e599]: ① 시드 문구가 노출됐는지 ② 단순 연결만 했는지 ③ 토큰 승인까지 했는지를 먼저 구분합니다. 노출된 시드는 회수 불가, 단순 연결은 해제 가능, 토큰 승인은 별도 취소 거래가 필요합니다.
+        - generic [ref=e600]:
+          - generic [ref=e601]: 챕터 요약
+          - paragraph [ref=e602]: 사고는 대부분 ‘설치·서명·시드 문구’ 세 지점에서 납니다. 이 세 곳에서만 한 박자 멈춰도 위험의 대부분을 막습니다.
+      - generic [ref=e603]:
+        - generic [ref=e604]:
+          - generic [ref=e605]: Part B
+          - heading "월렛과 관련 서비스 비교" [level=2] [ref=e606]
+        - generic [ref=e607]:
+          - generic [ref=e608]:
+            - generic [ref=e609]: 🟦
+            - text: 먼저 이렇게 구분합니다
+          - paragraph [ref=e610]: MetaMask·Phantom = 내가 키를 직접 관리하는 앱 월렛 · D'CENT = 키를 인터넷 밖 기기에 둔 월렛 · Samsung Wallet = 휴대폰 생활 지갑 · 마이비 = 리워드 앱 안에 들어간 지갑 기능 · Polymarket = 월렛을 연결해 쓰는 예측시장 dApp.
+      - generic [ref=e611]:
+        - generic [ref=e612]:
+          - generic [ref=e613]: "06"
+          - generic [ref=e614]:
+            - heading "서비스 ‘유형’부터 구분하기 중급" [level=2] [ref=e615]:
+              - text: 서비스 ‘유형’부터 구분하기
+              - generic [ref=e616]: 중급
+            - generic [ref=e617]: Classify by Type First
+        - paragraph [ref=e618]: 핵심 메시지 · 자주 묶여 언급되지만 이들은 같은 종류의 경쟁 서비스가 아닙니다. 기능 비교 전에 정체성(유형)을 먼저 가립니다.
+        - generic [ref=e619]:
+          - button "표 넓게 보기" [ref=e620] [cursor=pointer]: 넓게 보기
+          - table [ref=e621]:
+            - rowgroup [ref=e622]:
+              - row "키워드 한 문장 설명 서비스 유형" [ref=e623]:
+                - columnheader "키워드" [ref=e624]
+                - columnheader "한 문장 설명" [ref=e625]
+                - columnheader "서비스 유형" [ref=e626]
+            - rowgroup [ref=e627]:
+              - row "MetaMask 여러 체인·Web3 서비스에 연결하는 범용 월렛 소프트웨어 · 셀프 커스터디" [ref=e628]:
+                - cell "MetaMask" [ref=e629]
+                - cell "여러 체인·Web3 서비스에 연결하는 범용 월렛" [ref=e630]
+                - cell "소프트웨어 · 셀프 커스터디" [ref=e631]
+              - row "Phantom 솔라나에서 출발해 멀티체인으로 확장한 월렛 소프트웨어 · 셀프 커스터디" [ref=e632]:
+                - cell "Phantom" [ref=e633]
+                - cell "솔라나에서 출발해 멀티체인으로 확장한 월렛" [ref=e634]
+                - cell "소프트웨어 · 셀프 커스터디" [ref=e635]
+              - row "갤럭시 삼성 기기의 결제·신분증·디지털 키·블록체인 월렛 생태계 단말 · 플랫폼 기반" [ref=e636]:
+                - cell "갤럭시" [ref=e637]
+                - cell "삼성 기기의 결제·신분증·디지털 키·블록체인 월렛 생태계" [ref=e638]
+                - cell "단말 · 플랫폼 기반" [ref=e639]
+              - row "D'CENT 개인키를 별도 기기·카드에 보관하는 하드웨어 월렛 하드웨어 · 콜드 월렛" [ref=e640]:
+                - cell "D'CENT" [ref=e641]
+                - cell "개인키를 별도 기기·카드에 보관하는 하드웨어 월렛" [ref=e642]
+                - cell "하드웨어 · 콜드 월렛" [ref=e643]
+              - row "마이비(MyB) 활동으로 리워드를 얻고 XPLA 기능을 접목한 앱테크 리워드 앱 · 임베디드 Web3" [ref=e644]:
+                - cell "마이비(MyB)" [ref=e645]
+                - cell "활동으로 리워드를 얻고 XPLA 기능을 접목한 앱테크" [ref=e646]
+                - cell "리워드 앱 · 임베디드 Web3" [ref=e647]
+              - row "Polymarket 미래 사건 결과를 토큰화 포지션으로 거래하는 예측시장 예측시장 dApp · Polygon/pUSD" [ref=e648]:
+                - cell "Polymarket" [ref=e649]
+                - cell "미래 사건 결과를 토큰화 포지션으로 거래하는 예측시장" [ref=e650]
+                - cell "예측시장 dApp · Polygon/pUSD" [ref=e651]
+        - generic [ref=e652]:
+          - button "Copy" [ref=e653] [cursor=pointer]
+          - generic [ref=e654]: 범용 소프트웨어 월렛 ──── MetaMask / Phantom 하드웨어 중심 월렛 ────── D'CENT 단말·생활 플랫폼 월렛 ─── 갤럭시 / Samsung Wallet 생태계 리워드 내장형 Web3 ────── 마이비(MyB) 연결해 쓰는 예측시장 dApp ─ Polymarket
+        - generic [ref=e655]:
+          - generic [ref=e656]:
+            - generic [ref=e657]: 📌
+            - text: 분석 원칙
+          - paragraph [ref=e658]: 셀프 커스터디 = “열쇠를 내가 든 상태”, 콜드 월렛 = “열쇠를 인터넷 밖 금고에 둔 상태”, 임베디드 월렛 = “앱 안에 지갑이 들어 있는 상태”, dApp = “그 열쇠로 접속하는 서비스”.
+        - generic [ref=e659]:
+          - generic [ref=e660]: 챕터 요약
+          - paragraph [ref=e661]: “어느 게 더 좋은가”가 아니라 “어떤 유형이고 내 상황에 맞는가”로 접근합니다.
+      - generic [ref=e662]:
+        - generic [ref=e663]:
+          - generic [ref=e664]: "07"
+          - generic [ref=e665]:
+            - heading "대표 서비스 6종 살펴보기 중급" [level=2] [ref=e666]:
+              - text: 대표 서비스 6종 살펴보기
+              - generic [ref=e667]: 중급
+            - generic [ref=e668]: Six Representative Services
+        - paragraph [ref=e669]: 핵심 메시지 · 같은 ‘월렛’ 단어 아래 소프트웨어·하드웨어·플랫폼·임베디드·dApp이 섞여 있습니다.
+        - heading "1) MetaMask — 범용 소프트웨어 월렛" [level=3] [ref=e670]
+        - paragraph [ref=e671]:
+          - text: 브라우저 확장·모바일 앱으로 제공되는 셀프 커스터디 월렛. 코인·토큰 보관/전송, DEX·NFT 마켓 등 Web3 연결, 거래·스마트 계약 서명에 사용.
+          - link "공식 ↗" [ref=e672] [cursor=pointer]:
+            - /url: https://metamask.io
+        - generic [ref=e673]:
+          - generic [ref=e674]:
+            - generic [ref=e675]: 📌
+            - text: 지원 체인 (2026-06 기준)
+          - paragraph [ref=e676]:
+            - text: Ethereum, Linea, Base, Polygon, BNB Chain, Arbitrum, OP Mainnet, Avalanche, zkSync Era, Sei, Bitcoin, Solana, TRON 등. Solana 네이티브 2025-07, Bitcoin 네이티브 2025-12 추가. 목록을 외울 필요는 없고 “범용 월렛, 사용 전 지원 체인 확인”으로 충분.
+            - superscript [ref=e677]:
+              - link "출처 2" [ref=e678] [cursor=pointer]:
+                - /url: "#src-2"
+                - text: "[2]"
+        - heading "2) Phantom — 사용성 중심 멀티체인 월렛" [level=3] [ref=e679]
+        - paragraph [ref=e680]:
+          - text: 솔라나에서 출발해 멀티체인으로 확장한 셀프 커스터디 월렛. MetaMask가 이더리움·EVM에서 강했다면 Phantom은 솔라나에서 강하게 성장.
+          - link "공식 ↗" [ref=e681] [cursor=pointer]:
+            - /url: https://phantom.app
+        - generic [ref=e682]:
+          - generic [ref=e683]:
+            - generic [ref=e684]: 📌
+            - text: 지원 네트워크 (2026-06-09 기준)
+          - paragraph [ref=e685]:
+            - text: Solana, Ethereum, Base, Polygon, Sui, Monad, Bitcoin, HyperEVM. BSC·Arbitrum·Optimism·Avalanche·Linea 등 미지원 → MetaMask와 지원 범위가 완전히 같지는 않음.
+            - superscript [ref=e686]:
+              - link "출처 3" [ref=e687] [cursor=pointer]:
+                - /url: "#src-3"
+                - text: "[3]"
+        - heading "3) 갤럭시 월렛 생태계 추가 확인 필요" [level=3] [ref=e688]
+        - list [ref=e689]:
+          - listitem [ref=e690]: Samsung Wallet — 결제 카드·멤버십·신분증·탑승권·디지털 키 등을 모으는 생활형 디지털 월렛(암호화폐 월렛보다 범위가 넓음).
+          - listitem [ref=e691]: Samsung Blockchain Wallet — 갤럭시 기기와 연결된 암호화폐 월렛 기능.
+        - generic [ref=e692]:
+          - generic [ref=e693]:
+            - generic [ref=e694]: ⚠️
+            - text: 지역·기기 제한
+          - paragraph [ref=e695]:
+            - text: Blockchain Wallet은 특정 갤럭시 단말(S10 이후 S/Note/Fold/Z 및 일부 A 시리즈)·지원 국가(미국[Verizon 제외]·유럽 12개국·싱가포르·필리핀·호주 등)로 제한. 한국 정식 지원 여부·잔존 기능은 [확인 필요].
+            - superscript [ref=e696]:
+              - link "출처 4" [ref=e697] [cursor=pointer]:
+                - /url: "#src-4"
+                - text: "[4]"
+            - link "Samsung Wallet ↗" [ref=e698] [cursor=pointer]:
+              - /url: https://www.samsung.com/global/galaxy/apps/samsung-wallet/
+        - heading "4) D'CENT — 하드웨어 콜드 월렛" [level=3] [ref=e699]
+        - paragraph [ref=e700]:
+          - text: 개인키가 전용 보안 칩 안에만 존재하고 기기 밖으로 나오지 않습니다. 제품은 지문인증 하드웨어 / 카드형(NFC) / 모바일 앱 세 형태.
+          - link "공식 ↗" [ref=e701] [cursor=pointer]:
+            - /url: https://dcentwallet.com
+        - generic [ref=e702]:
+          - button "표 넓게 보기" [ref=e703] [cursor=pointer]: 넓게 보기
+          - table [ref=e704]:
+            - rowgroup [ref=e705]:
+              - row "구분 핫 월렛(MetaMask·Phantom) D'CENT 하드웨어(콜드)" [ref=e706]:
+                - columnheader "구분" [ref=e707]
+                - columnheader "핫 월렛(MetaMask·Phantom)" [ref=e708]
+                - columnheader "D'CENT 하드웨어(콜드)" [ref=e709]
+            - rowgroup [ref=e710]:
+              - row "개인키 위치 인터넷 연결 기기 내부 오프라인 전용 칩" [ref=e711]:
+                - cell "개인키 위치" [ref=e712]
+                - cell "인터넷 연결 기기 내부" [ref=e713]
+                - cell "오프라인 전용 칩" [ref=e714]
+              - row "편의성 빠르고 간편 기기 연결 단계 추가" [ref=e715]:
+                - cell "편의성" [ref=e716]
+                - cell "빠르고 간편" [ref=e717]
+                - cell "기기 연결 단계 추가" [ref=e718]
+              - row "보안 온라인 공격 노출 가능 인터넷과 물리적 분리" [ref=e719]:
+                - cell "보안" [ref=e720]
+                - cell "온라인 공격 노출 가능" [ref=e721]
+                - cell "인터넷과 물리적 분리" [ref=e722]
+              - row "적합 규모 소액·일상 거래 큰 금액·장기 보유" [ref=e723]:
+                - cell "적합 규모" [ref=e724]
+                - cell "소액·일상 거래" [ref=e725]
+                - cell "큰 금액·장기 보유" [ref=e726]
+        - generic [ref=e727]:
+          - generic [ref=e728]:
+            - generic [ref=e729]: 💡
+            - text: 핵심 팁
+          - paragraph [ref=e730]: 거래 시 하드웨어 기기 화면에서 직접 거래 내용을 확인하고 승인하므로, PC·폰이 감염돼도 주소 바꿔치기 공격을 차단할 수 있습니다.
+        - heading "5) 마이비(MyB) — 리워드 내장형 임베디드 월렛 추가 확인 필요" [level=3] [ref=e731]
+        - paragraph [ref=e732]:
+          - text: 블록체인 월렛 자체라기보다, 퀴즈·걷기·쇼핑으로 포인트를 모으는 리워드 앱에 지갑 기능을 연결한 서비스. MetaMask·Phantom과 동일하게 보면 안 됩니다(월렛 중심 vs 리워드 중심).
+          - link "공식 ↗" [ref=e733] [cursor=pointer]:
+            - /url: https://myb.im
+        - generic [ref=e734]:
+          - generic [ref=e735]:
+            - generic [ref=e736]: 📌
+            - text: 확인된 사실
+          - paragraph [ref=e737]:
+            - text: 원셀프월드(1Self.World)가 운영, 2025-01 XPLA 메인넷 온보딩. 모든 트랜잭션·SBT 발행·지갑 관리가 XPLA에서 처리. 출시 6개월 만에 가입자 55만 명.
+            - superscript [ref=e738]:
+              - link "출처 5" [ref=e739] [cursor=pointer]:
+                - /url: "#src-5"
+                - text: "[5]"
+        - generic [ref=e740]:
+          - generic [ref=e741]:
+            - generic [ref=e742]: ⚠️
+            - text: "[확인 필요]"
+          - paragraph [ref=e743]: ① 개인키 커스터디 주체(사용자/원셀프월드/XPLA) ② 구체적 복구 방식 ③ 외부 지갑 출금 허용 범위는 공개 자료로 확정 불가.
+        - heading "6) Polymarket — 예측시장 dApp 지역·규제 확인" [level=3] [ref=e744]
+        - paragraph [ref=e745]:
+          - text: 월렛이 아니라 월렛을 연결해 들어가는 거래장. 선거·경제·스포츠 등 미래 사건에 YES/NO 포지션을 0.00~1.00달러로 사고팝니다. 국제판은 Polygon 기반 스마트 계약·스마트 월렛 사용, 2026-04 CLOB V2 이후 담보 토큰은 USDC로 뒷받침되는
+          - code [ref=e746]: pUSD
+          - text: 로 정리.
+          - superscript [ref=e747]:
+            - link "출처 10" [ref=e748] [cursor=pointer]:
+              - /url: "#src-10"
+              - text: "[10]"
+          - link "공식 ↗" [ref=e749] [cursor=pointer]:
+            - /url: https://polymarket.com
+          - text: ·
+          - link "문서 ↗" [ref=e750] [cursor=pointer]:
+            - /url: https://docs.polymarket.com/polymarket-101
+        - generic [ref=e751]:
+          - generic [ref=e752]:
+            - generic [ref=e753]: ⚠️
+            - text: 투자·규제·보안
+          - paragraph [ref=e754]:
+            - text: 포지션이 틀리면 전액 손실 가능. 국제판/미국판(CFTC 규제 DCM)에 따라 지갑·입금·규제가 다름. 2026-06에는 공급망 통한 프론트엔드 악성코드 주입으로 일부 자금 도난·환불 보도가 있었음 — “공식처럼 보여도 서명 팝업은 끝까지 확인”이라는 원칙과 직결.
+            - superscript [ref=e755]:
+              - link "출처 11" [ref=e756] [cursor=pointer]:
+                - /url: "#src-11"
+                - text: "[11]"
+              - link "출처 12" [ref=e757] [cursor=pointer]:
+                - /url: "#src-12"
+                - text: "[12]"
+        - generic [ref=e758]:
+          - generic [ref=e759]: 챕터 요약
+          - paragraph [ref=e760]: 6종은 ‘월렛’이라는 한 단어로 묶이지만 유형이 다릅니다. 키 관리·지원 체인·복구·권한/지역 제한을 기준으로 읽으면 헷갈리지 않습니다.
+      - generic [ref=e761]:
+        - generic [ref=e762]:
+          - generic [ref=e763]: "08"
+          - generic [ref=e764]:
+            - heading "내게 맞는 선택 · 이전 · 한국 제도 중급" [level=2] [ref=e765]:
+              - text: 내게 맞는 선택 · 이전 · 한국 제도
+              - generic [ref=e766]: 중급
+            - generic [ref=e767]: Choosing, Migrating & Korean Regulation
+        - paragraph [ref=e768]: 핵심 메시지 · 정답은 없습니다. 내 목적에 맞춰 고르고, 위험은 ‘분리’로 줄입니다.
+        - heading "상황별 추천" [level=3] [ref=e769]
+        - generic [ref=e770]:
+          - button "표 넓게 보기" [ref=e771] [cursor=pointer]: 넓게 보기
+          - table [ref=e772]:
+            - rowgroup [ref=e773]:
+              - row "내 상황 추천 이유" [ref=e774]:
+                - columnheader "내 상황" [ref=e775]
+                - columnheader "추천" [ref=e776]
+                - columnheader "이유" [ref=e777]
+            - rowgroup [ref=e778]:
+              - row "블록체인 처음, DeFi·NFT 경험하고 싶다 MetaMask EVM 연결성 최대, 자료·커뮤니티 풍부" [ref=e779]:
+                - cell "블록체인 처음, DeFi·NFT 경험하고 싶다" [ref=e780]
+                - cell "MetaMask" [ref=e781]
+                - cell "EVM 연결성 최대, 자료·커뮤니티 풍부" [ref=e782]
+              - row "솔라나 NFT·저수수료 서비스 Phantom 솔라나 진입 최적, 수수료 낮아 소액 실습 부담↓" [ref=e783]:
+                - cell "솔라나 NFT·저수수료 서비스" [ref=e784]
+                - cell "Phantom" [ref=e785]
+                - cell "솔라나 진입 최적, 수수료 낮아 소액 실습 부담↓" [ref=e786]
+              - row "큰 금액 장기 보유·보안 최우선 D'CENT 키를 인터넷과 분리, 단독 소프트웨어보다 안전" [ref=e787]:
+                - cell "큰 금액 장기 보유·보안 최우선" [ref=e788]
+                - cell "D'CENT" [ref=e789]
+                - cell "키를 인터넷과 분리, 단독 소프트웨어보다 안전" [ref=e790]
+              - row "갤럭시 + 결제·교통·신분증 생활편의 Samsung Wallet 기기 내장, 생활 기능 중심" [ref=e791]:
+                - cell "갤럭시 + 결제·교통·신분증 생활편의" [ref=e792]
+                - cell "Samsung Wallet" [ref=e793]
+                - cell "기기 내장, 생활 기능 중심" [ref=e794]
+              - row "블록체인 개념 없이 포인트 앱처럼 마이비(MyB) 시드·가스비 직접 안 다룸, 점진적 입문" [ref=e795]:
+                - cell "블록체인 개념 없이 포인트 앱처럼" [ref=e796]
+                - cell "마이비(MyB)" [ref=e797]
+                - cell "시드·가스비 직접 안 다룸, 점진적 입문" [ref=e798]
+              - row "예측시장 dApp·월렛 연결 사례 학습 Polymarket 월렛이 아니라 dApp 사례, 소액 전용 월렛 분리 권장" [ref=e799]:
+                - cell "예측시장 dApp·월렛 연결 사례 학습" [ref=e800]
+                - cell "Polymarket" [ref=e801]
+                - cell "월렛이 아니라 dApp 사례, 소액 전용 월렛 분리 권장" [ref=e802]
+        - generic [ref=e803]:
+          - generic [ref=e804]:
+            - generic [ref=e805]: 💡
+            - text: 조합 사용 패턴
+          - paragraph [ref=e806]: D'CENT + MetaMask 장기 보유는 콜드, 일상 Web3는 핫 · MetaMask + Phantom 이더리움/솔라나 분리 · 마이비 → MetaMask/Phantom 입문 후 직접 키 관리로 이동 · 소액 월렛 + Polymarket 위험 dApp은 장기 지갑과 분리.
+        - heading "거래소에서 개인 월렛으로 옮기는 6단계" [level=3] [ref=e807]
+        - list [ref=e808]:
+          - listitem [ref=e809]: 월렛 생성 — 이때부터 복구 정보 관리 책임 발생.
+          - listitem [ref=e810]: 네트워크 선택 — 같은 USDT라도 Ethereum/Tron/Solana는 다른 자산처럼 취급.
+          - listitem [ref=e811]: 주소 복사 — 앞뒤 몇 글자 확인.
+          - listitem [ref=e812]: 소액 테스트 — 가장 안전한 검증 방법.
+          - listitem [ref=e813]: 블록 탐색기 확인 — 거래소 반영과 온체인 반영 시간이 다를 수 있음.
+          - listitem [ref=e814]: 본 전송 — 테스트 확인 후 잔액 전송.
+        - generic [ref=e815]:
+          - generic [ref=e816]:
+            - generic [ref=e817]: ⚠️
+            - text: 거래소 출금 화면에서 특히
+          - paragraph [ref=e818]: 자산 이름·네트워크·출금 수수료·최소 출금액·외부 지갑 등록 여부를 확인합니다. 국내 거래소는 지갑 주소 등록·추가 확인을 요구할 수 있어 최신 공지 확인 필요.
+        - heading "한국 사용자 제도 메모" [level=3] [ref=e819]
+        - generic [ref=e820]:
+          - button "표 넓게 보기" [ref=e821] [cursor=pointer]: 넓게 보기
+          - table [ref=e822]:
+            - rowgroup [ref=e823]:
+              - row "구분 이해할 포인트" [ref=e824]:
+                - columnheader "구분" [ref=e825]
+                - columnheader "이해할 포인트" [ref=e826]
+            - rowgroup [ref=e827]:
+              - row "가상자산이용자보호법 예치금·자산 보호, 불공정거래 규제 등. 금융위원회는 2024-07-19 시행을 안내.출처 9" [ref=e828]:
+                - cell "가상자산이용자보호법" [ref=e829]
+                - cell "예치금·자산 보호, 불공정거래 규제 등. 금융위원회는 2024-07-19 시행을 안내.출처 9" [ref=e830]:
+                  - text: 예치금·자산 보호, 불공정거래 규제 등. 금융위원회는 2024-07-19 시행을 안내.
+                  - superscript [ref=e831]:
+                    - link "출처 9" [ref=e832] [cursor=pointer]:
+                      - /url: "#src-9"
+                      - text: "[9]"
+              - row "보호의 한계 주로 ‘거래소 이용자’ 보호. 개인 월렛에서 직접 승인한 온체인 거래·시드 유출·피싱 서명을 자동 복구해주지 않음" [ref=e833]:
+                - cell "보호의 한계" [ref=e834]
+                - cell "주로 ‘거래소 이용자’ 보호. 개인 월렛에서 직접 승인한 온체인 거래·시드 유출·피싱 서명을 자동 복구해주지 않음" [ref=e835]
+              - row "투자 판단 월렛 이해는 보관·전송 방법이지 코인·NFT의 투자 가치 보장이 아님" [ref=e836]:
+                - cell "투자 판단" [ref=e837]
+                - cell "월렛 이해는 보관·전송 방법이지 코인·NFT의 투자 가치 보장이 아님" [ref=e838]
+        - generic [ref=e839]:
+          - generic [ref=e840]:
+            - generic [ref=e841]: 📌
+            - text: 한 줄 정리
+          - paragraph [ref=e842]: 거래소 안에서는 규칙·법적 보호가 일부 작동하지만, 개인 월렛으로 옮긴 뒤에는 키·서명·복구 책임이 훨씬 직접적으로 사용자에게 옵니다.
+        - generic [ref=e843]:
+          - generic [ref=e844]: 챕터 요약
+          - paragraph [ref=e845]: 좋은 선택 = 목적 적합성 + 위험 분리. 옮길 때는 ‘소액 테스트’가 가장 값싼 보험입니다.
+      - generic [ref=e846]:
+        - generic [ref=e847]:
+          - generic [ref=e848]: Part C
+          - heading "리워드 앱 시장 깊이 보기" [level=2] [ref=e849]
+        - generic [ref=e850]:
+          - generic [ref=e851]:
+            - generic [ref=e852]: 🟦
+            - text: 읽기 전 안내
+          - paragraph [ref=e853]: 공개되지 않은 서비스별 매출·활성 사용자 수·비용 구조는 임의로 계산하지 않았습니다. 운영사 전체 실적과 개별 앱 실적도 구분해 설명합니다. (마이비 사례 중심)
+      - generic [ref=e854]:
+        - generic [ref=e855]:
+          - generic [ref=e856]: "09"
+          - generic [ref=e857]:
+            - heading "리워드 앱이란 무엇이고 어떻게 작동하나 초급" [level=2] [ref=e858]:
+              - text: 리워드 앱이란 무엇이고 어떻게 작동하나
+              - generic [ref=e859]: 초급
+            - generic [ref=e860]: What Reward Apps Are
+        - paragraph [ref=e861]: 핵심 메시지 · 리워드 앱은 무료로 돈을 주는 곳이 아니라, 기업이 원하는 행동의 대가 일부를 사용자에게 지급하는 사업입니다.
+        - paragraph [ref=e862]: 사용자가 보상을 받는 행동은 광고 시청·설문/퀴즈·걷기·출석·앱 설치/가입·쇼핑·친구 초대·게임 등. 포인트는 현금·상품권·간편결제·할인 등으로 사용. 예를 들어 쇼핑 앱이 신규 회원 1명에 5,000원을 지불하면, 플랫폼은 그중 일부를 사용자에게 주고 나머지로 운영비·수수료를 충당합니다.
+        - generic [ref=e863]:
+          - button "표 넓게 보기" [ref=e864] [cursor=pointer]: 넓게 보기
+          - table [ref=e865]:
+            - rowgroup [ref=e866]:
+              - row "사용자 관점 기업 관점" [ref=e867]:
+                - columnheader "사용자 관점" [ref=e868]
+                - columnheader "기업 관점" [ref=e869]
+            - rowgroup [ref=e870]:
+              - row "남는 시간·일상 행동을 소액 가치로 전환. 보상까지 시간이 짧고, 포인트 가치가 명확하고, 현금화가 쉽고, 반복 이유가 있어야 함 돈을 나눠주려는 게 아니라 광고 노출/클릭, 설치/가입, 설문 응답, 쇼핑·금융 유도, 재방문, 행동 데이터 수집을 위해 운영" [ref=e871]:
+                - cell "남는 시간·일상 행동을 소액 가치로 전환. 보상까지 시간이 짧고, 포인트 가치가 명확하고, 현금화가 쉽고, 반복 이유가 있어야 함" [ref=e872]
+                - cell "돈을 나눠주려는 게 아니라 광고 노출/클릭, 설치/가입, 설문 응답, 쇼핑·금융 유도, 재방문, 행동 데이터 수집을 위해 운영" [ref=e873]
+        - generic [ref=e874]:
+          - generic [ref=e875]:
+            - generic [ref=e876]: 📌
+            - text: 리워드 앱의 핵심 사업 질문
+          - paragraph [ref=e877]: “기업이 사용자 행동으로 얻는 매출이, 사용자에게 지급하는 보상과 운영비보다 큰가?” 여기에 계속 ‘그렇다’고 답할 수 있어야 사업이 유지됩니다.
+        - paragraph [ref=e878]: 돈과 데이터의 흐름
+        - generic [ref=e879]:
+          - button "Copy" [ref=e880] [cursor=pointer]
+          - generic [ref=e881]: "[돈] 광고주 캠페인 의뢰 → 플랫폼이 미션 제공 → 사용자 수행 → 광고주가 결과에 따라 비용 지급 → 일부를 보상·제휴 비용으로 → 남은 금액으로 인건비·서버비·마케팅비·수익 [데이터] 사용자의 취향·구매·반응 → 플랫폼 분석 → 누구에게 어떤 광고를 보일지 결정"
+        - paragraph [ref=e882]:
+          - emphasis [ref=e883]: 타기팅
+          - text: 이 정확할수록 광고주는 같은 비용으로 더 많은 성과를 얻습니다. 다만 보상 때문에 사실과 다르게 답하면 데이터 가치가 떨어집니다.
+        - generic [ref=e884]:
+          - generic [ref=e885]: 챕터 요약
+          - paragraph [ref=e886]: 보상의 재원은 광고·조사·제휴 비용입니다. 그래서 ‘데이터 품질’과 ‘반복 참여’가 사업의 생명선입니다.
+      - generic [ref=e887]:
+        - generic [ref=e888]:
+          - generic [ref=e889]: "10"
+          - generic [ref=e890]:
+            - heading "유형 · 수익모델 · 핵심 성과지표 중급" [level=2] [ref=e891]:
+              - text: 유형 · 수익모델 · 핵심 성과지표
+              - generic [ref=e892]: 중급
+            - generic [ref=e893]: Types, Revenue Models & KPIs
+        - paragraph [ref=e894]: 핵심 메시지 · 다운로드 수가 아니라 활성도·재구매·공헌이익으로 사업성을 봅니다.
+        - heading "서비스 유형" [level=3] [ref=e895]
+        - generic [ref=e896]:
+          - button "표 넓게 보기" [ref=e897] [cursor=pointer]: 넓게 보기
+          - table [ref=e898]:
+            - rowgroup [ref=e899]:
+              - row "유형 핵심 행동 대표 서비스" [ref=e900]:
+                - columnheader "유형" [ref=e901]
+                - columnheader "핵심 행동" [ref=e902]
+                - columnheader "대표 서비스" [ref=e903]
+            - rowgroup [ref=e904]:
+              - row "설문·취향 데이터형 질문에 답하고 적립 마이비, 오베이" [ref=e905]:
+                - cell "설문·취향 데이터형" [ref=e906]
+                - cell "질문에 답하고 적립" [ref=e907]
+                - cell "마이비, 오베이" [ref=e908]
+              - row "행동·미션 리워드형 걷기·출석·위치·잠금화면 등 일상 행동 캐시워크, 돈이돼지" [ref=e909]:
+                - cell "행동·미션 리워드형" [ref=e910]
+                - cell "걷기·출석·위치·잠금화면 등 일상 행동" [ref=e911]
+                - cell "캐시워크, 돈이돼지" [ref=e912]
+              - row "자산·토큰 리워드형 지갑·퀴즈·미션으로 코인/금 보상 리워디, 코퀴즈" [ref=e913]:
+                - cell "자산·토큰 리워드형" [ref=e914]
+                - cell "지갑·퀴즈·미션으로 코인/금 보상" [ref=e915]
+                - cell "리워디, 코퀴즈" [ref=e916]
+              - row "슈퍼앱 혜택형 금융·결제·쇼핑 안에 리워드 내장 토스 혜택, 토스 만보기" [ref=e917]:
+                - cell "슈퍼앱 혜택형" [ref=e918]
+                - cell "금융·결제·쇼핑 안에 리워드 내장" [ref=e919]
+                - cell "토스 혜택, 토스 만보기" [ref=e920]
+        - generic [ref=e921]:
+          - generic [ref=e922]:
+            - generic [ref=e923]: 📌
+            - text: 슈퍼앱의 우위
+          - paragraph [ref=e924]: 슈퍼앱은 리워드 자체에서 이익이 안 나도 금융·결제·쇼핑으로 비용을 회수할 수 있어, 독립 리워드 앱보다 보상 경쟁에서 유리할 수 있습니다.
+        - heading "주요 수익모델" [level=3] [ref=e925]
+        - list [ref=e926]:
+          - listitem [ref=e927]: 프로그래머틱 광고 — 실시간 자동 구매·배치. 물량 안정적이나 단가 변동.
+          - listitem [ref=e928]: "직접 광고 — 브랜드와 직접 계약(예: 신제품 퀴즈). 단가 높지만 영업·제작 필요."
+          - listitem [ref=e929]: CPA — 설치·가입 등 행동 완료 시에만 과금. 성과 명확하나 부정 설치 방지 필요.
+          - listitem [ref=e930]: 이 밖에 설문·패널 사업, 제휴 커머스(반품 시 포인트 회수 가능), 외부 매체용 광고 네트워크(마이비 ‘애드체인’).
+        - heading "핵심 성과지표" [level=3] [ref=e931]
+        - generic [ref=e932]:
+          - button "표 넓게 보기" [ref=e933] [cursor=pointer]: 넓게 보기
+          - table [ref=e934]:
+            - rowgroup [ref=e935]:
+              - row "지표 뜻" [ref=e936]:
+                - columnheader "지표" [ref=e937]
+                - columnheader "뜻" [ref=e938]
+            - rowgroup [ref=e939]:
+              - row "MAU / DAU 한 달 / 하루 활성 사용자 수" [ref=e940]:
+                - cell "MAU / DAU" [ref=e941]
+                - cell "한 달 / 하루 활성 사용자 수" [ref=e942]
+              - row "DAU/MAU 월간 사용자 중 매일 찾는 비중(높을수록 습관 강함)" [ref=e943]:
+                - cell "DAU/MAU" [ref=e944]
+                - cell "월간 사용자 중 매일 찾는 비중(높을수록 습관 강함)" [ref=e945]
+              - row "리텐션 가입 후 계속 쓰는 비율(가입 30일 후 = D30)" [ref=e946]:
+                - cell "리텐션" [ref=e947]
+                - cell "가입 후 계속 쓰는 비율(가입 30일 후 = D30)" [ref=e948]
+              - row "ARPDAU 하루 활성 1명당 평균 매출(매출 1천만·DAU 10만 → 100원)" [ref=e949]:
+                - cell "ARPDAU" [ref=e950]
+                - cell "하루 활성 1명당 평균 매출(매출 1천만·DAU 10만 → 100원)" [ref=e951]
+              - row "CAC 신규 1명 확보 비용(광고비 1천만으로 1만 명 → 1,000원)" [ref=e952]:
+                - cell "CAC" [ref=e953]
+                - cell "신규 1명 확보 비용(광고비 1천만으로 1만 명 → 1,000원)" [ref=e954]
+              - row "LTV 사용자 1명의 전체 이용 가치. LTV > CAC여야 지속 성장" [ref=e955]:
+                - cell "LTV" [ref=e956]
+                - cell "사용자 1명의 전체 이용 가치. LTV > CAC여야 지속 성장" [ref=e957]
+        - generic [ref=e958]:
+          - generic [ref=e959]:
+            - generic [ref=e960]: 💡
+            - text: 리워드 앱만의 ‘보상비’
+          - paragraph [ref=e961]: "매출이 나도 지급 포인트·상품권 수수료·현금 출금비·부정사용 손실을 빼면 적자일 수 있습니다. 행동 한 건의 경제성:"
+          - generic [ref=e962]:
+            - button "Copy" [ref=e963] [cursor=pointer]
+            - generic [ref=e964]: 광고·조사·제휴 매출 − 사용자 리워드 − 외부 매체 수익배분 − 현금화·상품권 수수료 − 부정사용 손실 − 변동 운영비 = 행동당 공헌이익
+        - generic [ref=e965]:
+          - generic [ref=e966]: 챕터 요약
+          - paragraph [ref=e967]: “설치자 수 많다”는 자랑이 아니라, 보상을 주고도 남는가(공헌이익)가 본질입니다.
+      - generic [ref=e968]:
+        - generic [ref=e969]:
+          - generic [ref=e970]: "11"
+          - generic [ref=e971]:
+            - heading "주요 서비스 비교와 기업 사례 중급" [level=2] [ref=e972]:
+              - text: 주요 서비스 비교와 기업 사례
+              - generic [ref=e973]: 중급
+            - generic [ref=e974]: Service Comparison & Case Studies
+        - paragraph [ref=e975]: 핵심 메시지 · 사례마다 던지는 교훈이 다릅니다 — 응답 품질, 반복 행동, 회수 구조, Web3 보상 설계, 보상비 통제.
+        - generic [ref=e976]:
+          - generic [ref=e977]:
+            - generic [ref=e978]: 📌
+            - text: 수치 해석 기준
+          - paragraph [ref=e979]: 예상 유저수와 예상 매출은 공개 자료 기준의 대략적 지표입니다. 앱 단독 실적이 아닌 회사 전체·연결 실적은 별도로 표시했습니다.
+        - heading "월렛 결합형 리워드 서비스를 읽는 프레임" [level=3] [ref=e980]
+        - paragraph [ref=e981]:
+          - text: 리워드와 월렛이 결합된 서비스는 “얼마를 적립해주나”만 보면 핵심을 놓치기 쉽습니다. 적립 행동, 사용처, 자산화 경로, 제휴사 설득 논리를 함께 봐야 합니다.
+          - superscript [ref=e982]:
+            - link "출처 22" [ref=e983] [cursor=pointer]:
+              - /url: "#src-22"
+              - text: "[22]"
+        - generic [ref=e984]:
+          - button "표 넓게 보기" [ref=e985] [cursor=pointer]: 넓게 보기
+          - table [ref=e986]:
+            - rowgroup [ref=e987]:
+              - row "서비스군 대표 사례 강점 한계·검증 질문" [ref=e988]:
+                - columnheader "서비스군" [ref=e989]
+                - columnheader "대표 사례" [ref=e990]
+                - columnheader "강점" [ref=e991]
+                - columnheader "한계·검증 질문" [ref=e992]
+            - rowgroup [ref=e993]:
+              - row "행동 기반 + 자체 월렛 리워디, 마이비 출석·퀴즈·설문처럼 진입 장벽이 낮고 반복 방문을 만들기 쉬움 포인트 획득처와 사용처가 단순하면 장기 자산화 경험이 약해짐. 현금화·토큰 전환·투자 사용처가 실제로 얼마나 쓰이는지 확인 필요" [ref=e994]:
+                - cell "행동 기반 + 자체 월렛" [ref=e995]
+                - cell "리워디, 마이비" [ref=e996]
+                - cell "출석·퀴즈·설문처럼 진입 장벽이 낮고 반복 방문을 만들기 쉬움" [ref=e997]
+                - cell "포인트 획득처와 사용처가 단순하면 장기 자산화 경험이 약해짐. 현금화·토큰 전환·투자 사용처가 실제로 얼마나 쓰이는지 확인 필요" [ref=e998]
+              - row "포인트 통합·전환형 밀크(Milk) 제휴사 포인트를 토큰으로 전환해 월렛·거래·현금화 경험을 제공 신규 포인트를 직접 만들기보다 기존 포인트 전환에 의존. 제휴사 입장에서는 포인트 자산 유출 우려가 생길 수 있음" [ref=e999]:
+                - cell "포인트 통합·전환형" [ref=e1000]
+                - cell "밀크(Milk)" [ref=e1001]
+                - cell "제휴사 포인트를 토큰으로 전환해 월렛·거래·현금화 경험을 제공" [ref=e1002]
+                - cell "신규 포인트를 직접 만들기보다 기존 포인트 전환에 의존. 제휴사 입장에서는 포인트 자산 유출 우려가 생길 수 있음" [ref=e1003]
+              - row "구매 기반 + 코인 월렛 Lolli, Fold, StormX 실제 구매나 카드 결제에 보상이 연결돼 포인트 신뢰도와 자산화 명분이 강함 BTC·토큰 보상 모델을 국내 규제와 정산 인프라에 그대로 가져오기 어려움. 구매 인증·정산·과세·거래소 연계 구조 확인 필요" [ref=e1004]:
+                - cell "구매 기반 + 코인 월렛" [ref=e1005]
+                - cell "Lolli, Fold, StormX" [ref=e1006]
+                - cell "실제 구매나 카드 결제에 보상이 연결돼 포인트 신뢰도와 자산화 명분이 강함" [ref=e1007]
+                - cell "BTC·토큰 보상 모델을 국내 규제와 정산 인프라에 그대로 가져오기 어려움. 구매 인증·정산·과세·거래소 연계 구조 확인 필요" [ref=e1008]
+              - row "슈퍼앱 혜택형 토스 혜택 리워드 자체가 손익분기점이 아니어도 금융·결제·투자 전환으로 회수 가능 독립 리워드 앱이 같은 보상 수준을 따라 하면 보상비 부담이 커질 수 있음. 회수 사업이 무엇인지 먼저 봐야 함" [ref=e1009]:
+                - cell "슈퍼앱 혜택형" [ref=e1010]
+                - cell "토스 혜택" [ref=e1011]
+                - cell "리워드 자체가 손익분기점이 아니어도 금융·결제·투자 전환으로 회수 가능" [ref=e1012]
+                - cell "독립 리워드 앱이 같은 보상 수준을 따라 하면 보상비 부담이 커질 수 있음. 회수 사업이 무엇인지 먼저 봐야 함" [ref=e1013]
+              - row "구매 인증 코어 + 행동 서브 신규 BM 가설 구매 페이백으로 포인트의 신뢰도를 만들고, 출석·퀴즈·미션은 재방문 장치로 쓰는 구조 행동 리워드가 코어를 흐리지 않도록 보상 단가·레벨·출금 한도를 분리해야 함. 광고주·제휴사 비용 부담 구조가 선명해야 함" [ref=e1014]:
+                - cell "구매 인증 코어 + 행동 서브" [ref=e1015]
+                - cell "신규 BM 가설" [ref=e1016]
+                - cell "구매 페이백으로 포인트의 신뢰도를 만들고, 출석·퀴즈·미션은 재방문 장치로 쓰는 구조" [ref=e1017]
+                - cell "행동 리워드가 코어를 흐리지 않도록 보상 단가·레벨·출금 한도를 분리해야 함. 광고주·제휴사 비용 부담 구조가 선명해야 함" [ref=e1018]
+        - generic [ref=e1019]:
+          - generic [ref=e1020]:
+            - generic [ref=e1021]: 💡
+            - text: 리서치할 때 던질 질문
+          - paragraph [ref=e1022]: 월렛 결합형 리워드는 ① 어떤 행동이 포인트를 새로 만드는가 ② 포인트가 현금·토큰·투자·기프티콘·구독처럼 어디까지 쓰이는가 ③ 보상비를 누가 부담하는가 ④ 제휴사에는 포인트 소진이 아니라 유저 유입·수수료·데이터 가치로 설명되는가를 봐야 합니다.
+        - generic [ref=e1023]:
+          - button "표 넓게 보기" [ref=e1024] [cursor=pointer]: 넓게 보기
+          - table [ref=e1025]:
+            - rowgroup [ref=e1026]:
+              - row "서비스 유형·핵심 행동 보상·사용처 주요 수익모델 예상 유저수 예상 매출 구조적 강점 주요 위험" [ref=e1027]:
+                - columnheader "서비스" [ref=e1028]
+                - columnheader "유형·핵심 행동" [ref=e1029]
+                - columnheader "보상·사용처" [ref=e1030]
+                - columnheader "주요 수익모델" [ref=e1031]
+                - columnheader "예상 유저수" [ref=e1032]
+                - columnheader "예상 매출" [ref=e1033]
+                - columnheader "구조적 강점" [ref=e1034]
+                - columnheader "주요 위험" [ref=e1035]
+            - rowgroup [ref=e1036]:
+              - row "마이비 취향 투표·퀴즈·걷기·게임·쇼핑 현금·네이버페이·상품권·금 광고·설문·오퍼월·쇼핑 제휴·애드체인 가입자 100만+·MAU 미공개 앱 단독 미공개 취향 데이터·W3ID·외부 매체 확장 보상비·응답 품질·개인정보 신뢰·수익성" [ref=e1037]:
+                - cell "마이비" [ref=e1038]
+                - cell "취향 투표·퀴즈·걷기·게임·쇼핑" [ref=e1039]
+                - cell "현금·네이버페이·상품권·금" [ref=e1040]
+                - cell "광고·설문·오퍼월·쇼핑 제휴·애드체인" [ref=e1041]
+                - cell "가입자 100만+·MAU 미공개" [ref=e1042]
+                - cell "앱 단독 미공개" [ref=e1043]
+                - cell "취향 데이터·W3ID·외부 매체 확장" [ref=e1044]
+                - cell "보상비·응답 품질·개인정보 신뢰·수익성" [ref=e1045]
+              - row "오베이 타기팅 설문 응답 현금·네이버페이·기프티콘 기업 리서치·데이터 최근 4주 활성 패널 약 20만 오픈서베이 2024년 약 158억(회사 전체) 검증된 패널·품질 관리 불성실 응답·표본 편향" [ref=e1046]:
+                - cell "오베이" [ref=e1047]
+                - cell "타기팅 설문 응답" [ref=e1048]
+                - cell "현금·네이버페이·기프티콘" [ref=e1049]
+                - cell "기업 리서치·데이터" [ref=e1050]
+                - cell "최근 4주 활성 패널 약 20만" [ref=e1051]
+                - cell "오픈서베이 2024년 약 158억(회사 전체)" [ref=e1052]
+                - cell "검증된 패널·품질 관리" [ref=e1053]
+                - cell "불성실 응답·표본 편향" [ref=e1054]
+              - row "캐시워크 걷기·건강 챌린지 캐시·상품 교환 광고·커머스·B2B MAU 450만 넛지헬스케어 2025 연결 1,182억(앱 단독 아님) 높은 빈도·대규모 트래픽·자체 광고기술 걸음 조작·광고 피로·보상비" [ref=e1055]:
+                - cell "캐시워크" [ref=e1056]
+                - cell "걷기·건강 챌린지" [ref=e1057]
+                - cell "캐시·상품 교환" [ref=e1058]
+                - cell "광고·커머스·B2B" [ref=e1059]
+                - cell "MAU 450만" [ref=e1060]
+                - cell "넛지헬스케어 2025 연결 1,182억(앱 단독 아님)" [ref=e1061]
+                - cell "높은 빈도·대규모 트래픽·자체 광고기술" [ref=e1062]
+                - cell "걸음 조작·광고 피로·보상비" [ref=e1063]
+              - row "토스 혜택 걷기·앱 실행·결제·제휴 토스포인트 금융·결제·광고·제휴 전환 만보기 1,150만명·주 2회+ 사용 혜택 단독 미공개·금융 전환으로 회수 기존 금융 사용자·결제 데이터 대규모 보상비·구조 복잡성" [ref=e1064]:
+                - cell "토스 혜택" [ref=e1065]
+                - cell "걷기·앱 실행·결제·제휴" [ref=e1066]
+                - cell "토스포인트" [ref=e1067]
+                - cell "금융·결제·광고·제휴 전환" [ref=e1068]
+                - cell "만보기 1,150만명·주 2회+ 사용" [ref=e1069]
+                - cell "혜택 단독 미공개·금융 전환으로 회수" [ref=e1070]
+                - cell "기존 금융 사용자·결제 데이터" [ref=e1071]
+                - cell "대규모 보상비·구조 복잡성" [ref=e1072]
+              - row "리워디 리워드 지갑·코인/금 모으기 토큰·금·포인트성 보상 광고·미션·제휴·가상자산 연동 Google Play 10만+ 다운로드·활성 미공개 앱 단독 미공개 지갑·보상·금 투자 경험 결합 가상자산 신뢰·보상 재원·규제/변동성" [ref=e1073]:
+                - cell "리워디" [ref=e1074]
+                - cell "리워드 지갑·코인/금 모으기" [ref=e1075]
+                - cell "토큰·금·포인트성 보상" [ref=e1076]
+                - cell "광고·미션·제휴·가상자산 연동" [ref=e1077]
+                - cell "Google Play 10만+ 다운로드·활성 미공개" [ref=e1078]
+                - cell "앱 단독 미공개" [ref=e1079]
+                - cell "지갑·보상·금 투자 경험 결합" [ref=e1080]
+                - cell "가상자산 신뢰·보상 재원·규제/변동성" [ref=e1081]
+              - row "코퀴즈 퀴즈 참여·정답 보상 코넛코인·상금/이벤트 광고·토큰 생태계·NFT/커뮤니티 누적 다운로드 약 3만·누적 플레이 495만 앱 단독 미공개·상금 3억은 보상 원가 퀴즈형 참여와 토큰 보상 결합 토큰 유동성·보상비·지속 참여" [ref=e1082]:
+                - cell "코퀴즈" [ref=e1083]
+                - cell "퀴즈 참여·정답 보상" [ref=e1084]
+                - cell "코넛코인·상금/이벤트" [ref=e1085]
+                - cell "광고·토큰 생태계·NFT/커뮤니티" [ref=e1086]
+                - cell "누적 다운로드 약 3만·누적 플레이 495만" [ref=e1087]
+                - cell "앱 단독 미공개·상금 3억은 보상 원가" [ref=e1088]
+                - cell "퀴즈형 참여와 토큰 보상 결합" [ref=e1089]
+                - cell "토큰 유동성·보상비·지속 참여" [ref=e1090]
+              - row "돈이돼지 잠금화면·미션·걷기·쇼핑 현금성 포인트·기프티콘 광고·제휴 커머스·오퍼월 DAU 11만+·Google Play 50만+ 다운로드 앱 흑자·비트바이트 연매출 100억+ 전망(두 서비스 포함) 일상 접점과 광고 재방문 플라이휠 보상비·광고 피로·회사 전체 지표와 앱 지표 혼재" [ref=e1091]:
+                - cell "돈이돼지" [ref=e1092]
+                - cell "잠금화면·미션·걷기·쇼핑" [ref=e1093]
+                - cell "현금성 포인트·기프티콘" [ref=e1094]
+                - cell "광고·제휴 커머스·오퍼월" [ref=e1095]
+                - cell "DAU 11만+·Google Play 50만+ 다운로드" [ref=e1096]
+                - cell "앱 흑자·비트바이트 연매출 100억+ 전망(두 서비스 포함)" [ref=e1097]
+                - cell "일상 접점과 광고 재방문 플라이휠" [ref=e1098]
+                - cell "보상비·광고 피로·회사 전체 지표와 앱 지표 혼재" [ref=e1099]
+        - heading "사례에서 배우는 점" [level=3] [ref=e1100]
+        - list [ref=e1101]:
+          - listitem [ref=e1102]:
+            - text: 오베이 — 보상보다 응답 품질. 오픈서베이는 2025-01 기준 최근 4주 활성 패널 약 20만 명 관리, 2024년 회사 전체 매출 약 158억(흑자 전환).
+            - emphasis [ref=e1103]: 이 매출은 오베이 앱 단독이 아니라 리서치·SW 포함 회사 전체.
+            - text: "교훈: 응답 수보다 광고주가 다시 사는 데이터 품질."
+            - superscript [ref=e1104]:
+              - link "출처 16" [ref=e1105] [cursor=pointer]:
+                - /url: "#src-16"
+                - text: "[16]"
+          - listitem [ref=e1106]:
+            - text: 캐시워크 — 반복 행동 + 광고기술. 넛지헬스케어 2025 연결 매출 1,182억·영업이익 81억, 캐시워크 MAU 450만. 2분기 매출 구조 프로그래머틱 65%·직접 12%·EAP 10%·캐시딜 8%.
+            - emphasis [ref=e1107]: 연결 실적(앱 단독 아님).
+            - text: "교훈: 기능 나열 전 매일 반복할 하나의 행동 확보."
+            - superscript [ref=e1108]:
+              - link "출처 17" [ref=e1109] [cursor=pointer]:
+                - /url: "#src-17"
+                - text: "[17]"
+          - listitem [ref=e1110]:
+            - text: "토스 혜택 — 전체 서비스에서 회수. 2025-01 현금성 포인트 서비스 35개, 만보기 약 1,150만 명·주 2회+ (토스 자체 발표치). 리워드에서 손해여도 송금·카드·보험·투자로 연결. 교훈: 회수 사업 없는 곳이 보상 수준을 따라 하면 수익성 악화."
+            - superscript [ref=e1111]:
+              - link "출처 18" [ref=e1112] [cursor=pointer]:
+                - /url: "#src-18"
+                - text: "[18]"
+          - listitem [ref=e1113]:
+            - text: "리워디 — 보상형 지갑은 현금화 경험이 핵심. Google Play 10만+ 다운로드로 표시되지만 활성 사용자와 매출은 미공개입니다. 교훈: Web3·자산형 리워드는 보상액보다 보상 자산을 어디서 쓰고 회수할 수 있는지가 신뢰를 좌우합니다."
+            - superscript [ref=e1114]:
+              - link "출처 19" [ref=e1115] [cursor=pointer]:
+                - /url: "#src-19"
+                - text: "[19]"
+          - listitem [ref=e1116]:
+            - text: "코퀴즈 — 퀴즈 참여와 토큰 보상의 결합. 2026년 보도 기준 누적 다운로드 약 3만, 누적 상금 3억원, 누적 플레이 495만회를 공개했습니다. 교훈: 상금 규모는 매출이 아니라 보상 원가에 가깝고, 토큰형 리워드는 유동성과 반복 참여 설계가 함께 필요합니다."
+            - superscript [ref=e1117]:
+              - link "출처 20" [ref=e1118] [cursor=pointer]:
+                - /url: "#src-20"
+                - text: "[20]"
+          - listitem [ref=e1119]:
+            - text: "돈이돼지 — 작은 보상도 매일 접점이 되면 매출 엔진이 됩니다. 공식 페이지는 DAU 11만+·누적 적립금 60억원+을 제시하고, DARO 사례는 앱 흑자와 비트바이트의 연매출 100억원+ 전망을 설명합니다. 교훈: 보상비를 통제하려면 광고 위치, 세션 빈도, 정산 구조가 함께 맞아야 합니다."
+            - superscript [ref=e1120]:
+              - link "출처 21" [ref=e1121] [cursor=pointer]:
+                - /url: "#src-21"
+                - text: "[21]"
+        - generic [ref=e1122]:
+          - generic [ref=e1123]: 챕터 요약
+          - paragraph [ref=e1124]: 같은 ‘리워드’라도 강점·위험·수익 회수 방식이 제각각입니다. 마이비를 볼 때도 이 잣대들을 그대로 적용합니다.
+      - generic [ref=e1125]:
+        - generic [ref=e1126]:
+          - generic [ref=e1127]: "12"
+          - generic [ref=e1128]:
+            - heading "마이비의 사업 구조 · 매출 · 위험 · 전망 고급" [level=2] [ref=e1129]:
+              - text: 마이비의 사업 구조 · 매출 · 위험 · 전망
+              - generic [ref=e1130]: 고급
+            - generic [ref=e1131]: MyB — Business, Revenue, Risk, Outlook
+        - paragraph [ref=e1132]: 핵심 메시지 · 마이비는 ‘퀴즈 앱’에서 취향 데이터 × 보상형 광고 플랫폼으로 전환하는 단계입니다. 매출 성장은 확인됐지만 수익성·구조적 경쟁력은 아직 입증 전입니다.
+        - heading "기본 작동 구조" [level=3] [ref=e1133]
+        - paragraph [ref=e1134]: 초기엔 취향 퀴즈·설문으로 B포인트를 주는 서비스였고, 현재는 만보기·게임·쇼핑·출석·현금 인출·네이버페이/상품권·B포인트 적금·금 기능까지 더한 종합 앱테크에 가깝습니다(200개 이상 상품 교환 소개).
+        - generic [ref=e1135]:
+          - button "Copy" [ref=e1136] [cursor=pointer]
+          - generic [ref=e1137]: 사용자 취향 응답 수집 → 사용자별 관심 정보 구성 → 광고·조사 타기팅 → 광고주로부터 수익 확보 → 사용자에게 리워드 지급
+        - generic [ref=e1138]:
+          - generic [ref=e1139]:
+            - generic [ref=e1140]: ⚠️
+            - text: 출시 시점·지표 [확인 필요]
+          - paragraph [ref=e1141]: 출시를 외부 보도는 2024-04, 운영사 연혁은 2024-05로 표기. 2025-04 가입자 100만 돌파 발표·Google Play 100만+ 다운로드. 단, 가입자·다운로드는 실제 사용자 수가 아니며 MAU·DAU·D30 리텐션은 미공개. 포인트 전환율·최소 인출액·출금비·적금 재원·금 수수료도 공개 자료로는 [확인 필요].
+        - heading "W3ID와 SBT" [level=3] [ref=e1142]
+        - paragraph [ref=e1143]: 마이비는 취향 정보를 SBT(양도 불가한 디지털 증명)로 기록하고 이를 조합해 W3ID(개인별 데이터 프로필)를 구성한다고 설명합니다. 사용자에게 실제 가치는 ① 더 관련성 높은 설문·광고 ② 같은 시간에 더 높은 보상 ③ 내 데이터 사용 방식 확인·통제로 나타나야 합니다. 광고주에겐 ‘직접 제공된 취향정보’가 잠재 장점이나, 응답이 부정확·노후되면 효과가 떨어집니다.
+        - heading "수익모델·재방문 장치" [level=3] [ref=e1144]
+        - paragraph [ref=e1145]:
+          - text: 보상형 광고, 설문·브랜드 퀴즈, 쇼핑 제휴, 오퍼월, 외부 앱용 광고 네트워크(‘마이비 애드체인’). 애드체인은 외부 앱에 퀴즈형 광고를 넣고 수익을 매체사와 배분(똑닥·트레져러 등 탑재 발표). 2025년 말 목표 매체 MAU 약 500만은 발표 당시 목표치, 달성 여부 [확인 필요]. 재방문 장치로 첫 달 최대 2만 B포인트, 짧은 퀴즈, 매일 갱신 퀴즈·출석·만보기, 출석패스·방어권, 배지·게임·쇼핑, 포인트 적금·금 기능 — 다만 대부분 경쟁사가 쉽게 복제 가능.
+          - superscript [ref=e1146]:
+            - link "출처 15" [ref=e1147] [cursor=pointer]:
+              - /url: "#src-15"
+              - text: "[15]"
+        - heading "매출·투자 (원셀프월드 전체)" [level=3] [ref=e1148]
+        - generic [ref=e1149]:
+          - button "표 넓게 보기" [ref=e1150] [cursor=pointer]: 넓게 보기
+          - table [ref=e1151]:
+            - rowgroup [ref=e1152]:
+              - row "항목 2024 2025" [ref=e1153]:
+                - columnheader "항목" [ref=e1154]
+                - columnheader "2024" [ref=e1155]
+                - columnheader "2025" [ref=e1156]
+            - rowgroup [ref=e1157]:
+              - row "매출 4억963만원 58억5,226만원 (약 +1,328.7%)" [ref=e1158]:
+                - cell "매출" [ref=e1159]
+                - cell "4억963만원" [ref=e1160]
+                - cell "58억5,226만원 (약 +1,328.7%)" [ref=e1161]
+              - row "영업손실 18억9,414만원 35억1,707만원" [ref=e1162]:
+                - cell "영업손실" [ref=e1163]
+                - cell "18억9,414만원" [ref=e1164]
+                - cell "35억1,707만원" [ref=e1165]
+              - row "당기순손실 — 33억4,759만원" [ref=e1166]:
+                - cell "당기순손실" [ref=e1167]
+                - cell "—" [ref=e1168]
+                - cell "33억4,759만원" [ref=e1169]
+              - row "영업이익률(계산상) 약 −462.4% 약 −60.1% (손실률 크게 개선)" [ref=e1170]:
+                - cell "영업이익률(계산상)" [ref=e1171]
+                - cell "약 −462.4%" [ref=e1172]
+                - cell "약 −60.1% (손실률 크게 개선)" [ref=e1173]
+        - generic [ref=e1174]:
+          - generic [ref=e1175]:
+            - generic [ref=e1176]: 📌
+            - text: 수치 해석 주의
+          - paragraph [ref=e1177]:
+            - text: 이 수치는 사람인이 NICE평가정보 기반으로 제공한 원셀프월드 전체 재무자료이며 감사보고서 원문 직접 확인값이 아닙니다. 마이비 앱 광고·애드체인·쇼핑 제휴 등 사업별 비중은 미공개 → 매출 성장은 확인되나 앱 자체 수익성 확보로 판단할 수는 없음.
+            - superscript [ref=e1178]:
+              - link "출처 14" [ref=e1179] [cursor=pointer]:
+                - /url: "#src-14"
+                - text: "[14]"
+          - paragraph [ref=e1180]: "· 투자: 크릿벤처스 2025-03 프리A 15억, 2025-09 후속 20억(합계 최소 35억). 블루포인트·와이즈버즈·페넌트 등 참여는 연혁에 있으나 개별 금액 미공개 → 누적 투자액 [확인 필요]."
+          - paragraph [ref=e1181]: · 운영사 발표 성과(가입자 100만, SBT 3,000만 발행, ARPDAU 경쟁사 4배+·애드체인 지표 3배+)는 비교 대상·기간·표본·외부 검증이 공개되지 않아 시장 평균이 아니라 ‘운영사 발표치’로 구분해야 합니다.
+        - heading "위험요인" [level=3] [ref=e1182]
+        - generic [ref=e1183]:
+          - button "표 넓게 보기" [ref=e1184] [cursor=pointer]: 넓게 보기
+          - table [ref=e1185]:
+            - rowgroup [ref=e1186]:
+              - row "위험 내용" [ref=e1187]:
+                - columnheader "위험" [ref=e1188]
+                - columnheader "내용" [ref=e1189]
+            - rowgroup [ref=e1190]:
+              - row "보상비 증가 사용자 증가 = 지급 포인트 증가. 보상·현금화가 광고매출보다 빨리 늘면 매출↑여도 손실↑" [ref=e1191]:
+                - cell "보상비 증가" [ref=e1192]
+                - cell "사용자 증가 = 지급 포인트 증가. 보상·현금화가 광고매출보다 빨리 늘면 매출↑여도 손실↑" [ref=e1193]
+              - row "응답 품질 저하 보상 목적의 무작위 응답은 데이터의 광고 가치를 떨어뜨림" [ref=e1194]:
+                - cell "응답 품질 저하" [ref=e1195]
+                - cell "보상 목적의 무작위 응답은 데이터의 광고 가치를 떨어뜨림" [ref=e1196]
+              - row "부정사용 다계정·추천 조작·자동화·걸음 조작·허위 전환. 탐지 과도 시 정상 사용자 차단" [ref=e1197]:
+                - cell "부정사용" [ref=e1198]
+                - cell "다계정·추천 조작·자동화·걸음 조작·허위 전환. 탐지 과도 시 정상 사용자 차단" [ref=e1199]
+              - row "개인정보 신뢰 ‘데이터 소유·대가’ 강조 vs Apple 공시상 타사 앱/웹 추적 활용 가능 표시 — 동의와 이해는 별개" [ref=e1200]:
+                - cell "개인정보 신뢰" [ref=e1201]
+                - cell "‘데이터 소유·대가’ 강조 vs Apple 공시상 타사 앱/웹 추적 활용 가능 표시 — 동의와 이해는 별개" [ref=e1202]
+              - row "광고 수요 변동 광고주·단가 하락 시 보상 축소 또는 자체 비용 부담" [ref=e1203]:
+                - cell "광고 수요 변동" [ref=e1204]
+                - cell "광고주·단가 하락 시 보상 축소 또는 자체 비용 부담" [ref=e1205]
+              - row "정체성 약화 기능 확장으로 ‘왜 마이비인가’가 흐려지고 취향 데이터 강점이 묻힐 수 있음" [ref=e1206]:
+                - cell "정체성 약화" [ref=e1207]
+                - cell "기능 확장으로 ‘왜 마이비인가’가 흐려지고 취향 데이터 강점이 묻힐 수 있음" [ref=e1208]
+        - heading "향후 전망 — 장기 성패를 가를 세 가지" [level=3] [ref=e1209]
+        - list [ref=e1210]:
+          - listitem [ref=e1211]: 취향 타기팅 광고가 일반 광고보다 실제로 더 높은 성과를 내는가
+          - listitem [ref=e1212]: 보상을 주고도 캠페인별 공헌이익이 남는가
+          - listitem [ref=e1213]: 광고주·외부 매체가 한 번이 아니라 반복해서 마이비를 쓰는가
+        - generic [ref=e1214]:
+          - generic [ref=e1215]:
+            - generic [ref=e1216]: 💡
+            - text: 핵심 팁
+          - paragraph [ref=e1217]: 애드체인이 확대되면 자체 앱 사용자 수에 덜 의존하는 광고 네트워크로 성장 가능. 반대로 효율이 일반 오퍼월과 비슷하거나 보상 축소 시 사용자가 빠르게 이탈하면 가격 경쟁에 빠질 위험.
+        - generic [ref=e1218]:
+          - generic [ref=e1219]: 챕터 요약
+          - paragraph [ref=e1220]: 마이비의 진짜 시험대는 가입자 수가 아니라 ‘취향 데이터가 광고 성과로 증명되고, 보상 후에도 이익이 남고, 광고주가 반복 구매하는가’입니다.
+      - generic [ref=e1221]:
+        - generic [ref=e1222]:
+          - generic [ref=e1223]: ★
+          - generic [ref=e1224]:
+            - heading "최종 핵심 요약" [level=2] [ref=e1225]
+            - generic [ref=e1226]: Key Takeaways
+        - generic [ref=e1227]:
+          - generic [ref=e1228]:
+            - generic [ref=e1229]: A
+            - heading "개념 (A부)" [level=4] [ref=e1230]
+            - paragraph [ref=e1231]: 자산은 블록체인에, 권한은 월렛에 — 월렛은 키를 관리하는 도구. 주소는 공개 가능, 개인키·시드 문구는 절대 비공개. 코인=연료, 토큰=그 위 자산, NFT=고유 토큰. 가스비는 코인으로만. 멈춤 지점은 ‘서명 직전’.
+          - generic [ref=e1232]:
+            - generic [ref=e1233]: B
+            - heading "서비스 비교 (B부)" [level=4] [ref=e1234]
+            - paragraph [ref=e1235]: "6종은 경쟁 서비스가 아니라 유형이 다름: 소프트웨어·하드웨어·플랫폼·임베디드·dApp. 선택 기준은 목적 적합성 + 위험 분리. 옮길 땐 소액 테스트가 최선의 보험. 개인 월렛으로 옮기면 책임도 함께 옮겨옴."
+          - generic [ref=e1236]:
+            - generic [ref=e1237]: C
+            - heading "리워드 시장 (C부)" [level=4] [ref=e1238]
+            - paragraph [ref=e1239]: 리워드 앱 = 기업이 원하는 행동의 대가 일부를 지급하는 사업. 사업성은 다운로드가 아니라 DAU·MAU·리텐션·공헌이익. 마이비는 매출 급성장했지만 영업손실 확대·앱 단독 수익성 미확인.
+      - generic [ref=e1240]:
+        - generic [ref=e1241]:
+          - generic [ref=e1242]: ✓
+          - generic [ref=e1243]:
+            - heading "바로 실행할 수 있는 체크리스트" [level=2] [ref=e1244]
+            - generic [ref=e1245]: Actionable Checklist — 클릭해서 체크
+        - generic [ref=e1246]:
+          - heading "# 처음 월렛을 만들 때" [level=4] [ref=e1247]
+          - list [ref=e1248]:
+            - listitem [ref=e1249] [cursor=pointer]:
+              - generic [ref=e1251]: 공식 사이트/공식 앱스토어에서만 설치했다
+            - listitem [ref=e1252] [cursor=pointer]:
+              - generic [ref=e1254]: 시드 문구를 종이에 오프라인 기록했다(사진·클라우드·메신저 ✕)
+            - listitem [ref=e1255] [cursor=pointer]:
+              - generic [ref=e1257]: 키 관리 주체·지원 체인·복구 방식을 확인했다
+        - generic [ref=e1258]:
+          - heading "# 자산을 보낼 때" [level=4] [ref=e1259]
+          - list [ref=e1260]:
+            - listitem [ref=e1261] [cursor=pointer]:
+              - generic [ref=e1263]: 받는 네트워크가 맞는지 확인했다(같은 USDT라도 체인 다름)
+            - listitem [ref=e1264] [cursor=pointer]:
+              - generic [ref=e1266]: 주소를 복사·붙여넣기하고 앞뒤 글자를 재확인했다
+            - listitem [ref=e1267] [cursor=pointer]:
+              - generic [ref=e1269]: 수수료용 코인이 지갑에 있는지 확인했다
+            - listitem [ref=e1270] [cursor=pointer]:
+              - generic [ref=e1272]: 소액 테스트 전송을 먼저 했다
+        - generic [ref=e1273]:
+          - heading "# Web3 서비스에 연결·서명할 때" [level=4] [ref=e1274]
+          - list [ref=e1275]:
+            - listitem [ref=e1276] [cursor=pointer]:
+              - generic [ref=e1278]: 사이트 주소·평판·연결 목적을 확인했다
+            - listitem [ref=e1279] [cursor=pointer]:
+              - generic [ref=e1281]: 서명 팝업의 거래 내용·권한 요청을 읽었다(불분명하면 거절)
+            - listitem [ref=e1282] [cursor=pointer]:
+              - generic [ref=e1284]: 안 쓰는 dApp 연결과 토큰 승인을 주기적으로 정리한다
+        - generic [ref=e1285]:
+          - heading "# 리워드 앱을 평가할 때" [level=4] [ref=e1286]
+          - list [ref=e1287]:
+            - listitem [ref=e1288] [cursor=pointer]:
+              - generic [ref=e1290]: 포인트 전환율·최소 교환액·유효기간·사용처가 명확한가
+            - listitem [ref=e1291] [cursor=pointer]:
+              - generic [ref=e1293]: 다운로드 수가 아니라 활성도(DAU/MAU)·리텐션을 보는가
+            - listitem [ref=e1294] [cursor=pointer]:
+              - generic [ref=e1296]: 공개 ‘운영사 발표치’와 ‘독립 검증된 사실’을 구분했는가
+            - listitem [ref=e1297] [cursor=pointer]:
+              - generic [ref=e1299]: (마이비 등) 키 관리 주체·복구·출금 범위 등 [확인 필요] 항목을 따로 확인했는가
+      - generic [ref=e1300]:
+        - generic [ref=e1301]:
+          - generic [ref=e1302]: ＃
+          - generic [ref=e1303]:
+            - heading "용어 사전 (빠른 참조)" [level=2] [ref=e1304]
+            - generic [ref=e1305]: Glossary
+        - paragraph [ref=e1306]: 각 용어를 클릭하면 비전공자를 위한 자세한 설명이 펼쳐집니다.
+        - generic [ref=e1307]:
+          - button "표 넓게 보기" [ref=e1308] [cursor=pointer]: 넓게 보기
+          - table [ref=e1309]:
+            - rowgroup [ref=e1310]:
+              - row "용어 한 줄 뜻" [ref=e1311]:
+                - columnheader "용어" [ref=e1312]
+                - columnheader "한 줄 뜻" [ref=e1313]
+            - rowgroup [ref=e1314]:
+              - row "+ 블록체인 여러 노드가 함께 보관하는 분산 거래 장부" [ref=e1315] [cursor=pointer]:
+                - cell "+ 블록체인" [ref=e1316]
+                - cell "여러 노드가 함께 보관하는 분산 거래 장부" [ref=e1317]
+              - row "+ 코인 / 토큰 / NFT 네트워크 기본 화폐 / 그 위에 발행된 자산 / 고유한 토큰" [ref=e1318] [cursor=pointer]:
+                - cell "+ 코인 / 토큰 / NFT" [ref=e1319]
+                - cell "네트워크 기본 화폐 / 그 위에 발행된 자산 / 고유한 토큰" [ref=e1320]
+              - row "+ 스마트 계약 조건 충족 시 자동 실행되는 블록체인 프로그램" [ref=e1321] [cursor=pointer]:
+                - cell "+ 스마트 계약" [ref=e1322]
+                - cell "조건 충족 시 자동 실행되는 블록체인 프로그램" [ref=e1323]
+              - row "+ 가스비 거래 기록 비용. 해당 네트워크 코인으로만 납부" [ref=e1324] [cursor=pointer]:
+                - cell "+ 가스비" [ref=e1325]
+                - cell "거래 기록 비용. 해당 네트워크 코인으로만 납부" [ref=e1326]
+              - row "+ 지갑 주소 자산을 받을 때 공개하는 식별값(계좌번호 격)" [ref=e1327] [cursor=pointer]:
+                - cell "+ 지갑 주소" [ref=e1328]
+                - cell "자산을 받을 때 공개하는 식별값(계좌번호 격)" [ref=e1329]
+              - row "+ 개인키 / 시드 문구 거래 서명 권한 / 지갑 전체 복구용 마스터키(절대 비공개)" [ref=e1330] [cursor=pointer]:
+                - cell "+ 개인키 / 시드 문구" [ref=e1331]
+                - cell "거래 서명 권한 / 지갑 전체 복구용 마스터키(절대 비공개)" [ref=e1332]
+              - row "+ 커스터디 / 셀프 커스터디 회사가 키 관리 / 사용자가 키 직접 관리" [ref=e1333] [cursor=pointer]:
+                - cell "+ 커스터디 / 셀프 커스터디" [ref=e1334]
+                - cell "회사가 키 관리 / 사용자가 키 직접 관리" [ref=e1335]
+              - row "+ 핫 월렛 / 콜드 월렛 인터넷 연결 소프트웨어 / 키를 오프라인 보관" [ref=e1336] [cursor=pointer]:
+                - cell "+ 핫 월렛 / 콜드 월렛" [ref=e1337]
+                - cell "인터넷 연결 소프트웨어 / 키를 오프라인 보관" [ref=e1338]
+              - 'row "+ 임베디드 월렛 앱 내부에 내장·연동된 지갑(예: 마이비)" [ref=e1339] [cursor=pointer]':
+                - cell "+ 임베디드 월렛" [ref=e1340]
+                - 'cell "앱 내부에 내장·연동된 지갑(예: 마이비)" [ref=e1341]'
+              - row "+ dApp / 스마트 월렛 월렛 연결해 쓰는 탈중앙화 앱 / 스마트 계약 기반 월렛" [ref=e1342] [cursor=pointer]:
+                - cell "+ dApp / 스마트 월렛" [ref=e1343]
+                - cell "월렛 연결해 쓰는 탈중앙화 앱 / 스마트 계약 기반 월렛" [ref=e1344]
+              - row "+ Web3 / EVM 지갑으로 신원·자산을 통제하는 인터넷 / 이더리움 호환 실행 환경" [ref=e1345] [cursor=pointer]:
+                - cell "+ Web3 / EVM" [ref=e1346]
+                - cell "지갑으로 신원·자산을 통제하는 인터넷 / 이더리움 호환 실행 환경" [ref=e1347]
+              - row "+ 거래 해시 / 블록 탐색기 거래 조회 번호 / 온체인 기록 검색 도구" [ref=e1348] [cursor=pointer]:
+                - cell "+ 거래 해시 / 블록 탐색기" [ref=e1349]
+                - cell "거래 조회 번호 / 온체인 기록 검색 도구" [ref=e1350]
+              - row "+ Polygon / pUSD 이더리움 호환 저수수료 체인 / Polymarket 담보 토큰(USDC 기반)" [ref=e1351] [cursor=pointer]:
+                - cell "+ Polygon / pUSD" [ref=e1352]
+                - cell "이더리움 호환 저수수료 체인 / Polymarket 담보 토큰(USDC 기반)" [ref=e1353]
+              - row "+ XPLA 마이비 트랜잭션·지갑이 처리되는 메인넷" [ref=e1354] [cursor=pointer]:
+                - cell "+ XPLA" [ref=e1355]
+                - cell "마이비 트랜잭션·지갑이 처리되는 메인넷" [ref=e1356]
+              - row "+ SBT 양도 불가하도록 지갑에 귀속된 토큰(취향 뱃지 등)" [ref=e1357] [cursor=pointer]:
+                - cell "+ SBT" [ref=e1358]
+                - cell "양도 불가하도록 지갑에 귀속된 토큰(취향 뱃지 등)" [ref=e1359]
+              - row "+ MAU/DAU·리텐션 월간/일간 활성 사용자 수·재사용 비율" [ref=e1360] [cursor=pointer]:
+                - cell "+ MAU/DAU·리텐션" [ref=e1361]
+                - cell "월간/일간 활성 사용자 수·재사용 비율" [ref=e1362]
+              - row "+ ARPDAU·CAC·LTV 활성 1명당 매출·신규 1명 확보 비용·1명 생애 가치" [ref=e1363] [cursor=pointer]:
+                - cell "+ ARPDAU·CAC·LTV" [ref=e1364]
+                - cell "활성 1명당 매출·신규 1명 확보 비용·1명 생애 가치" [ref=e1365]
+              - row "+ 공헌이익 매출에서 보상·변동비를 뺀 실질 잔액" [ref=e1366] [cursor=pointer]:
+                - cell "+ 공헌이익" [ref=e1367]
+                - cell "매출에서 보상·변동비를 뺀 실질 잔액" [ref=e1368]
+              - row "+ 타기팅·오퍼월·CPA 맞춤 광고·미션 목록 광고·행동 완료 시 과금" [ref=e1369] [cursor=pointer]:
+                - cell "+ 타기팅·오퍼월·CPA" [ref=e1370]
+                - cell "맞춤 광고·미션 목록 광고·행동 완료 시 과금" [ref=e1371]
+      - generic [ref=e1372]:
+        - generic [ref=e1373]:
+          - generic [ref=e1374]: §
+          - generic [ref=e1375]:
+            - heading "출처" [level=2] [ref=e1376]
+            - generic [ref=e1377]: References — 확인 기준일 2026-06-29
+        - paragraph [ref=e1378]:
+          - text: 지원 체인·국가별 가용성·규제 상태는 수시로 변하므로 사용 시점에 각 공식 페이지를 재확인하세요. 본 원고는 원본 학습 노트
+          - emphasis [ref=e1379]: 002_wallet_guide
+          - text: 를 재구성·요약한 것이며, 외부 공식 자료로 보강한 부분은 본문에 표시했습니다.
+        - list [ref=e1380]:
+          - listitem [ref=e1381]:
+            - text: NIST,
+            - emphasis [ref=e1382]: "NISTIR 8301: Blockchain Networks — Token Design and Management Overview"
+            - text: (2021), ISO 22739:2020 인용 —
+            - link "nvlpubs.nist.gov" [ref=e1383] [cursor=pointer]:
+              - /url: https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8301.pdf
+              - code [ref=e1384]: nvlpubs.nist.gov
+          - listitem [ref=e1385]:
+            - text: MetaMask 공식 FAQ / Help Center —
+            - link "metamask.io/faqs" [ref=e1386] [cursor=pointer]:
+              - /url: https://metamask.io/faqs
+              - code [ref=e1387]: metamask.io/faqs
+            - text: ·
+            - link "support.metamask.io" [ref=e1388] [cursor=pointer]:
+              - /url: https://support.metamask.io/configure/networks/
+              - code [ref=e1389]: support.metamask.io
+          - listitem [ref=e1390]:
+            - text: Phantom Help Center, “Supported networks/chains in Phantom”(2026-06-09 갱신) —
+            - link "help.phantom.com" [ref=e1391] [cursor=pointer]:
+              - /url: https://help.phantom.com/hc/en-us/articles/41372840389651-Supported-networks-chains-in-Phantom
+              - code [ref=e1392]: help.phantom.com
+          - listitem [ref=e1393]:
+            - text: Samsung 공식 지원 페이지(미국/싱가포르) —
+            - link "samsung.com/us" [ref=e1394] [cursor=pointer]:
+              - /url: https://www.samsung.com/us/support/owners/app/samsung-blockchain
+              - code [ref=e1395]: samsung.com/us
+            - text: ·
+            - link "samsung.com/sg" [ref=e1396] [cursor=pointer]:
+              - /url: https://www.samsung.com/sg/support/apps-services/what-devices-support-the-samsung-blockchain-wallet/
+              - code [ref=e1397]: samsung.com/sg
+          - listitem [ref=e1398]:
+            - text: ZDNet Korea · 디지털투데이 · 마이비 공식 —
+            - link "zdnet.co.kr" [ref=e1399] [cursor=pointer]:
+              - /url: https://zdnet.co.kr/view/?no=20250107171159
+              - code [ref=e1400]: zdnet.co.kr
+            - text: ·
+            - link "digitaltoday.co.kr" [ref=e1401] [cursor=pointer]:
+              - /url: https://www.digitaltoday.co.kr/news/articleView.html?idxno=548696
+              - code [ref=e1402]: digitaltoday.co.kr
+            - text: ·
+            - link "myb.im" [ref=e1403] [cursor=pointer]:
+              - /url: https://myb.im/
+              - code [ref=e1404]: myb.im
+          - listitem [ref=e1405]:
+            - text: Ethereum.org, “Wallets” / “How to create an Ethereum account” —
+            - link "ethereum.org/en/wallets" [ref=e1406] [cursor=pointer]:
+              - /url: https://ethereum.org/en/wallets/
+              - code [ref=e1407]: ethereum.org/en/wallets
+          - listitem [ref=e1408]:
+            - text: MetaMask Help Center, 사기·탈취 대응 / 토큰 승인 취소 —
+            - link "support.metamask.io/stay-safe" [ref=e1409] [cursor=pointer]:
+              - /url: https://support.metamask.io/stay-safe/
+              - code [ref=e1410]: support.metamask.io/stay-safe
+            - text: ·
+            - link "token approval" [ref=e1411] [cursor=pointer]:
+              - /url: https://support.metamask.io/stay-safe/safety-in-web3/what-is-a-token-approval/
+              - code [ref=e1412]: token approval
+          - listitem [ref=e1413]:
+            - text: Phantom Help Center, “Security tips for Phantom users” —
+            - link "help.phantom.com" [ref=e1414] [cursor=pointer]:
+              - /url: https://help.phantom.com/hc/en-us/sections/43994405239443-Security
+              - code [ref=e1415]: help.phantom.com
+          - listitem [ref=e1416]:
+            - text: 금융위원회, “가상자산이용자보호법이 시행됩니다”(2024-07-17) —
+            - link "fsc.go.kr" [ref=e1417] [cursor=pointer]:
+              - /url: https://www.fsc.go.kr/no010101/82682
+              - code [ref=e1418]: fsc.go.kr
+          - listitem [ref=e1419]:
+            - text: Polymarket Help Center / Developer Docs(pUSD·v2 마이그레이션 등) —
+            - link "help.polymarket.com" [ref=e1420] [cursor=pointer]:
+              - /url: https://help.polymarket.com/
+              - code [ref=e1421]: help.polymarket.com
+            - text: ·
+            - link "docs.polymarket.com" [ref=e1422] [cursor=pointer]:
+              - /url: https://docs.polymarket.com/concepts/pusd
+              - code [ref=e1423]: docs.polymarket.com
+          - listitem [ref=e1424]:
+            - text: Polymarket “Geographic Restrictions” · CFTC DCM filing · Polymarket US —
+            - link "help.polymarket.com" [ref=e1425] [cursor=pointer]:
+              - /url: https://help.polymarket.com/
+              - code [ref=e1426]: help.polymarket.com
+            - text: ·
+            - link "cftc.gov" [ref=e1427] [cursor=pointer]:
+              - /url: https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizations/49571
+              - code [ref=e1428]: cftc.gov
+            - text: ·
+            - link "polymarketexchange.com" [ref=e1429] [cursor=pointer]:
+              - /url: https://polymarketexchange.com/
+              - code [ref=e1430]: polymarketexchange.com
+          - listitem [ref=e1431]:
+            - text: TechCrunch, “Polymarket says hackers stole users’ funds”(2026-06-25) —
+            - link "techcrunch.com" [ref=e1432] [cursor=pointer]:
+              - /url: https://techcrunch.com/2026/06/25/polymarket-says-hackers-stole-users-funds/
+              - code [ref=e1433]: techcrunch.com
+          - listitem [ref=e1434]:
+            - text: Polygon Docs(PoS·POL 토큰) —
+            - link "docs.polygon.technology" [ref=e1435] [cursor=pointer]:
+              - /url: https://docs.polygon.technology/pos/concepts/tokens/pol/
+              - code [ref=e1436]: docs.polygon.technology
+          - listitem [ref=e1437]:
+            - text: 사람인(NICE평가정보 기반) 원셀프월드 재무정보 —
+            - link "saramin.co.kr" [ref=e1438] [cursor=pointer]:
+              - /url: https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/YldzdjF1eWd3MGFOU0lKTlhzNWtzUT09/company_nm/%EC%9B%90%EC%85%80%ED%94%84%EC%9B%94%EB%93%9C%28%EC%A3%BC%29?nomo=1
+              - code [ref=e1439]: saramin.co.kr
+          - listitem [ref=e1440]:
+            - text: 마이비 투자·애드체인·W3ID 보도 —
+            - link "edaily.co.kr" [ref=e1441] [cursor=pointer]:
+              - /url: https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02528886642107912
+              - code [ref=e1442]: edaily.co.kr
+            - text: ·
+            - link "zdnet.co.kr" [ref=e1443] [cursor=pointer]:
+              - /url: https://zdnet.co.kr/view/?no=20250902095220
+              - code [ref=e1444]: zdnet.co.kr
+            - text: ·
+            - link "mk.co.kr" [ref=e1445] [cursor=pointer]:
+              - /url: https://www.mk.co.kr/news/it/11472892
+              - code [ref=e1446]: mk.co.kr
+            - text: ·
+            - link "edaily.co.kr" [ref=e1447] [cursor=pointer]:
+              - /url: https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02925766639117536
+              - code [ref=e1448]: edaily.co.kr
+          - listitem [ref=e1449]:
+            - text: 오픈서베이 패널 안내 / 2024 실적 —
+            - link "support.opensurvey.io" [ref=e1450] [cursor=pointer]:
+              - /url: https://support.opensurvey.io/ko/articles/12320040-%ED%8C%A8%EB%84%90-%EC%85%80%ED%94%84%EC%84%9C%EB%B2%A0%EC%9D%B4%EB%8A%94-%EC%96%B4%EB%96%A4-%ED%8C%A8%EB%84%90%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%82%98%EC%9A%94
+              - code [ref=e1451]: support.opensurvey.io
+            - text: ·
+            - link "blog.opensurvey.co.kr" [ref=e1452] [cursor=pointer]:
+              - /url: https://blog.opensurvey.co.kr/newsroom/opensurvey-sales-2024/
+              - code [ref=e1453]: blog.opensurvey.co.kr
+          - listitem [ref=e1454]:
+            - text: 넛지헬스케어 IR —
+            - link "cashwalk.com/ir" [ref=e1455] [cursor=pointer]:
+              - /url: https://cashwalk.com/ir
+              - code [ref=e1456]: cashwalk.com/ir
+          - listitem [ref=e1457]:
+            - text: 토스 혜택·만보기 이용 현황 —
+            - link "toss.im/tossfeed" [ref=e1458] [cursor=pointer]:
+              - /url: https://toss.im/tossfeed/article/2024benefit
+              - code [ref=e1459]: toss.im/tossfeed
+          - listitem [ref=e1460]:
+            - text: 리워디 Google Play 정보 —
+            - link "play.google.com" [ref=e1461] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?hl=ko&id=com.chainwith.rewardy
+              - code [ref=e1462]: play.google.com
+          - listitem [ref=e1463]:
+            - text: 코퀴즈 서비스 보도 —
+            - link "sports.khan.co.kr" [ref=e1464] [cursor=pointer]:
+              - /url: https://sports.khan.co.kr/article/202603030908003
+              - code [ref=e1465]: sports.khan.co.kr
+          - listitem [ref=e1466]:
+            - text: 돈이돼지 공식·Google Play·DARO 성장 사례 —
+            - link "moneypiggy.kr" [ref=e1467] [cursor=pointer]:
+              - /url: https://moneypiggy.kr/
+              - code [ref=e1468]: moneypiggy.kr
+            - text: ·
+            - link "play.google.com" [ref=e1469] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?hl=ko&id=kr.bitbyte.moneypig
+              - code [ref=e1470]: play.google.com
+            - text: ·
+            - link "daro.so" [ref=e1471] [cursor=pointer]:
+              - /url: https://daro.so/blog/bitbyte-growth-flywheel-to-profitability
+              - code [ref=e1472]: daro.so
+          - listitem [ref=e1473]:
+            - text: Confluence 외부 공유 문서, “3. 페이백쇼핑*월렛 아이데이션 2.0” —
+            - link "hectoinno.atlassian.net" [ref=e1474] [cursor=pointer]:
+              - /url: https://hectoinno.atlassian.net/wiki/external/ODZmYTY1YTk4ZTUxNGY1NWJjZWJmNjg5MDM5Y2I5MjY
+              - code [ref=e1475]: hectoinno.atlassian.net
+  - button "맨 위로": ↑
