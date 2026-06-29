@@ -1,0 +1,8 @@
+[2026-06-29T00:54:31.752Z] GET file:///C:/Users/Owner/Desktop/%EC%9B%94%EB%A0%9B_%EA%B0%80%EC%8B%9C/output/002_wallet_guide.html → 200 (3ms, 96247B)
+[2026-06-29T00:54:31.758Z] GET https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap → pending (?ms, ?B)
+[2026-06-29T00:54:32.295Z] GET https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2 → 200 (421ms, 48807B)
+[2026-06-29T00:54:32.295Z] GET https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2 → 200 (459ms, 31559B)
+[2026-06-29T00:55:33.955Z] GET file:///C:/Users/Owner/Desktop/%EC%9B%94%EB%A0%9B_%EA%B0%80%EC%8B%9C/output/002_wallet_guide.html → 200 (2ms, 96247B)
+[2026-06-29T00:55:33.960Z] GET https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap → 200 (3ms, -698B)
+[2026-06-29T00:55:34.018Z] GET https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2 → 200 (1ms, -815B)
+[2026-06-29T00:55:34.018Z] GET https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2 → 200 (1ms, -815B)
