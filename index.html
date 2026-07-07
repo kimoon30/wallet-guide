@@ -470,7 +470,7 @@ table code{background:var(--subtle-2)}
         <p class="lead">코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 <b>열쇠(키)를 관리하는 도구</b>입니다. 이 한 가지 관점으로 핵심 개념, 대표 서비스 6종, 그리고 그 배경이 되는 <b>리워드 앱 시장</b>까지 한 번에 정리합니다.</p>
 
         <div class="meta-chips">
-          <span class="chip">확인 기준일 2026-06-29</span>
+          <span class="chip">확인 기준일 2026-07-07</span>
           <span class="chip">대상 · 블록체인·월렛 입문자</span>
           <span class="chip">난이도 · 초급 → 중급 → 고급</span>
           <span class="chip">형식 · 학습 리포트</span>
@@ -478,9 +478,9 @@ table code{background:var(--subtle-2)}
 
         <div class="stats">
           <div class="stat"><div class="snum">12</div><div class="slabel">핵심 섹션</div></div>
-          <div class="stat"><div class="snum">6</div><div class="slabel">대표 월렛</div></div>
+          <div class="stat"><div class="snum">6</div><div class="slabel">대표 서비스</div></div>
           <div class="stat"><div class="snum">7</div><div class="slabel">리워드 사례</div></div>
-          <div class="stat"><div class="snum">19</div><div class="slabel">검증 출처</div></div>
+          <div class="stat"><div class="snum">31</div><div class="slabel">검증 출처</div></div>
           <div class="stat"><div class="snum">3</div><div class="slabel">학습 파트</div></div>
         </div>
 
@@ -633,7 +633,8 @@ table code{background:var(--subtle-2)}
         </table></div>
         <p>한 줄 정리 — <b>코인은 네트워크의 연료, 토큰은 그 위에서 발행된 자산, NFT는 고유성이 보장된 토큰.</b></p>
         <h3>스마트 계약</h3>
-        <p>조건이 충족되면 중개자 없이 자동 실행되는 블록체인 프로그램입니다(자판기 비유). 토큰·NFT 발행, DeFi 대출, 탈중앙화 거래소(DEX)가 모두 이 위에서 작동합니다. 월렛의 “서명 요청” 팝업이 바로 스마트 계약과 상호작용하는 순간입니다.</p>
+        <p>스마트 계약은 종이 계약서라기보다 <b>블록체인 위에 공개해 둔 자동 실행 규칙</b>입니다. “돈이 들어오면 티켓을 발급한다”, “담보 비율이 낮아지면 청산한다”처럼 조건과 결과를 코드로 적어 두고, 사용자가 월렛으로 서명하면 그 코드가 실행됩니다. 코드와 현재 상태는 특정 계약 주소에 저장되므로 누구나 기록을 확인할 수 있지만, 배포된 뒤에는 임의로 고치기 어렵습니다.</p>
+        <p>그래서 월렛의 “서명 요청” 팝업은 단순 로그인 버튼이 아니라, <b>내 주소가 어떤 스마트 계약 기능을 호출해도 된다고 허락하는 순간</b>일 수 있습니다. 토큰·NFT 발행, DeFi 예치·대출, DEX 거래, 에어드랍 클레임이 모두 이 구조 위에서 움직입니다.<sup class="cite"><a href="#src-23" aria-label="출처 23">[23]</a></sup></p>
         <div class="callout warn">
           <div class="co-head"><span class="co-ic">⚠️</span>주의</div>
           <p>스마트 계약은 코드이므로 버그·악의적 설계가 있을 수 있습니다. 내용을 확인하지 않고 서명하면 <b>자산 인출 권한을 악성 계약에 넘겨줄 수 있습니다.</b></p>
@@ -774,7 +775,7 @@ table code{background:var(--subtle-2)}
         </div>
         <div class="cardbox">
           <div class="co-head"><span class="co-ic">🟦</span>먼저 이렇게 구분합니다</div>
-          <p><b>MetaMask·Phantom</b> = 내가 키를 직접 관리하는 앱 월렛 · <b>D'CENT</b> = 키를 인터넷 밖 기기에 둔 월렛 · <b>Samsung Wallet</b> = 휴대폰 생활 지갑 · <b>마이비</b> = 리워드 앱 안에 들어간 지갑 기능 · <b>Polymarket</b> = 월렛을 연결해 쓰는 예측시장 dApp.</p>
+          <p><b>MetaMask·Phantom</b> = 내가 키를 직접 관리하는 앱 월렛 · <b>D'CENT</b> = 키를 인터넷 밖 기기에 둔 월렛 · <b>GALXE</b> = 지갑을 연결해 퀘스트와 자격을 검증하는 리워드 플랫폼 · <b>마이비</b> = 리워드 앱 안에 들어간 지갑 기능 · <b>Polymarket</b> = 월렛을 연결해 쓰는 예측시장 dApp.</p>
         </div>
       </section>
 
@@ -793,7 +794,7 @@ table code{background:var(--subtle-2)}
           <tbody>
             <tr><td>MetaMask</td><td>여러 체인·Web3 서비스에 연결하는 범용 월렛</td><td>소프트웨어 · 셀프 커스터디</td></tr>
             <tr><td>Phantom</td><td>솔라나에서 출발해 멀티체인으로 확장한 월렛</td><td>소프트웨어 · 셀프 커스터디</td></tr>
-            <tr><td>갤럭시</td><td>삼성 기기의 결제·신분증·디지털 키·블록체인 월렛 생태계</td><td>단말 · 플랫폼 기반</td></tr>
+            <tr><td>GALXE</td><td>지갑 연결 후 퀘스트·자격증명·에어드랍 캠페인에 참여하는 Web3 성장 플랫폼</td><td>퀘스트·크리덴셜 · 리워드 플랫폼</td></tr>
             <tr><td>D'CENT</td><td>개인키를 별도 기기·카드에 보관하는 하드웨어 월렛</td><td>하드웨어 · 콜드 월렛</td></tr>
             <tr><td>마이비(MyB)</td><td>활동으로 리워드를 얻고 XPLA 기능을 접목한 앱테크</td><td>리워드 앱 · 임베디드 Web3</td></tr>
             <tr><td>Polymarket</td><td>미래 사건 결과를 토큰화 포지션으로 거래하는 예측시장</td><td>예측시장 dApp · Polygon/pUSD</td></tr>
@@ -801,7 +802,7 @@ table code{background:var(--subtle-2)}
         </table></div>
         <div class="codeblock"><button class="copy">Copy</button><pre>범용 소프트웨어 월렛 ──── MetaMask / Phantom
 하드웨어 중심 월렛 ────── D'CENT
-단말·생활 플랫폼 월렛 ─── 갤럭시 / Samsung Wallet 생태계
+퀘스트·크리덴셜 플랫폼 ─ GALXE
 리워드 내장형 Web3 ────── 마이비(MyB)
 연결해 쓰는 예측시장 dApp ─ Polymarket</pre></div>
         <div class="callout note">
@@ -820,7 +821,7 @@ table code{background:var(--subtle-2)}
             <div class="sec-sub">Six Representative Services</div>
           </div>
         </div>
-        <p class="keymsg"><b>핵심 메시지</b> · 같은 ‘월렛’ 단어 아래 소프트웨어·하드웨어·플랫폼·임베디드·dApp이 섞여 있습니다.</p>
+        <p class="keymsg"><b>핵심 메시지</b> · 같은 ‘월렛 연결’ 경험 아래 소프트웨어·하드웨어·퀘스트 플랫폼·임베디드·dApp이 섞여 있습니다.</p>
 
         <h3>1) MetaMask — 범용 소프트웨어 월렛</h3>
         <p>브라우저 확장·모바일 앱으로 제공되는 <b>셀프 커스터디</b> 월렛. 코인·토큰 보관/전송, DEX·NFT 마켓 등 Web3 연결, 거래·스마트 계약 서명에 사용. <a href="https://metamask.io" target="_blank" rel="noopener">공식 ↗</a></p>
@@ -830,12 +831,10 @@ table code{background:var(--subtle-2)}
         <p>솔라나에서 출발해 멀티체인으로 확장한 셀프 커스터디 월렛. MetaMask가 이더리움·EVM에서 강했다면 Phantom은 솔라나에서 강하게 성장. <a href="https://phantom.app" target="_blank" rel="noopener">공식 ↗</a></p>
         <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>지원 네트워크 (2026-06-09 기준)</div><p>Solana, Ethereum, Base, Polygon, Sui, Monad, Bitcoin, HyperEVM. BSC·Arbitrum·Optimism·Avalanche·Linea 등 미지원 → MetaMask와 지원 범위가 완전히 같지는 않음.<sup class="cite"><a href="#src-3" aria-label="출처 3">[3]</a></sup></p></div>
 
-        <h3>3) 갤럭시 월렛 생태계 <span class="badge">추가 확인 필요</span></h3>
-        <ul>
-          <li><b>Samsung Wallet</b> — 결제 카드·멤버십·신분증·탑승권·디지털 키 등을 모으는 <b>생활형 디지털 월렛</b>(암호화폐 월렛보다 범위가 넓음).</li>
-          <li><b>Samsung Blockchain Wallet</b> — 갤럭시 기기와 연결된 암호화폐 월렛 기능.</li>
-        </ul>
-        <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>지역·기기 제한</div><p>Blockchain Wallet은 특정 갤럭시 단말(S10 이후 S/Note/Fold/Z 및 일부 A 시리즈)·지원 국가(미국[Verizon 제외]·유럽 12개국·싱가포르·필리핀·호주 등)로 제한. <b>한국 정식 지원 여부·잔존 기능은 [확인 필요].</b><sup class="cite"><a href="#src-4" aria-label="출처 4">[4]</a></sup> <a href="https://www.samsung.com/global/galaxy/apps/samsung-wallet/" target="_blank" rel="noopener">Samsung Wallet ↗</a></p></div>
+        <h3>3) GALXE — 퀘스트·크리덴셜·에어드랍 플랫폼 <span class="badge">월렛 연결형</span></h3>
+        <p>GALXE는 월렛 자체가 아니라, 프로젝트가 사용자에게 미션을 내고 참여 이력을 검증해 보상을 제공하는 <b>Web3 성장 플랫폼</b>입니다. 사용자는 월렛을 연결하고 소셜 팔로우, 온체인 거래, NFT 보유, 특정 토큰 보유 같은 조건을 충족해 퀘스트에 참여합니다. <a href="https://www.galxe.com/" target="_blank" rel="noopener">공식 ↗</a></p>
+        <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>어떻게 쓰이나</div><p>프로젝트는 GALXE Quest에서 참여 조건을 만들고, 온체인·오프체인 크리덴셜로 사용자의 자격을 확인합니다. 보상은 포인트, NFT/OAT, allowlist, 토큰 리워드처럼 캠페인마다 다릅니다.<sup class="cite"><a href="#src-4" aria-label="출처 4">[4]</a></sup></p></div>
+        <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>참여 전 확인</div><p>퀘스트 참여가 수익을 보장하지 않습니다. 공식 도메인인지, 어떤 지갑 권한을 요청하는지, 토큰 리워드가 취소 불가능한 지급인지, 개인정보·소셜 계정 연결 범위가 무엇인지 확인해야 합니다.</p></div>
 
         <h3>4) D'CENT — 하드웨어 콜드 월렛</h3>
         <p>개인키가 전용 보안 칩 안에만 존재하고 <b>기기 밖으로 나오지 않습니다.</b> 제품은 지문인증 하드웨어 / 카드형(NFC) / 모바일 앱 세 형태. <a href="https://dcentwallet.com" target="_blank" rel="noopener">공식 ↗</a></p>
@@ -858,7 +857,7 @@ table code{background:var(--subtle-2)}
         <h3>6) Polymarket — 예측시장 dApp <span class="badge">지역·규제 확인</span></h3>
         <p>월렛이 아니라 <b>월렛을 연결해 들어가는 거래장</b>. 선거·경제·스포츠 등 미래 사건에 YES/NO 포지션을 0.00~1.00달러로 사고팝니다. 국제판은 Polygon 기반 스마트 계약·스마트 월렛 사용, 2026-04 CLOB V2 이후 담보 토큰은 USDC로 뒷받침되는 <code>pUSD</code>로 정리.<sup class="cite"><a href="#src-10" aria-label="출처 10">[10]</a></sup> <a href="https://polymarket.com" target="_blank" rel="noopener">공식 ↗</a> · <a href="https://docs.polymarket.com/polymarket-101" target="_blank" rel="noopener">문서 ↗</a></p>
         <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>투자·규제·보안</div><p>포지션이 틀리면 전액 손실 가능. 국제판/미국판(CFTC 규제 DCM)에 따라 지갑·입금·규제가 다름. 2026-06에는 공급망 통한 프론트엔드 악성코드 주입으로 일부 자금 도난·환불 보도가 있었음 — “공식처럼 보여도 서명 팝업은 끝까지 확인”이라는 원칙과 직결.<sup class="cite"><a href="#src-11" aria-label="출처 11">[11]</a><a href="#src-12" aria-label="출처 12">[12]</a></sup></p></div>
-        <div class="summary"><span class="stag">챕터 요약</span><p>6종은 ‘월렛’이라는 한 단어로 묶이지만 유형이 다릅니다. 키 관리·지원 체인·복구·권한/지역 제한을 기준으로 읽으면 헷갈리지 않습니다.</p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>6종은 모두 월렛과 닿아 있지만 유형이 다릅니다. 키 관리·지원 체인·복구·권한/지역 제한을 기준으로 읽으면 헷갈리지 않습니다.</p></div>
       </section>
 
       <!-- 08 -->
@@ -878,7 +877,7 @@ table code{background:var(--subtle-2)}
             <tr><td>블록체인 처음, DeFi·NFT 경험하고 싶다</td><td><b>MetaMask</b></td><td>EVM 연결성 최대, 자료·커뮤니티 풍부</td></tr>
             <tr><td>솔라나 NFT·저수수료 서비스</td><td><b>Phantom</b></td><td>솔라나 진입 최적, 수수료 낮아 소액 실습 부담↓</td></tr>
             <tr><td>큰 금액 장기 보유·보안 최우선</td><td><b>D'CENT</b></td><td>키를 인터넷과 분리, 단독 소프트웨어보다 안전</td></tr>
-            <tr><td>갤럭시 + 결제·교통·신분증 생활편의</td><td><b>Samsung Wallet</b></td><td>기기 내장, 생활 기능 중심</td></tr>
+            <tr><td>에어드랍·퀘스트·커뮤니티 미션을 학습하고 싶다</td><td><b>GALXE</b></td><td>월렛 연결, 자격 검증, 캠페인 보상 구조를 한 번에 볼 수 있음</td></tr>
             <tr><td>블록체인 개념 없이 포인트 앱처럼</td><td><b>마이비(MyB)</b></td><td>시드·가스비 직접 안 다룸, 점진적 입문</td></tr>
             <tr><td>예측시장 dApp·월렛 연결 사례 학습</td><td><b>Polymarket</b></td><td>월렛이 아니라 dApp 사례, 소액 전용 월렛 분리 권장</td></tr>
           </tbody>
@@ -1171,8 +1170,8 @@ table code{background:var(--subtle-2)}
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner">은행처럼 한 곳이 장부를 독점 관리하는 게 아니라, 전 세계 수많은 컴퓨터(<strong>노드</strong>)가 똑같은 거래 기록을 나눠 갖고 서로 끊임없이 대조합니다. 한번 기록되면 임의로 고치거나 지우기가 사실상 불가능해 위·변조에 강합니다. 특정 회사·기관에 의존하지 않는다는 이 점이 바로 '탈중앙화'의 핵심입니다.</div></td></tr>
             <tr class="gl-row"><td>코인 / 토큰 / NFT</td><td>네트워크 기본 화폐 / 그 위에 발행된 자산 / 고유한 토큰</td></tr>
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>코인</strong>은 그 블록체인의 기본 화폐입니다(예: 이더리움의 ETH). <strong>토큰</strong>은 그 네트워크 위에 별도로 발행한 자산으로, 게임머니·포인트·스테이블코인처럼 종류가 다양합니다. <strong>NFT</strong>는 하나하나가 고유해 서로 맞바꿔도 같지 않은 토큰으로, 그림·티켓·증명서처럼 '유일함'이 중요한 곳에 쓰입니다.</div></td></tr>
-            <tr class="gl-row"><td>스마트 계약</td><td>조건 충족 시 자동 실행되는 블록체인 프로그램</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">'조건이 맞으면 자동으로 실행'되도록 블록체인 위에 올려둔 프로그램입니다. 예컨대 "A가 돈을 보내면 B에게 입장권을 준다"는 규칙을 코드로 심어 두면, 중개자 없이 그대로 처리됩니다. 자판기에 동전을 넣으면 음료가 나오듯, 사람이 끼어들거나 누군가를 믿을 필요가 없습니다.</div></td></tr>
+            <tr class="gl-row"><td>스마트 계약 / 스마트 컨트랙트</td><td>조건 충족 시 자동 실행되는 블록체인 프로그램</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 계약</strong>은 종이 계약서가 아니라, 블록체인에 올려 둔 공개 프로그램입니다. 영어 smart contract를 한국어로는 스마트 계약 또는 스마트 컨트랙트라고 부르며, “스마트 컨트렉트”는 같은 대상을 가리키는 비표준 표기로 이해하면 됩니다. “A가 돈을 보내면 B에게 입장권을 준다”, “담보가 부족해지면 자동으로 정리한다”처럼 조건과 결과를 코드로 적어 둡니다. 사용자가 월렛에서 서명하면 그 계약 주소의 기능이 실행되고, 결과는 장부에 남습니다. 편리하지만 코드가 곧 규칙이므로, 잘못 만들었거나 악의적인 계약에 서명하면 되돌리기 어렵습니다.</div></td></tr>
             <tr class="gl-row"><td>가스비</td><td>거래 기록 비용. 해당 네트워크 코인으로만 납부</td></tr>
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner">블록체인에 거래를 기록해 달라고 네트워크에 내는 수수료입니다. 도로 통행료처럼, 네트워크가 붐빌수록 비싸집니다. 핵심은 <strong>그 네트워크의 코인으로만 낼 수 있다</strong>는 점 — 이더리움에선 ETH, Polygon에선 POL이 지갑에 조금이라도 있어야 송금·거래가 됩니다.</div></td></tr>
             <tr class="gl-row"><td>지갑 주소</td><td>자산을 받을 때 공개하는 식별값(계좌번호 격)</td></tr>
@@ -1189,6 +1188,34 @@ table code{background:var(--subtle-2)}
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>dApp</strong>(탈중앙화 앱)은 회사 서버가 아니라 블록체인 위에서 돌아가는 앱으로, 지갑을 연결해 로그인·거래합니다. <strong>스마트 월렛</strong>은 단순 열쇠가 아니라 스마트 계약으로 만든 지갑이라, 지출 한도 설정·복구 도우미 지정 같은 똑똑한 기능을 넣을 수 있습니다.</div></td></tr>
             <tr class="gl-row"><td>Web3 / EVM</td><td>지갑으로 신원·자산을 통제하는 인터넷 / 이더리움 호환 실행 환경</td></tr>
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Web3</strong>는 플랫폼이 내 계정·자산을 쥐고 있는 기존 인터넷과 달리, 지갑으로 내 신원과 자산을 스스로 통제하는 인터넷을 가리킵니다. <strong>EVM</strong>(이더리움 가상 머신)은 이더리움이 프로그램을 실행하는 표준 환경으로, 'EVM 호환' 체인들끼리는 같은 지갑·앱을 거의 그대로 쓸 수 있습니다.</div></td></tr>
+            <tr class="gl-row"><td>DeFi / DeFi 프로토콜</td><td>은행·증권사 없이 스마트 계약으로 쓰는 금융 앱 묶음</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DeFi</strong>(탈중앙화 금융)는 월렛만 있으면 예치, 대출, 교환, 파생상품, 수익 전략에 접근할 수 있게 만든 금융 앱들의 묶음입니다. <strong>DeFi 프로토콜</strong>은 그 기능을 실제로 처리하는 스마트 계약 시스템입니다. 편리하지만 예금자보호가 아니며, 코드 버그·가격 급락·유동성 부족·청산 위험을 사용자가 직접 이해해야 합니다.</div></td></tr>
+            <tr class="gl-row"><td>DeFi Gateway</td><td>복잡한 DeFi 상품을 앱 안에서 쉽게 연결해 주는 진입 화면</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">DeFi Gateway는 사용자가 Morpho, Pendle, Vault 같은 이름을 모두 몰라도 예치·교환·수익 상품에 접근하도록 만든 <strong>중간 진입로</strong>입니다. 겉으로는 “USDT 맡기고 수익 받기”처럼 단순해 보이지만, 뒤에서는 여러 프로토콜·체인·위험 정책이 연결될 수 있습니다. 그래서 게이트웨이를 볼 때는 “누가 운용하나, 실제 자금은 어디로 가나, 출금 조건은 무엇인가”를 확인해야 합니다.</div></td></tr>
+            <tr class="gl-row"><td>스마트 컨트랙트 DIY / 유니파이 상품</td><td>계약 조건을 직접 조립하는 방식 / 멀티체인 DeFi 빌딩블록 상품군</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 컨트랙트 DIY</strong>는 개발자나 프로젝트가 템플릿·도구·직접 코딩으로 “어떤 조건이면 어떤 보상이 나가는가”를 직접 설계하는 방식입니다. 예를 들어 퀘스트 보상, 토큰 발행, 예치 금고, 자동 분배 규칙을 조합할 수 있습니다. <strong>유니파이(Unifi Protocol)</strong>는 비수탁·멀티체인 스마트 계약을 DeFi 개발용 빌딩블록으로 제공하는 프로토콜 사례입니다. 이름이 비슷한 네트워크 장비 브랜드 UniFi와는 다른 Web3/DeFi 문맥입니다.</div></td></tr>
+            <tr class="gl-row"><td>VASP</td><td>고객 대신 가상자산 교환·이전·보관을 제공하는 사업자</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>VASP</strong>(Virtual Asset Service Provider)는 거래소, 커스터디 지갑, 가상자산 이전·교환 서비스를 사업으로 제공하는 주체를 뜻합니다. 핵심은 “내 자산이나 이전을 누군가 사업자로 대신 처리해 주는가”입니다. 개인이 직접 쓰는 셀프 커스터디 월렛과 달리, VASP는 자금세탁방지, 고객확인, 신고·등록 같은 규제 의무와 연결됩니다.</div></td></tr>
+            <tr class="gl-row"><td>Kaia 체인</td><td>LINE·Kakao 계열 생태계가 합쳐진 EVM 호환 Layer 1 체인</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Kaia</strong>는 Klaytn과 Finschia 계열 생태계가 통합된 Layer 1 블록체인입니다. EVM과 호환되어 이더리움식 스마트 계약과 월렛 연결 경험을 활용할 수 있고, 아시아 지역의 결제·스테이블코인·온체인 금융 생태계를 목표로 합니다. 마이비의 XPLA처럼 “어떤 체인에 기록되는가”를 확인하듯, Kaia 기반 상품도 수수료 코인·지원 월렛·출금 경로를 봐야 합니다.</div></td></tr>
+            <tr class="gl-row"><td>자산 어그리게이터 / Vault</td><td>여러 수익처를 모아 자동 운용하는 금고형 스마트 계약</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>자산 어그리게이터</strong>는 여러 DeFi 수익처를 비교·연결해 주는 서비스이고, <strong>Vault</strong>(볼트)는 사용자가 맡긴 자산을 정해진 전략대로 운용하는 스마트 계약 금고입니다. 사용자는 버튼 하나로 예치하지만, 실제로는 대출시장, LP풀, 스테이킹, RWA 상품 등으로 자금이 배분될 수 있습니다. Yearn Finance와 Beefy Finance는 이런 볼트·자동 복리 전략을 대표하는 사례입니다.</div></td></tr>
+            <tr class="gl-row"><td>SuperEarn</td><td>Kaia 기반 스테이블코인 수익 상품 진입점</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>SuperEarn</strong>은 Kaia 생태계에서 USDT 같은 스테이블코인을 맡겨 큐레이션된 온체인 수익 전략에 접근하게 하는 상품입니다. 사용자는 하나의 예치 화면을 보지만, 뒤에서는 Morpho Vault, Pendle PT, Yield8 같은 여러 수익원이 조합될 수 있습니다. 이런 상품은 “간편함”이 장점인 만큼, 기초 자산·운용자·출금 대기·손실 가능성을 함께 읽어야 합니다.</div></td></tr>
+            <tr class="gl-row"><td>Morpho / Pendle / Yield8</td><td>대출시장 / 수익 분리 거래 / 토큰화 사모신용 상품</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Morpho</strong>는 담보를 맡기고 빌리거나, 대출시장에 자금을 공급해 이자를 받는 DeFi 대출 인프라입니다. <strong>Pendle</strong>은 이자 나는 자산을 원금 성격과 미래 수익 성격으로 나눠 고정수익·수익률 거래를 가능하게 합니다. <strong>Yield8</strong>은 Kaia 생태계에서 언급되는 RWA·사모신용 기반 토큰화 상품으로, 온체인 토큰 뒤에 오프체인 자산과 법적 구조가 붙습니다.</div></td></tr>
+            <tr class="gl-row"><td>스테이킹 / 레버리지 스테이킹</td><td>네트워크 보안에 자산을 묶고 보상 받기 / 빌린 돈까지 더해 수익·위험 확대</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스테이킹</strong>은 지분증명 체인에서 코인을 묶어 네트워크 검증에 참여하거나 위임하고 보상을 받는 구조입니다. <strong>레버리지 스테이킹</strong>은 맡긴 자산을 담보로 다시 빌려 더 많이 스테이킹하는 방식입니다. 수익률은 커질 수 있지만 가격이 흔들리면 청산·이자비용·연쇄 손실 위험도 함께 커집니다.</div></td></tr>
+            <tr class="gl-row"><td>DEX LP풀 / Curve LP</td><td>탈중앙화 거래소에 유동성을 넣고 수수료·보상을 받는 포지션</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DEX LP풀</strong>은 두 개 이상의 토큰을 거래소 풀에 넣어 다른 사용자가 교환할 수 있게 해 주고, 그 대가로 수수료나 보상을 받는 구조입니다. <strong>Curve LP</strong>는 Curve의 풀에 유동성을 넣은 포지션을 말하며, 주로 스테이블코인이나 비슷한 가격의 자산 교환에 많이 쓰입니다. 단, 가격 괴리·풀 해킹·보상 토큰 하락 같은 위험은 남습니다.</div></td></tr>
+            <tr class="gl-row"><td>담보대출 프로토콜 / RWA 펀드</td><td>담보 맡기고 빌리는 DeFi / 실물자산 수익을 토큰화한 상품</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>담보대출 프로토콜</strong>은 ETH, BTC, 스테이블코인 등을 담보로 맡기고 다른 자산을 빌리는 스마트 계약 시장입니다. 담보가치가 떨어지면 자동 청산될 수 있습니다. <strong>RWA 펀드</strong>는 부동산, 국채, 매출채권, 사모신용처럼 현실 세계 자산에서 나오는 수익을 토큰으로 연결한 상품입니다. 온체인 투명성은 늘 수 있지만, 실제 자산 보관·법적 권리·상환 지연은 오프체인 위험으로 남습니다.</div></td></tr>
+            <tr class="gl-row"><td>GALXE / 신규토큰 에어드랍</td><td>퀘스트·자격 검증 플랫폼 / 새 토큰을 홍보·보상 목적으로 배포</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>GALXE</strong>는 프로젝트가 퀘스트를 만들고 사용자의 온체인·오프체인 활동을 크리덴셜로 검증해 보상을 주는 플랫폼입니다. <strong>신규토큰 에어드랍</strong>은 새 프로젝트가 사용자 확보나 커뮤니티 보상을 위해 토큰을 배포하는 방식입니다. “무료”처럼 보이지만 피싱 링크, 과도한 권한 승인, 개인정보 연결, 보상 미지급 가능성을 확인해야 합니다.</div></td></tr>
+            <tr class="gl-row"><td>Zora Rewards / Sweat Economy / StickK(Web2)</td><td>창작자 보상 / 걷기 보상 / 목표 달성 보증금 모델</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Zora Rewards</strong>는 온체인 콘텐츠·크리에이터 경제에서 창작자와 참여자에게 보상을 배분하는 모델입니다. <strong>Sweat Economy</strong>는 걷기 같은 신체 활동을 보상과 연결한 move-to-earn 계열입니다. <strong>StickK</strong>는 블록체인이 아닌 Web2 서비스지만, 목표를 정하고 돈을 걸어 실패 비용을 만드는 커밋먼트 계약 사례로 볼 수 있습니다. 셋 다 “행동을 경제적 보상으로 바꾼다”는 점에서 리워드 설계 비교에 유용합니다.</div></td></tr>
+            <tr class="gl-row"><td>온체인 로또 / P2P 제로섬</td><td>무작위 추첨형 스마트 계약 / 누군가의 이익이 다른 사람 손실이 되는 게임</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>온체인 로또</strong>는 추첨·당첨·지급 규칙을 스마트 계약으로 공개하는 복권형 서비스입니다. 규칙은 투명해질 수 있지만 기대수익이 플러스라는 뜻은 아닙니다. <strong>P2P 제로섬</strong>은 참가자끼리 돈을 걸고 결과에 따라 한쪽 이익이 다른 쪽 손실이 되는 구조입니다. 예측시장, 대결형 베팅, 일부 게임형 리워드에서 이런 성격이 나타납니다.</div></td></tr>
             <tr class="gl-row"><td>거래 해시 / 블록 탐색기</td><td>거래 조회 번호 / 온체인 기록 검색 도구</td></tr>
             <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>거래 해시</strong>는 보낸 거래마다 붙는 고유 영수증 번호입니다. <strong>블록 탐색기</strong>는 그 번호를 넣으면 거래가 언제·얼마·어디로 처리됐는지 누구나 조회할 수 있는 공개 검색 사이트입니다(예: Etherscan). 송금이 실제로 됐는지 직접 확인할 때 씁니다.</div></td></tr>
             <tr class="gl-row"><td>Polygon / pUSD</td><td>이더리움 호환 저수수료 체인 / Polymarket 담보 토큰(USDC 기반)</td></tr>
@@ -1215,15 +1242,15 @@ table code{background:var(--subtle-2)}
           <div class="sec-num">§</div>
           <div class="sh-body">
             <h2>출처</h2>
-            <div class="sec-sub">References — 확인 기준일 2026-06-29</div>
+            <div class="sec-sub">References — 확인 기준일 2026-07-07</div>
           </div>
         </div>
-        <p style="font-size:13.5px">지원 체인·국가별 가용성·규제 상태는 수시로 변하므로 사용 시점에 각 공식 페이지를 재확인하세요. 본 원고는 원본 학습 노트 <em>002_wallet_guide</em>를 재구성·요약한 것이며, 외부 공식 자료로 보강한 부분은 본문에 표시했습니다.</p>
+        <p style="font-size:13.5px">지원 체인·국가별 가용성·규제 상태는 수시로 변하므로 사용 시점에 각 공식 페이지를 재확인하세요. 본 원고는 원본 학습 노트 <em>002_wallet_guide</em>를 재구성·요약한 것이며, 외부 공식 자료로 보강한 부분은 본문과 용어 사전, 아래 출처 목록에 반영했습니다.</p>
         <ol>
           <li id="src-1">NIST, <em>NISTIR 8301: Blockchain Networks — Token Design and Management Overview</em> (2021), ISO 22739:2020 인용 — <a href="https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8301.pdf" target="_blank" rel="noopener"><code>nvlpubs.nist.gov</code></a></li>
           <li id="src-2">MetaMask 공식 FAQ / Help Center — <a href="https://metamask.io/faqs" target="_blank" rel="noopener"><code>metamask.io/faqs</code></a> · <a href="https://support.metamask.io/configure/networks/" target="_blank" rel="noopener"><code>support.metamask.io</code></a></li>
           <li id="src-3">Phantom Help Center, “Supported networks/chains in Phantom”(2026-06-09 갱신) — <a href="https://help.phantom.com/hc/en-us/articles/41372840389651-Supported-networks-chains-in-Phantom" target="_blank" rel="noopener"><code>help.phantom.com</code></a></li>
-          <li id="src-4">Samsung 공식 지원 페이지(미국/싱가포르) — <a href="https://www.samsung.com/us/support/owners/app/samsung-blockchain" target="_blank" rel="noopener"><code>samsung.com/us</code></a> · <a href="https://www.samsung.com/sg/support/apps-services/what-devices-support-the-samsung-blockchain-wallet/" target="_blank" rel="noopener"><code>samsung.com/sg</code></a></li>
+          <li id="src-4">GALXE 공식 및 Galxe Quest 문서 — <a href="https://www.galxe.com/" target="_blank" rel="noopener"><code>galxe.com</code></a> · <a href="https://docs.galxe.com/quest/introduction" target="_blank" rel="noopener"><code>docs.galxe.com</code></a></li>
           <li id="src-5">ZDNet Korea · 디지털투데이 · 마이비 공식 — <a href="https://zdnet.co.kr/view/?no=20250107171159" target="_blank" rel="noopener"><code>zdnet.co.kr</code></a> · <a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=548696" target="_blank" rel="noopener"><code>digitaltoday.co.kr</code></a> · <a href="https://myb.im/" target="_blank" rel="noopener"><code>myb.im</code></a></li>
           <li id="src-6">Ethereum.org, “Wallets” / “How to create an Ethereum account” — <a href="https://ethereum.org/en/wallets/" target="_blank" rel="noopener"><code>ethereum.org/en/wallets</code></a></li>
           <li id="src-7">MetaMask Help Center, 사기·탈취 대응 / 토큰 승인 취소 — <a href="https://support.metamask.io/stay-safe/" target="_blank" rel="noopener"><code>support.metamask.io/stay-safe</code></a> · <a href="https://support.metamask.io/stay-safe/safety-in-web3/what-is-a-token-approval/" target="_blank" rel="noopener"><code>token approval</code></a></li>
@@ -1242,6 +1269,15 @@ table code{background:var(--subtle-2)}
           <li id="src-20">코퀴즈 서비스 보도 — <a href="https://sports.khan.co.kr/article/202603030908003" target="_blank" rel="noopener"><code>sports.khan.co.kr</code></a></li>
           <li id="src-21">돈이돼지 공식·Google Play·DARO 성장 사례 — <a href="https://moneypiggy.kr/" target="_blank" rel="noopener"><code>moneypiggy.kr</code></a> · <a href="https://play.google.com/store/apps/details?hl=ko&id=kr.bitbyte.moneypig" target="_blank" rel="noopener"><code>play.google.com</code></a> · <a href="https://daro.so/blog/bitbyte-growth-flywheel-to-profitability" target="_blank" rel="noopener"><code>daro.so</code></a></li>
           <li id="src-22">Confluence 외부 공유 문서, “3. 페이백쇼핑*월렛 아이데이션 2.0” — <a href="https://hectoinno.atlassian.net/wiki/external/ODZmYTY1YTk4ZTUxNGY1NWJjZWJmNjg5MDM5Y2I5MjY" target="_blank" rel="noopener"><code>hectoinno.atlassian.net</code></a></li>
+          <li id="src-23">Ethereum.org 스마트 계약·DeFi·스테이킹 설명 — <a href="https://ethereum.org/developers/docs/smart-contracts/" target="_blank" rel="noopener"><code>ethereum.org/smart-contracts</code></a> · <a href="https://ethereum.org/defi/" target="_blank" rel="noopener"><code>ethereum.org/defi</code></a> · <a href="https://ethereum.org/staking/" target="_blank" rel="noopener"><code>ethereum.org/staking</code></a></li>
+          <li id="src-24">FATF, <em>Updated Guidance for a Risk-Based Approach to Virtual Assets and VASPs</em> (2021) — <a href="https://www.fatf-gafi.org/content/dam/fatf/documents/recommendations/Updated-Guidance-VA-VASP.pdf" target="_blank" rel="noopener"><code>fatf-gafi.org</code></a></li>
+          <li id="src-25">Kaia 공식 문서 및 Kaia Wallet 문서 — <a href="https://docs.kaia.io/kaiatech/kaia-white-paper/" target="_blank" rel="noopener"><code>docs.kaia.io</code></a> · <a href="https://docs.kaiawallet.io/" target="_blank" rel="noopener"><code>docs.kaiawallet.io</code></a></li>
+          <li id="src-26">Kaia SuperEarn 파트너 페이지 및 SuperEarn 문서 — <a href="https://www.kaia.io/partners/superearn" target="_blank" rel="noopener"><code>kaia.io/partners/superearn</code></a> · <a href="https://superearn-fe42391a.mintlify.app/en/protocol/opportunity-set" target="_blank" rel="noopener"><code>superearn docs</code></a></li>
+          <li id="src-27">Yield8 설명 및 Pruv Finance 토큰화 파트너십 — <a href="https://www.linkedin.com/pulse/kip-launches-yield8-your-onchain-gateway-asian-private-credit-tfafc" target="_blank" rel="noopener"><code>Kaia/KIP LinkedIn</code></a> · <a href="https://pruv.finance/blog/read/20/pruv-partners-with-kaia-to-tokenize-yield8-bringing-private-credit-markets-onchain" target="_blank" rel="noopener"><code>pruv.finance</code></a></li>
+          <li id="src-28">Morpho·Pendle 공식 문서 — <a href="https://docs.morpho.org/get-started/" target="_blank" rel="noopener"><code>docs.morpho.org</code></a> · <a href="https://docs.pendle.finance/pendle-v2/Introduction" target="_blank" rel="noopener"><code>docs.pendle.finance</code></a></li>
+          <li id="src-29">Yearn·Beefy·Curve 공식 문서 — <a href="https://docs.yearn.fi/getting-started/products/yvaults/overview" target="_blank" rel="noopener"><code>docs.yearn.fi</code></a> · <a href="https://docs.beefy.finance/beefy-products/vaults" target="_blank" rel="noopener"><code>docs.beefy.finance</code></a> · <a href="https://docs.curve.finance/user/dex/liquidity" target="_blank" rel="noopener"><code>docs.curve.finance</code></a></li>
+          <li id="src-30">Zora·Sweatcoin·StickK 공식 문서/페이지 — <a href="https://docs.zora.co/coins" target="_blank" rel="noopener"><code>docs.zora.co</code></a> · <a href="https://sweatco.in/" target="_blank" rel="noopener"><code>sweatco.in</code></a> · <a href="https://www.stickk.com/tour" target="_blank" rel="noopener"><code>stickk.com</code></a></li>
+          <li id="src-31">Unifi Protocol 공식 문서 — <a href="https://docs.unifiprotocol.com/" target="_blank" rel="noopener"><code>docs.unifiprotocol.com</code></a></li>
         </ol>
       </section>
 
