@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>디지털 월렛 입문 가이드 — 개념부터 서비스 비교, 리워드 앱 시장까지</title>
-<meta name="description" content="월렛은 코인을 담는 앱이 아니라 블록체인 자산을 움직이는 키를 관리하는 도구입니다. 핵심 개념·대표 서비스 6종·리워드 앱 시장까지 한 번에 정리한 입문 가이드.">
+<title>디지털 월렛 서비스기획 가이드 — 개념부터 코어 기능, 재화 정책, 리워드 운영까지</title>
+<meta name="description" content="월렛은 코인을 담는 앱이 아니라 블록체인 자산을 움직이는 키를 관리하는 도구입니다. 비전공 서비스기획자를 위해 월렛 개념, 코어 기능, 스마트 컨트랙트, 재화 정책, 경품 응모, 기프티콘 교환, 리워드 운영까지 정리한 실무 가이드.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -421,7 +421,7 @@ table code{background:var(--subtle-2)}
       <div class="brand">
         <div>
           <span class="bkicker">Digital Wallet</span>
-          <div class="btitle">입문 가이드<br>2026</div>
+          <div class="btitle">서비스기획 가이드<br>2026</div>
         </div>
         <div class="brand-actions">
           <button class="share" id="shareBtn">Share</button>
@@ -443,7 +443,7 @@ table code{background:var(--subtle-2)}
 
     <div class="progress">
       <div class="bar"><i id="progBar"></i></div>
-      <span class="pcount" id="progCount">00 / 20</span>
+      <span class="pcount" id="progCount">00 / 27</span>
     </div>
 
     <nav class="nav" id="nav"></nav>
@@ -467,36 +467,37 @@ table code{background:var(--subtle-2)}
             <rect x="28" y="32" width="8" height="8" fill="#fff"/>
           </svg>
         </h1>
-        <p class="lead">코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 <b>열쇠(키)를 관리하는 도구</b>입니다. 이 한 가지 관점으로 핵심 개념, 대표 서비스 6종, 그리고 그 배경이 되는 <b>리워드 앱 시장</b>까지 한 번에 정리합니다.</p>
+        <p class="lead">코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 <b>열쇠(키)를 관리하는 도구</b>입니다. 이 관점으로 핵심 개념과 대표 서비스, 그리고 서비스기획자가 실제로 정해야 하는 <b>코어 기능·재화 정책·경품 응모·기프티콘 교환·운영 리스크</b>까지 한 번에 정리합니다.</p>
 
         <div class="meta-chips">
           <span class="chip">확인 기준일 2026-07-07</span>
-          <span class="chip">대상 · 블록체인·월렛 입문자</span>
+          <span class="chip">대상 · 비전공 서비스기획자</span>
           <span class="chip">난이도 · 초급 → 중급 → 고급</span>
-          <span class="chip">형식 · 학습 리포트</span>
+          <span class="chip">형식 · 실무 학습 리포트</span>
         </div>
 
         <div class="stats">
-          <div class="stat"><div class="snum">12</div><div class="slabel">핵심 섹션</div></div>
+          <div class="stat"><div class="snum">18</div><div class="slabel">핵심 섹션</div></div>
           <div class="stat"><div class="snum">6</div><div class="slabel">대표 서비스</div></div>
           <div class="stat"><div class="snum">7</div><div class="slabel">리워드 사례</div></div>
           <div class="stat"><div class="snum">31</div><div class="slabel">검증 출처</div></div>
-          <div class="stat"><div class="snum">3</div><div class="slabel">학습 파트</div></div>
+          <div class="stat"><div class="snum">4</div><div class="slabel">학습 파트</div></div>
         </div>
 
         <div class="journey">
-          <h4>이 가이드를 읽는 법 — 3부 구성</h4>
-          <p>개념을 먼저 잡고, 서비스 유형을 구분한 뒤, 그 배경 시장까지 들어갑니다. 파트별로 난이도가 올라갑니다.</p>
+          <h4>이 가이드를 읽는 법 — 4부 구성</h4>
+          <p>개념을 먼저 잡고, 서비스 유형을 구분한 뒤, 실무 정책 설계와 리워드 시장까지 들어갑니다. 파트별로 난이도와 실무성이 올라갑니다.</p>
           <div class="jtags">
             <div class="jtag"><b>A부 · 기본 개념</b><span>초급</span></div>
             <div class="jtag"><b>B부 · 서비스 비교</b><span>중급</span></div>
-            <div class="jtag"><b>C부 · 리워드 시장</b><span>중급–고급</span></div>
+            <div class="jtag"><b>C부 · 실무 설계</b><span>중급</span></div>
+            <div class="jtag"><b>D부 · 리워드 시장</b><span>중급–고급</span></div>
           </div>
         </div>
 
         <div class="callout note" style="margin-top:30px">
           <div class="co-head"><span class="co-ic">📌</span>참고</div>
-          <p>이 문서는 <b>개념 이해와 서비스 구분을 위한 입문 가이드</b>입니다. 특정 코인·NFT·예측시장의 투자 가치를 보장하지 않으며, 실제 자산 이동 전에는 각 서비스 공식 안내를 다시 확인해야 합니다.</p>
+          <p>이 문서는 <b>월렛 서비스 이해와 초기 기획 판단을 위한 실무형 입문 가이드</b>입니다. 특정 코인·NFT·예측시장·수익상품의 투자 가치를 보장하지 않으며, 법률·규제·세무 항목은 실제 출시 전 전문가 검토가 필요합니다.</p>
         </div>
 
         <h3 style="margin-top:40px">핵심 포인트 4가지 — 먼저 이것만</h3>
@@ -504,7 +505,7 @@ table code{background:var(--subtle-2)}
           <div class="card"><span class="c-big">01</span><h4>월렛은 보관함이 아니라 ‘리모컨’</h4><p>코인은 앱 안이 아니라 블록체인 장부의 내 주소 항목에 있고, 월렛은 그것을 움직이는 키와 서명을 관리합니다.</p></div>
           <div class="card"><span class="c-big">02</span><h4>주소는 공개, 키는 비공개</h4><p>지갑 주소는 공개해도 되지만, 개인키·시드 문구는 누구에게도 알려주면 안 됩니다. 노출되는 순간 통제권을 잃습니다.</p></div>
           <div class="card"><span class="c-big">03</span><h4>기능이 아니라 ‘유형’으로 구분</h4><p>① 키를 누가 관리하나 ② 어떤 체인을 지원하나 ③ 어떻게 복구하나 ④(dApp이라면) 어떤 권한·지역 제한이 있나.</p></div>
-          <div class="card"><span class="c-big">04</span><h4>리워드 앱은 ‘공헌이익’이 본질</h4><p>성패는 다운로드 수가 아니라 보상 지급 후 남는 공헌이익입니다. 매출이 늘어도 보상비가 더 빨리 늘면 적자입니다.</p></div>
+          <div class="card"><span class="c-big">04</span><h4>기획자는 ‘정책과 원장’을 본다</h4><p>월렛 서비스는 화면보다 정책이 중요합니다. 적립·차감·응모·교환·취소·복구·CS가 모두 한 원장과 권한 흐름으로 이어집니다.</p></div>
         </div>
       </header>
 
@@ -615,7 +616,7 @@ table code{background:var(--subtle-2)}
             <div class="sec-sub">Core Terminology</div>
           </div>
         </div>
-        <p class="keymsg"><b>핵심 메시지</b> · 모두 외울 필요 없습니다. <b>“어디에 기록되나(블록체인) → 어떤 자산인가(코인/토큰/NFT) → 누가 승인하나(개인키/시드 문구)”</b> 순서로 이해합니다.</p>
+        <p class="keymsg"><b>핵심 메시지</b> · 모두 외울 필요 없습니다. <b>“어디에 기록되나(블록체인) → 어떤 자산인가(코인/토큰/NFT) → 누가 승인하나(개인키/시드 문구) → 어디에 연결하나(dApp/Web3)”</b> 순서로 이해합니다.</p>
         <h3>블록체인 · 네트워크(체인)</h3>
         <ul>
           <li><b>블록체인</b> — 여러 컴퓨터(노드)가 함께 보관하는 분산 거래 장부. 거래를 묶은 ‘블록’이 이전 블록의 해시로 연결돼 변조가 매우 어렵습니다. 은행은 ‘은행을 믿어서’, 블록체인은 ‘규칙과 다수 합의로’ 신뢰가 성립합니다.</li>
@@ -674,7 +675,38 @@ table code{background:var(--subtle-2)}
           <div class="co-head"><span class="co-ic">⚠️</span>보안 경고</div>
           <p>지갑 주소는 공개해도 되지만 <b>개인키와 시드 문구는 누구에게도 알려주면 안 됩니다.</b> 노출되는 순간 통제권을 잃습니다.</p>
         </div>
-        <div class="summary"><span class="stag">챕터 요약</span><p>기록 위치(체인) → 자산 종류(코인/토큰/NFT) → 승인 권한(키/시드)의 3단 구조만 잡으면 나머지 용어는 따라옵니다.</p></div>
+
+        <h3>월렛 유형: 핫 · 콜드 · 임베디드 · 스마트 월렛</h3>
+        <p>월렛은 “무엇을 담는 앱인가”보다 <b>키를 어디에 두고, 사용자가 얼마나 직접 통제하는가</b>로 나누면 훨씬 쉽습니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>유형</th><th>쉽게 말하면</th><th>예시와 확인할 점</th></tr></thead>
+          <tbody>
+            <tr><td>핫 월렛</td><td>인터넷에 연결된 지갑</td><td>MetaMask·Phantom처럼 자주 쓰기 편합니다. 대신 피싱 사이트 연결과 악성 서명에 노출되기 쉬워 소액·실습용으로 분리하는 편이 안전합니다.</td></tr>
+            <tr><td>콜드 월렛</td><td>키를 인터넷 밖에 보관하는 지갑</td><td>D'CENT 같은 하드웨어 지갑이 대표적입니다. 장기 보관용 큰 금액에 적합하지만, 거래할 때 기기 확인 단계가 추가됩니다.</td></tr>
+            <tr><td>임베디드 월렛</td><td>일반 앱 안에 내장된 지갑</td><td>마이비처럼 사용자가 시드 문구·가스비를 거의 의식하지 않게 만들 수 있습니다. 편한 대신 키 관리 주체와 복구 방식을 확인해야 합니다.</td></tr>
+            <tr><td>스마트 월렛</td><td>스마트 계약으로 만든 지갑</td><td>지출 한도, 복구 도우미, 자동화 같은 기능을 넣을 수 있습니다. 일반 지갑보다 기능은 많지만 계약 코드와 운영 정책을 함께 봐야 합니다.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>Web3 · dApp · EVM · DeFi</h3>
+        <ul>
+          <li><b>Web3</b> — 플랫폼 아이디만으로 로그인하는 대신, 지갑 주소와 서명으로 내 신원·자산·활동을 증명하는 인터넷 사용 방식입니다. 예: GALXE에서 지갑을 연결해 퀘스트 참여 이력을 확인.</li>
+          <li><b>dApp</b> — 월렛을 연결해 쓰는 블록체인 앱입니다. 사이트는 내 공개 주소를 보고, 실제 거래나 권한 부여는 내가 월렛에서 서명할 때 실행됩니다. 예: DEX에서 토큰 교환, NFT 구매, Polymarket 같은 예측시장 이용.</li>
+          <li><b>EVM</b> — 이더리움식 스마트 계약을 실행하는 표준 환경입니다. EVM 호환 체인은 같은 지갑·주소·개발 방식이 비슷하게 이어져 MetaMask 같은 지갑으로 여러 체인에 연결하기 쉽습니다.</li>
+          <li><b>DeFi</b> — 은행·증권사 앱처럼 예치, 대출, 교환, 수익 전략을 쓰되 스마트 계약이 핵심 기능을 처리하는 금융 앱 묶음입니다. 예: 스테이블코인을 예치해 이자를 받거나, 지갑만 연결해 토큰을 교환.</li>
+        </ul>
+        <div class="callout warn">
+          <div class="co-head"><span class="co-ic">⚠️</span>DeFi를 볼 때</div>
+          <p>DeFi는 예금자보호가 아닙니다. 수익률 숫자만 보지 말고 스마트 계약 위험, 가격 변동, 청산, 출금 대기, 실제 자금이 들어가는 프로토콜을 함께 확인해야 합니다.</p>
+        </div>
+
+        <h3>거래 해시 · 블록 탐색기</h3>
+        <p><b>거래 해시</b>는 블록체인 거래마다 붙는 영수증 번호이고, <b>블록 탐색기</b>는 그 영수증을 검색하는 공개 조회 사이트입니다. 송금이 실제로 처리됐는지, 어떤 주소로 갔는지, 실패했는지 확인할 때 씁니다.</p>
+        <div class="callout note">
+          <div class="co-head"><span class="co-ic">📌</span>예시</div>
+          <p>친구가 “보냈다”고 말하면 거래 해시를 받아 Etherscan 같은 탐색기에 붙여 넣어 확인합니다. 받는 주소, 수량, 네트워크가 맞으면 처리된 것이고, 실패로 표시되면 자산은 이동하지 않았지만 가스비는 일부 소모됐을 수 있습니다.</p>
+        </div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>기록 위치(체인) → 자산 종류(코인/토큰/NFT) → 승인 권한(키/시드) → 연결 대상(dApp/Web3) → 거래 확인(해시/탐색기)의 흐름만 잡으면 뒤 챕터의 서비스와 위험을 훨씬 쉽게 읽을 수 있습니다.</p></div>
       </section>
 
       <!-- 04 -->
@@ -825,7 +857,7 @@ table code{background:var(--subtle-2)}
 
         <h3>1) MetaMask — 범용 소프트웨어 월렛</h3>
         <p>브라우저 확장·모바일 앱으로 제공되는 <b>셀프 커스터디</b> 월렛. 코인·토큰 보관/전송, DEX·NFT 마켓 등 Web3 연결, 거래·스마트 계약 서명에 사용. <a href="https://metamask.io" target="_blank" rel="noopener">공식 ↗</a></p>
-        <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>지원 체인 (2026-06 기준)</div><p>Ethereum, Linea, Base, Polygon, BNB Chain, Arbitrum, OP Mainnet, Avalanche, zkSync Era, Sei, Bitcoin, Solana, TRON 등. Solana 네이티브 2025-07, Bitcoin 네이티브 2025-12 추가. 목록을 외울 필요는 없고 “범용 월렛, 사용 전 지원 체인 확인”으로 충분.<sup class="cite"><a href="#src-2" aria-label="출처 2">[2]</a></sup></p></div>
+        <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>지원 체인 (2026-07-07 확인 기준)</div><p>Ethereum, Linea, Base, Polygon, BNB Chain, Arbitrum, OP Mainnet, Avalanche, zkSync Era, Sei, Bitcoin, Solana, TRON 등. Solana 네이티브 2025-07, Bitcoin 네이티브 2025-12 추가. 목록을 외울 필요는 없고 “범용 월렛, 사용 전 지원 체인 확인”으로 충분.<sup class="cite"><a href="#src-2" aria-label="출처 2">[2]</a></sup></p></div>
 
         <h3>2) Phantom — 사용성 중심 멀티체인 월렛</h3>
         <p>솔라나에서 출발해 멀티체인으로 확장한 셀프 커스터디 월렛. MetaMask가 이더리움·EVM에서 강했다면 Phantom은 솔라나에서 강하게 성장. <a href="https://phantom.app" target="_blank" rel="noopener">공식 ↗</a></p>
@@ -898,6 +930,7 @@ table code{background:var(--subtle-2)}
           <thead><tr><th>구분</th><th>이해할 포인트</th></tr></thead>
           <tbody>
             <tr><td>가상자산이용자보호법</td><td>예치금·자산 보호, 불공정거래 규제 등. 금융위원회는 2024-07-19 시행을 안내.<sup class="cite"><a href="#src-9" aria-label="출처 9">[9]</a></sup></td></tr>
+            <tr><td>2단계 입법·스테이블코인</td><td>발행·유통·영업행위 규율 논의가 진행 중입니다. 월렛이 스테이블코인, 결제성 토큰, 수익성 상품을 연결하면 출시 전 최신 규제 검토가 필요합니다.<sup class="cite"><a href="#src-35" aria-label="출처 35">[35]</a></sup></td></tr>
             <tr><td>보호의 한계</td><td>주로 ‘거래소 이용자’ 보호. 개인 월렛에서 직접 승인한 온체인 거래·시드 유출·피싱 서명을 자동 복구해주지 않음</td></tr>
             <tr><td>투자 판단</td><td>월렛 이해는 보관·전송 방법이지 코인·NFT의 투자 가치 보장이 아님</td></tr>
           </tbody>
@@ -910,6 +943,183 @@ table code{background:var(--subtle-2)}
       <section id="sec-partC" class="section part anchor" data-part>
         <div class="part-head">
           <div class="eyebrow">Part C</div>
+          <h2>월렛 서비스기획 실무</h2>
+        </div>
+        <div class="cardbox">
+          <div class="co-head"><span class="co-ic">🟦</span>기획자가 봐야 할 단위</div>
+          <p>월렛 서비스는 “지갑 화면을 만든다”가 아니라 <b>계정·키·서명·재화 원장·교환·응모·CS</b>를 한 흐름으로 설계하는 일입니다. 아래 장은 개발 상세가 아니라 요구사항 정의와 정책 결정을 위한 최소 실무 지식입니다.</p>
+        </div>
+      </section>
+
+      <!-- 09 -->
+      <section id="sec-09" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">09</div>
+          <div class="sh-body">
+            <h2>월렛 코어 기능 정의 <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">Core Wallet Features For PMs</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 월렛 기능은 화면 목록이 아니라 <b>누가 권한을 갖고, 어떤 상태를 기록하며, 실패하면 어떻게 복구하는가</b>로 정의합니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>기능</th><th>사용자에게 보이는 것</th><th>기획자가 정할 것</th></tr></thead>
+          <tbody>
+            <tr><td>가입·월렛 생성</td><td>회원가입 후 자동 지갑 생성 또는 외부 월렛 연결</td><td>커스터디/셀프커스터디/임베디드 방식, 미성년자·휴면·탈퇴 정책</td></tr>
+            <tr><td>로그인·인증</td><td>비밀번호, 소셜 로그인, 패스키, 지갑 서명</td><td>인증 수단별 권한 범위, 기기 변경, 추가 인증이 필요한 고위험 행동</td></tr>
+            <tr><td>복구</td><td>기기 분실 후 재접속, 복구 문구 또는 고객센터 복구</td><td>사용자가 잃어버린 것을 회사가 복구할 수 있는지, 복구 심사와 대기 시간</td></tr>
+            <tr><td>잔액·자산 조회</td><td>포인트, 토큰, NFT, 응모권, 기프티콘 보관함</td><td>앱 원장 기준인지 온체인 기준인지, 동기화 지연 표시, 숨김/스팸 처리</td></tr>
+            <tr><td>전송·출금</td><td>주소 입력, 네트워크 선택, 수수료 확인</td><td>최소 출금액, 수수료 부담 주체, 오입금 방지, 소액 테스트 권장 여부</td></tr>
+            <tr><td>서명·승인</td><td>연결 팝업, 거래 승인, 토큰 권한 승인</td><td>서명 문구, 승인 한도, 위험 경고, 승인 취소 진입점</td></tr>
+            <tr><td>거래 내역·영수증</td><td>성공/대기/실패 상태, 거래 해시, 교환 주문번호</td><td>상태 코드, 사용자 노출 문구, CS가 추적할 내부 ID</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout tip"><div class="co-head"><span class="co-ic">💡</span>기능명보다 상태값</div><p>“출금 기능”보다 중요한 것은 <b>요청됨 → 심사중 → 온체인 전송중 → 성공/실패 → 재처리/환급</b> 같은 상태 정의입니다. 상태가 없으면 CS와 정산이 흔들립니다.</p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>월렛 코어 기능 정의서는 화면, 원장 상태, 권한 주체, 실패 처리까지 같이 써야 실무에서 작동합니다.</p></div>
+      </section>
+
+      <!-- 10 -->
+      <section id="sec-10" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">10</div>
+          <div class="sh-body">
+            <h2>스마트 월렛과 최신 UX <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">Account Abstraction, Passkeys &amp; Gas UX</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 2026년 월렛 UX는 “시드 문구를 외워라”에서 <b>패스키·복구·가스 대납·묶음 실행</b>으로 이동하고 있습니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>개념</th><th>비전공자 설명</th><th>서비스기획 영향</th></tr></thead>
+          <tbody>
+            <tr><td>계정 추상화</td><td>지갑 계정 자체에 규칙을 넣어 복구, 한도, 자동화, 수수료 대납을 가능하게 하는 방향</td><td>월렛을 단순 키 보관함이 아니라 “정책이 있는 계정”으로 설계</td></tr>
+            <tr><td>ERC-4337</td><td>스마트 계정이 UserOperation을 보내고 번들러가 묶어 처리하는 구조</td><td>가스 대납, 배치 실행, 소셜 복구, 세션키 UX 검토</td></tr>
+            <tr><td>EIP-7702</td><td>기존 EOA도 특정 코드에 권한을 위임해 스마트 월렛 기능을 쓸 수 있게 하는 업데이트</td><td>기존 지갑 사용자를 새 스마트 계정으로 강제 이전하지 않는 UX 가능</td></tr>
+            <tr><td>패스키</td><td>얼굴/지문/PIN으로 로그인하는 공개키 기반 인증</td><td>로그인 UX는 쉬워지지만, 온체인 자산 복구와 권한 모델은 별도 설계 필요</td></tr>
+            <tr><td>Paymaster</td><td>사용자 대신 가스비를 내주거나 특정 조건에서 수수료를 지원하는 주체</td><td>무료 거래 이벤트, 첫 출금 지원, 남용 방지 한도 정책 필요</td></tr>
+            <tr><td>세션키</td><td>짧은 기간·작은 권한만 가진 임시 열쇠</td><td>게임, 출석, 반복 미션에서 매번 서명하지 않게 할 수 있으나 권한 만료 필수</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>최신성 메모</div><p>Ethereum.org는 ERC-4337과 EIP-7702를 현재 실무적으로 쓰이는 계정 추상화 도구로 설명하며, Pectra 업그레이드에서 EIP-7702가 반영됐다고 안내합니다.<sup class="cite"><a href="#src-32" aria-label="출처 32">[32]</a></sup> 서명과 월렛 연결은 EIP-712, EIP-1193, ERC-4361, EIP-5792 같은 표준을 함께 봐야 합니다.<sup class="cite"><a href="#src-33" aria-label="출처 33">[33]</a></sup> 패스키 UX는 FIDO와 WebAuthn 자료를 함께 확인합니다.<sup class="cite"><a href="#src-34" aria-label="출처 34">[34]</a></sup></p></div>
+        <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>기획 주의</div><p>가스 대납과 자동 승인은 편하지만 비용 남용, 부정사용, 사용자가 이해하지 못한 권한 위임 문제가 생길 수 있습니다. “편한 월렛”일수록 한도, 취소, 알림, 위험 거래 추가 인증을 같이 설계해야 합니다.</p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>최신 월렛 UX의 목표는 시드 문구를 숨기는 것이 아니라, 권한·복구·비용을 사용자가 이해 가능한 정책으로 바꾸는 것입니다.</p></div>
+      </section>
+
+      <!-- 11 -->
+      <section id="sec-11" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">11</div>
+          <div class="sh-body">
+            <h2>재화 정책과 원장 설계 <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">Reward Currency &amp; Ledger Policy</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 포인트, 응모권, 토큰, 상품권은 모두 “재화”입니다. 실무에서는 <b>생성 근거·차감 순서·유효기간·회수 가능성</b>을 먼저 정합니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>정책 항목</th><th>정해야 할 질문</th><th>실무 리스크</th></tr></thead>
+          <tbody>
+            <tr><td>재화 종류</td><td>유상 포인트, 무상 포인트, 보너스, 응모권, 토큰을 구분하는가</td><td>환불·소멸·회계·규제 판단이 달라짐</td></tr>
+            <tr><td>적립 재원</td><td>광고주 비용, 회사 프로모션비, 제휴사 부담, 온체인 보상 중 무엇인가</td><td>공헌이익과 정산 책임이 흐려짐</td></tr>
+            <tr><td>차감 순서</td><td>유효기간 임박분, 무상분, 유상분 중 무엇을 먼저 쓰는가</td><td>고객 민원과 환급 계산 오류</td></tr>
+            <tr><td>유효기간</td><td>재화별 소멸일, 알림 시점, 연장 가능 여부는 무엇인가</td><td>소멸 고지 누락, 약관 불일치</td></tr>
+            <tr><td>취소·회수</td><td>미션 취소, 환불, 부정사용, 광고주 검수 실패 시 회수 가능한가</td><td>음수 잔액, 이미 교환된 상품 비용 손실</td></tr>
+            <tr><td>원장</td><td>사용자 화면 잔액과 내부 원장이 같은 기준인가</td><td>CS가 원인을 추적하지 못함</td></tr>
+          </tbody>
+        </table></div>
+        <div class="codeblock"><button class="copy">Copy</button><pre>재화 원장 기본 필드
+user_id / wallet_address / currency_type / amount / direction
+source_event / status / expires_at / reversible_until
+order_id / tx_hash / created_at / settled_at</pre></div>
+        <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>전문가 검토</div><p>현금성 포인트, 여러 가맹점에서 쓰는 선불성 재화, 모바일상품권은 전자금융거래법·약관·소비자보호 이슈가 생길 수 있습니다. 금융위원회는 선불전자지급수단 감독 대상 확대와 선불충전금 보호 강화를 안내했습니다.<sup class="cite"><a href="#src-36" aria-label="출처 36">[36]</a></sup></p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>재화 정책은 마케팅 문구가 아니라 정산·CS·법무·부정사용 탐지의 공통 언어입니다.</p></div>
+      </section>
+
+      <!-- 12 -->
+      <section id="sec-12" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">12</div>
+          <div class="sh-body">
+            <h2>경품 응모와 기프티콘 교환 <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">Prize Draws &amp; Gifticon Exchange</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 응모와 교환은 “보상을 준다”가 아니라 <b>권리 발생, 재고 차감, 당첨/발송 실패, 취소/환급</b>을 관리하는 운영 시스템입니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>영역</th><th>정책으로 써야 할 내용</th><th>확인 포인트</th></tr></thead>
+          <tbody>
+            <tr><td>응모권 발급</td><td>어떤 행동에 몇 장을 주는지, 중복/일일 한도, 부정 응답 제외 기준</td><td>봇·다계정·추천 조작 방지</td></tr>
+            <tr><td>추첨</td><td>당첨 확률, 추첨 시점, 당첨자 수, 예비 당첨자, 미수령 처리</td><td>사전 고지와 실제 로직 일치</td></tr>
+            <tr><td>당첨 취소</td><td>부정사용, 탈퇴, 연락 불가, 제세공과금 미제출 시 처리</td><td>취소 근거와 증빙 보관</td></tr>
+            <tr><td>기프티콘 교환</td><td>교환 가능 재화, 필요 포인트, 재고, 발송 채널, 사용처, 유효기간</td><td>교환 성공 전 포인트 선차감 여부</td></tr>
+            <tr><td>발송 실패</td><td>번호 오류, API 장애, 재고 소진, 수신 거부 시 재발송/환급 기준</td><td>주문 ID와 외부 발송 ID 매핑</td></tr>
+            <tr><td>유효기간·환불</td><td>유상 구매 상품권과 이벤트 무상 지급 상품권을 구분</td><td>무상 지급은 표준약관 적용이 다를 수 있음</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout note"><div class="co-head"><span class="co-ic">📌</span>정책 메모</div><p>공정위와 소비자원 안내는 모바일상품권의 유효기간, 기간 연장, 환급, 무상 제공 상품권 예외를 구분합니다.<sup class="cite"><a href="#src-37" aria-label="출처 37">[37]</a></sup> 경품 응모는 경품류 제공과 표시·광고·개인정보 처리 이슈가 얽힐 수 있어 캠페인 전 법무 검토 대상으로 분리합니다.<sup class="cite"><a href="#src-38" aria-label="출처 38">[38]</a></sup></p></div>
+        <div class="codeblock"><button class="copy">Copy</button><pre>기프티콘 교환 상태 예시
+요청됨 → 포인트 차감대기 → 발송요청 → 발송성공
+             ↘ 재고없음/실패 → 포인트 복구 또는 대체상품 안내</pre></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>응모와 교환은 UX보다 상태·고지·재고·외부 API 실패 처리가 먼저 설계돼야 합니다.</p></div>
+      </section>
+
+      <!-- 13 -->
+      <section id="sec-13" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">13</div>
+          <div class="sh-body">
+            <h2>온체인·오프체인 데이터 흐름 <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">On-chain &amp; Off-chain Flow</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 모든 데이터를 블록체인에 올리는 것이 좋은 설계는 아닙니다. <b>공개 검증이 필요한 기록</b>과 <b>개인정보·정산·CS용 내부 기록</b>을 나눠야 합니다.</p>
+        <div class="codeblock"><button class="copy">Copy</button><pre>[사용자 행동] 퀴즈/걷기/쇼핑/응모
+      ↓
+[오프체인 원장] 포인트·응모권·주문·CS 상태 기록
+      ↓ 필요한 경우
+[온체인 기록] 지갑 주소, SBT, 토큰 전송, 스마트 계약 이벤트
+      ↓
+[외부 시스템] 기프티콘 발송사, 광고주 정산, 블록 탐색기, 고객 알림</pre></div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>데이터</th><th>어디에 두는가</th><th>이유</th></tr></thead>
+          <tbody>
+            <tr><td>지갑 주소·거래 해시</td><td>온체인 + 앱 DB 참조</td><td>공개 검증과 CS 추적 모두 필요</td></tr>
+            <tr><td>취향 응답 원문</td><td>오프체인</td><td>개인정보·동의·삭제 요청 대응 필요</td></tr>
+            <tr><td>SBT/뱃지 발행</td><td>온체인 또는 온체인 참조값</td><td>위변조 방지와 자격 검증 목적</td></tr>
+            <tr><td>포인트 잔액</td><td>오프체인 원장 중심</td><td>취소·환불·정산·고객문의 대응이 잦음</td></tr>
+            <tr><td>기프티콘 발송 결과</td><td>외부 API + 내부 주문 원장</td><td>재발송, 환급, 사용 여부 확인 필요</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout warn"><div class="co-head"><span class="co-ic">⚠️</span>개인정보·위치정보</div><p>취향 데이터, 광고 반응, 위치 기반 걷기/방문 미션은 동의·보관기간·제3자 제공·철회 기능을 별도 설계해야 합니다. 개인정보 처리방침 작성지침과 위치정보법은 서비스 출시 전 확인 대상입니다.<sup class="cite"><a href="#src-39" aria-label="출처 39">[39]</a><a href="#src-40" aria-label="출처 40">[40]</a></sup></p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>온체인은 검증용, 오프체인은 운영용이라는 기준을 잡으면 개인정보와 CS 리스크를 줄일 수 있습니다.</p></div>
+      </section>
+
+      <!-- 14 -->
+      <section id="sec-14" class="section anchor" data-level="중급">
+        <div class="sec-head">
+          <div class="sec-num">14</div>
+          <div class="sh-body">
+            <h2>운영·CS·리스크 관리 <span class="badge lv-중급">중급</span></h2>
+            <div class="sec-sub">Operations, CS &amp; Risk</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 월렛 서비스의 신뢰는 사고가 없어서가 아니라, <b>사고 유형을 빨리 분류하고 같은 기준으로 처리하는 것</b>에서 나옵니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>상황</th><th>1차 확인</th><th>처리 원칙</th></tr></thead>
+          <tbody>
+            <tr><td>포인트가 안 들어옴</td><td>미션 완료 로그, 광고주 검수 상태, 지급 배치</td><td>지급 예정/검수 실패/수동 보정 기준 분리</td></tr>
+            <tr><td>기프티콘을 못 받음</td><td>주문 ID, 발송 API 응답, 휴대폰 번호, 재고</td><td>재발송 가능 횟수와 포인트 복구 기준 안내</td></tr>
+            <tr><td>온체인 전송 지연</td><td>거래 해시, 네트워크 혼잡, 실패 여부</td><td>대기/실패/재시도/환급 상태를 명확히 표시</td></tr>
+            <tr><td>시드·계정 탈취 의심</td><td>키 관리 방식, 최근 로그인, 승인 내역</td><td>회사가 복구 가능한 영역과 불가능한 영역을 즉시 구분</td></tr>
+            <tr><td>부정사용</td><td>다계정, 기기 지문, 추천 관계, 반복 패턴</td><td>임시 보류, 소명 절차, 정상 사용자 오탐 복구</td></tr>
+            <tr><td>규제·약관 민원</td><td>고지 문구, 동의 이력, 약관 버전</td><td>법무/컴플라이언스 검토와 사용자 보상 기준 연결</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout tip"><div class="co-head"><span class="co-ic">💡</span>CS가 필요한 필드</div><p>사용자 ID, 지갑 주소, 내부 주문 ID, 외부 발송 ID, 거래 해시, 캠페인 ID, 약관 버전, 동의 버전은 CS 화면에서 한 번에 조회되어야 합니다. 이 필드가 흩어져 있으면 작은 장애도 큰 민원으로 커집니다.</p></div>
+        <div class="summary"><span class="stag">챕터 요약</span><p>출시 전 운영표를 먼저 만들면 개발 범위도 또렷해집니다. “이 화면을 만든다”보다 “이 상태를 처리한다”가 더 정확한 요구사항입니다.</p></div>
+      </section>
+
+      <!-- ============ PART D ============ -->
+      <section id="sec-partD" class="section part anchor" data-part>
+        <div class="part-head">
+          <div class="eyebrow">Part D</div>
           <h2>리워드 앱 시장 깊이 보기</h2>
         </div>
         <div class="cardbox">
@@ -918,10 +1128,10 @@ table code{background:var(--subtle-2)}
         </div>
       </section>
 
-      <!-- 09 -->
-      <section id="sec-09" class="section anchor" data-level="초급">
+      <!-- 15 -->
+      <section id="sec-15" class="section anchor" data-level="초급">
         <div class="sec-head">
-          <div class="sec-num">09</div>
+          <div class="sec-num">15</div>
           <div class="sh-body">
             <h2>리워드 앱이란 무엇이고 어떻게 작동하나 <span class="badge lv-초급">초급</span></h2>
             <div class="sec-sub">What Reward Apps Are</div>
@@ -945,10 +1155,10 @@ table code{background:var(--subtle-2)}
         <div class="summary"><span class="stag">챕터 요약</span><p>보상의 재원은 광고·조사·제휴 비용입니다. 그래서 ‘데이터 품질’과 ‘반복 참여’가 사업의 생명선입니다.</p></div>
       </section>
 
-      <!-- 10 -->
-      <section id="sec-10" class="section anchor" data-level="중급">
+      <!-- 16 -->
+      <section id="sec-16" class="section anchor" data-level="중급">
         <div class="sec-head">
-          <div class="sec-num">10</div>
+          <div class="sec-num">16</div>
           <div class="sh-body">
             <h2>유형 · 수익모델 · 핵심 성과지표 <span class="badge lv-중급">중급</span></h2>
             <div class="sec-sub">Types, Revenue Models &amp; KPIs</div>
@@ -993,10 +1203,10 @@ table code{background:var(--subtle-2)}
         <div class="summary"><span class="stag">챕터 요약</span><p>“설치자 수 많다”는 자랑이 아니라, <b>보상을 주고도 남는가(공헌이익)</b>가 본질입니다.</p></div>
       </section>
 
-      <!-- 11 -->
-      <section id="sec-11" class="section anchor" data-level="중급">
+      <!-- 17 -->
+      <section id="sec-17" class="section anchor" data-level="중급">
         <div class="sec-head">
-          <div class="sec-num">11</div>
+          <div class="sec-num">17</div>
           <div class="sh-body">
             <h2>주요 서비스 비교와 기업 사례 <span class="badge lv-중급">중급</span></h2>
             <div class="sec-sub">Service Comparison &amp; Case Studies</div>
@@ -1041,10 +1251,10 @@ table code{background:var(--subtle-2)}
         <div class="summary"><span class="stag">챕터 요약</span><p>같은 ‘리워드’라도 강점·위험·수익 회수 방식이 제각각입니다. 마이비를 볼 때도 이 잣대들을 그대로 적용합니다.</p></div>
       </section>
 
-      <!-- 12 -->
-      <section id="sec-12" class="section anchor" data-level="고급">
+      <!-- 18 -->
+      <section id="sec-18" class="section anchor" data-level="고급">
         <div class="sec-head">
-          <div class="sec-num">12</div>
+          <div class="sec-num">18</div>
           <div class="sh-body">
             <h2>마이비의 사업 구조 · 매출 · 위험 · 전망 <span class="badge lv-고급">고급</span></h2>
             <div class="sec-sub">MyB — Business, Revenue, Risk, Outlook</div>
@@ -1104,7 +1314,7 @@ table code{background:var(--subtle-2)}
             <div class="sec-sub">Key Takeaways</div>
           </div>
         </div>
-        <div class="card-grid c3">
+        <div class="card-grid c2">
           <div class="card">
             <span class="c-icon">A</span><h4>개념 (A부)</h4>
             <p>자산은 블록체인에, 권한은 월렛에 — 월렛은 키를 관리하는 도구. 주소는 공개 가능, 개인키·시드 문구는 절대 비공개. 코인=연료, 토큰=그 위 자산, NFT=고유 토큰. 가스비는 코인으로만. 멈춤 지점은 ‘서명 직전’.</p>
@@ -1114,7 +1324,11 @@ table code{background:var(--subtle-2)}
             <p>6종은 경쟁 서비스가 아니라 유형이 다름: 소프트웨어·하드웨어·플랫폼·임베디드·dApp. 선택 기준은 목적 적합성 + 위험 분리. 옮길 땐 소액 테스트가 최선의 보험. 개인 월렛으로 옮기면 책임도 함께 옮겨옴.</p>
           </div>
           <div class="card">
-            <span class="c-icon">C</span><h4>리워드 시장 (C부)</h4>
+            <span class="c-icon">C</span><h4>실무 설계 (C부)</h4>
+            <p>월렛 서비스기획은 화면보다 상태와 정책을 먼저 정의해야 합니다. 생성·복구·연결·서명·전송·승인·내역 조회가 코어 기능이고, 포인트·응모권·기프티콘은 원장·유효기간·차감순서·취소/환불 규칙으로 관리합니다.</p>
+          </div>
+          <div class="card">
+            <span class="c-icon">D</span><h4>리워드 시장 (D부)</h4>
             <p>리워드 앱 = 기업이 원하는 행동의 대가 일부를 지급하는 사업. 사업성은 다운로드가 아니라 DAU·MAU·리텐션·공헌이익. 마이비는 매출 급성장했지만 영업손실 확대·앱 단독 수익성 미확인.</p>
           </div>
         </div>
@@ -1145,6 +1359,12 @@ table code{background:var(--subtle-2)}
           <li><span class="tb"></span><span>서명 팝업의 거래 내용·권한 요청을 읽었다(불분명하면 거절)</span></li>
           <li><span class="tb"></span><span>안 쓰는 dApp 연결과 토큰 승인을 주기적으로 정리한다</span></li>
         </ul></div>
+        <div class="todo"><h4># 월렛·재화 정책을 설계할 때</h4><ul>
+          <li><span class="tb"></span><span>키 관리 주체, 복구 수단, 가스비 부담 주체, 지원 체인을 요구사항에 명시했다</span></li>
+          <li><span class="tb"></span><span>포인트·응모권·쿠폰·온체인 토큰을 같은 재화로 뭉개지 않고 각각의 원장과 상태값을 분리했다</span></li>
+          <li><span class="tb"></span><span>지급·차감·만료·취소·환불·회수·정산·CS 조회 기준을 케이스별로 정의했다</span></li>
+          <li><span class="tb"></span><span>경품 응모와 기프티콘 교환은 재고, 외부 API 실패, 사용자 고지, 개인정보 보관기간을 함께 설계했다</span></li>
+        </ul></div>
         <div class="todo"><h4># 리워드 앱을 평가할 때</h4><ul>
           <li><span class="tb"></span><span>포인트 전환율·최소 교환액·유효기간·사용처가 명확한가</span></li>
           <li><span class="tb"></span><span>다운로드 수가 아니라 활성도(DAU/MAU)·리텐션을 보는가</span></li>
@@ -1162,76 +1382,84 @@ table code{background:var(--subtle-2)}
             <div class="sec-sub">Glossary</div>
           </div>
         </div>
-        <p class="gl-hint">각 용어를 클릭하면 비전공자를 위한 자세한 설명이 펼쳐집니다.</p>
+        <p class="gl-hint">각 용어를 클릭하면 비전공자를 위한 쉬운 설명과 예시가 펼쳐집니다.</p>
         <div class="tbl-wrap"><table>
           <thead><tr><th>용어</th><th>한 줄 뜻</th></tr></thead>
           <tbody>
             <tr class="gl-row"><td>블록체인</td><td>여러 노드가 함께 보관하는 분산 거래 장부</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">은행처럼 한 곳이 장부를 독점 관리하는 게 아니라, 전 세계 수많은 컴퓨터(<strong>노드</strong>)가 똑같은 거래 기록을 나눠 갖고 서로 끊임없이 대조합니다. 한번 기록되면 임의로 고치거나 지우기가 사실상 불가능해 위·변조에 강합니다. 특정 회사·기관에 의존하지 않는다는 이 점이 바로 '탈중앙화'의 핵심입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">은행처럼 한 곳이 장부를 독점 관리하는 게 아니라, 전 세계 수많은 컴퓨터(<strong>노드</strong>)가 똑같은 거래 기록을 나눠 갖고 서로 대조하는 방식입니다. 그래서 한 회사의 서버가 꺼져도 기록 전체가 쉽게 사라지지 않고, 한번 기록된 내역은 임의로 고치기 어렵습니다.<br><strong>예시:</strong> 친구에게 1 ETH를 보냈다면, 내 앱에만 저장되는 것이 아니라 이더리움 네트워크의 공개 장부에 "A 주소에서 B 주소로 이동"한 기록이 남습니다.</div></td></tr>
             <tr class="gl-row"><td>코인 / 토큰 / NFT</td><td>네트워크 기본 화폐 / 그 위에 발행된 자산 / 고유한 토큰</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>코인</strong>은 그 블록체인의 기본 화폐입니다(예: 이더리움의 ETH). <strong>토큰</strong>은 그 네트워크 위에 별도로 발행한 자산으로, 게임머니·포인트·스테이블코인처럼 종류가 다양합니다. <strong>NFT</strong>는 하나하나가 고유해 서로 맞바꿔도 같지 않은 토큰으로, 그림·티켓·증명서처럼 '유일함'이 중요한 곳에 쓰입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>코인</strong>은 그 블록체인의 기본 화폐입니다. <strong>토큰</strong>은 그 네트워크 위에 별도로 만든 자산이고, <strong>NFT</strong>는 각각 고유한 번호와 속성을 가진 토큰입니다. 코인은 네트워크 수수료를 내는 연료에 가깝고, 토큰과 NFT는 그 위에서 발행된 상품권·포인트·디지털 소유권에 가깝습니다.<br><strong>예시:</strong> 이더리움에서는 ETH가 코인, USDT·USDC가 토큰, 디지털 아트나 게임 아이템이 NFT에 해당합니다.</div></td></tr>
             <tr class="gl-row"><td>스마트 계약 / 스마트 컨트랙트</td><td>조건 충족 시 자동 실행되는 블록체인 프로그램</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 계약</strong>은 종이 계약서가 아니라, 블록체인에 올려 둔 공개 프로그램입니다. 영어 smart contract를 한국어로는 스마트 계약 또는 스마트 컨트랙트라고 부르며, “스마트 컨트렉트”는 같은 대상을 가리키는 비표준 표기로 이해하면 됩니다. “A가 돈을 보내면 B에게 입장권을 준다”, “담보가 부족해지면 자동으로 정리한다”처럼 조건과 결과를 코드로 적어 둡니다. 사용자가 월렛에서 서명하면 그 계약 주소의 기능이 실행되고, 결과는 장부에 남습니다. 편리하지만 코드가 곧 규칙이므로, 잘못 만들었거나 악의적인 계약에 서명하면 되돌리기 어렵습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 계약</strong>은 종이 계약서가 아니라, 블록체인 위에 올려 둔 공개 프로그램입니다. 영어 smart contract를 한국어로는 스마트 계약 또는 스마트 컨트랙트라고 부르며, "스마트 컨트렉트"는 같은 대상을 가리키는 비표준 표기로 이해하면 됩니다. 핵심은 "조건이 맞으면 정해진 행동을 자동으로 실행한다"는 점입니다. 사용자가 월렛에서 서명하면 해당 계약 주소의 기능이 실행되고, 결과는 장부에 남습니다.<br><strong>예시:</strong> 자판기에 돈을 넣으면 음료가 나오듯, NFT 구매 계약은 "구매자가 돈을 보내면 판매자에게 돈을 보내고 NFT 소유권을 구매자에게 옮긴다"는 규칙을 자동 실행합니다. 단, 악성 계약에 서명하면 자산 이동 권한까지 넘길 수 있어 서명 내용을 꼭 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>가스비</td><td>거래 기록 비용. 해당 네트워크 코인으로만 납부</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">블록체인에 거래를 기록해 달라고 네트워크에 내는 수수료입니다. 도로 통행료처럼, 네트워크가 붐빌수록 비싸집니다. 핵심은 <strong>그 네트워크의 코인으로만 낼 수 있다</strong>는 점 — 이더리움에선 ETH, Polygon에선 POL이 지갑에 조금이라도 있어야 송금·거래가 됩니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">블록체인에 거래를 기록해 달라고 네트워크에 내는 수수료입니다. 도로 통행료처럼, 네트워크가 붐빌수록 비싸질 수 있습니다. 핵심은 <strong>그 네트워크의 코인으로만 낼 수 있다</strong>는 점입니다.<br><strong>예시:</strong> 내 지갑에 USDT는 있어도 ETH가 전혀 없으면 이더리움 네트워크에서 USDT를 보낼 수 없습니다. 토큰을 옮기는 거래의 수수료도 ETH로 내야 하기 때문입니다.</div></td></tr>
             <tr class="gl-row"><td>지갑 주소</td><td>자산을 받을 때 공개하는 식별값(계좌번호 격)</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">자산을 받을 때 상대에게 알려주는 공개 식별값으로, 은행 계좌번호와 같은 역할입니다. 공개해도 안전하며, 길고 복잡한 문자·숫자 조합입니다. 다만 한 글자라도 틀리면 엉뚱한 곳으로 가서 되돌릴 수 없으니, 직접 입력하지 말고 <strong>복사·붙여넣기</strong>로 정확히 옮겨야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">자산을 받을 때 상대에게 알려주는 공개 식별값으로, 은행 계좌번호와 비슷한 역할입니다. 주소 자체는 공개해도 되지만, 길고 복잡해서 한 글자만 틀려도 엉뚱한 곳으로 보낼 수 있습니다.<br><strong>예시:</strong> 이더리움 주소는 보통 `0x`로 시작합니다. 송금 전에는 주소 앞 6자리와 뒤 4자리를 비교하고, 가능하면 먼저 소액 테스트 전송을 하는 것이 안전합니다.</div></td></tr>
             <tr class="gl-row"><td>개인키 / 시드 문구</td><td>거래 서명 권한 / 지갑 전체 복구용 마스터키(절대 비공개)</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>개인키</strong>는 "이 거래는 내가 승인한다"고 서명하는 비밀 열쇠입니다. <strong>시드 문구</strong>(보통 12~24개 단어)는 그 열쇠 전체를 복구할 수 있는 마스터키로, 지갑을 잃어도 이것만 있으면 자산을 되살립니다. 누구에게도 알려주면 안 되며, 유출되는 순간 자산 전체를 빼앗깁니다. 정식 서비스는 절대 이를 묻지 않습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>개인키</strong>는 "이 거래는 내가 승인한다"고 서명하는 비밀 열쇠입니다. <strong>시드 문구</strong>(보통 12~24개 단어)는 그 열쇠들을 다시 만들 수 있는 마스터키입니다. 비밀번호처럼 재발급되는 것이 아니라, 잃어버리면 복구가 어렵고 남에게 보이면 자산을 빼앗길 수 있습니다.<br><strong>예시:</strong> 새 휴대폰에서 지갑을 복구할 때 시드 문구를 입력하면 기존 주소와 자산 접근권이 되살아납니다. 반대로 피싱 사이트에 같은 문구를 입력하면 공격자도 똑같이 접근할 수 있습니다.</div></td></tr>
             <tr class="gl-row"><td>커스터디 / 셀프 커스터디</td><td>회사가 키 관리 / 사용자가 키 직접 관리</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>커스터디</strong>는 거래소·회사가 내 열쇠를 대신 보관하는 방식으로, 비밀번호를 잊어도 고객센터로 복구할 수 있지만 그 회사를 믿어야 합니다. <strong>셀프 커스터디</strong>는 내가 직접 열쇠를 보관하는 방식으로, 완전한 통제권을 갖는 대신 시드 문구를 잃으면 아무도 대신 복구해 줄 수 없습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>커스터디</strong>는 거래소·회사가 내 열쇠를 대신 보관하는 방식입니다. 비밀번호를 잊어도 고객센터 복구가 가능하지만, 그 회사의 보안과 정책을 믿어야 합니다. <strong>셀프 커스터디</strong>는 내가 직접 열쇠를 보관하는 방식으로, 통제권은 크지만 책임도 큽니다.<br><strong>예시:</strong> 거래소 앱에 로그인해 코인을 사고파는 것은 커스터디에 가깝고, MetaMask에서 시드 문구를 직접 보관하는 것은 셀프 커스터디입니다.</div></td></tr>
             <tr class="gl-row"><td>핫 월렛 / 콜드 월렛</td><td>인터넷 연결 소프트웨어 / 키를 오프라인 보관</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>핫 월렛</strong>은 인터넷에 연결된 앱·브라우저 확장 형태로, 쓰기 편한 대신 해킹에 노출됩니다(예: MetaMask). <strong>콜드 월렛</strong>은 열쇠를 인터넷과 분리된 기기에 오프라인으로 보관해 훨씬 안전합니다(예: 하드웨어 지갑). 보통 자주 쓰는 소액은 핫에, 오래 보관할 거액은 콜드에 둡니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>핫 월렛</strong>은 인터넷에 연결된 앱·브라우저 확장 지갑이라 자주 쓰기 편합니다. <strong>콜드 월렛</strong>은 개인키를 인터넷과 분리된 기기에 보관해 보안성이 높지만, 거래할 때 한 단계가 더 필요합니다.<br><strong>예시:</strong> 매일 DeFi나 NFT를 실습할 소액은 MetaMask 같은 핫 월렛에 두고, 오래 보관할 큰 금액은 하드웨어 지갑 같은 콜드 월렛에 두는 식으로 나눕니다.</div></td></tr>
             <tr class="gl-row"><td>임베디드 월렛</td><td>앱 내부에 내장·연동된 지갑(예: 마이비)</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">별도 지갑 앱을 따로 설치하지 않아도, 일반 앱 안에 지갑 기능이 내장된 형태입니다. 사용자는 복잡한 시드 문구나 가스비를 거의 의식하지 못한 채 평소 쓰던 앱처럼 이용할 수 있습니다(예: 마이비). 블록체인을 모르는 사람도 쉽게 진입하도록 장벽을 낮춘 방식입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">별도 지갑 앱을 설치하지 않아도, 일반 앱 안에 지갑 기능이 들어가 있는 형태입니다. 사용자는 시드 문구·가스비·네트워크 선택을 거의 의식하지 않고 평소 쓰던 앱처럼 이용할 수 있습니다.<br><strong>예시:</strong> 리워드 앱 안에서 포인트나 토큰 보상을 받고, 앱이 뒤에서 지갑 생성과 거래 기록을 처리한다면 임베디드 월렛에 가깝습니다.</div></td></tr>
             <tr class="gl-row"><td>dApp / 스마트 월렛</td><td>월렛 연결해 쓰는 탈중앙화 앱 / 스마트 계약 기반 월렛</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>dApp</strong>(탈중앙화 앱)은 회사 서버가 아니라 블록체인 위에서 돌아가는 앱으로, 지갑을 연결해 로그인·거래합니다. <strong>스마트 월렛</strong>은 단순 열쇠가 아니라 스마트 계약으로 만든 지갑이라, 지출 한도 설정·복구 도우미 지정 같은 똑똑한 기능을 넣을 수 있습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>dApp</strong>(탈중앙화 앱)은 지갑을 연결해 로그인하고, 스마트 계약으로 거래를 처리하는 앱입니다. <strong>스마트 월렛</strong>은 단순히 개인키만 들고 있는 지갑이 아니라 스마트 계약으로 만든 지갑이라 지출 한도, 복구 도우미, 자동화 같은 기능을 넣을 수 있습니다.<br><strong>예시:</strong> Uniswap에서 토큰을 바꾸거나 OpenSea에서 NFT를 사는 것은 dApp 사용이고, 하루 지출 한도를 설정할 수 있는 계약형 지갑은 스마트 월렛에 가깝습니다.</div></td></tr>
             <tr class="gl-row"><td>Web3 / EVM</td><td>지갑으로 신원·자산을 통제하는 인터넷 / 이더리움 호환 실행 환경</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Web3</strong>는 플랫폼이 내 계정·자산을 쥐고 있는 기존 인터넷과 달리, 지갑으로 내 신원과 자산을 스스로 통제하는 인터넷을 가리킵니다. <strong>EVM</strong>(이더리움 가상 머신)은 이더리움이 프로그램을 실행하는 표준 환경으로, 'EVM 호환' 체인들끼리는 같은 지갑·앱을 거의 그대로 쓸 수 있습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Web3</strong>는 플랫폼 계정만으로 움직이는 기존 인터넷과 달리, 지갑으로 내 신원·자산·활동 기록을 직접 들고 다니는 인터넷을 가리킵니다. <strong>EVM</strong>(이더리움 가상 머신)은 이더리움식 스마트 계약을 실행하는 표준 환경입니다.<br><strong>예시:</strong> 같은 MetaMask로 Ethereum, Polygon, Base 같은 EVM 호환 체인에 연결할 수 있는 이유는 기본 실행 방식과 주소 체계가 비슷하기 때문입니다.</div></td></tr>
+            <tr class="gl-row"><td>계정 추상화 / 스마트 계정</td><td>지갑 계정에 복구·한도·자동화 규칙을 넣는 월렛 UX 방향</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>계정 추상화</strong>는 사용자가 개인키 하나를 직접 지키는 구조를 넘어, 지갑 계정 자체에 복구·권한·수수료 대납·묶음 거래 같은 기능을 넣는 방향입니다. <strong>스마트 계정</strong>은 이런 기능을 스마트 컨트랙트로 구현한 계정입니다.<br><strong>예시:</strong> "휴대폰 패스키로 로그인하고, 하루 10만원까지만 전송되고, 분실하면 지정한 복구 연락처로 복구한다"는 UX는 스마트 계정 설계에 가깝습니다.</div></td></tr>
+            <tr class="gl-row"><td>패스키 / Paymaster / 세션키</td><td>쉬운 인증 / 가스비 대납자 / 제한된 임시 권한</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>패스키</strong>는 비밀번호 대신 기기 보안칩·생체인증을 활용하는 로그인 방식입니다. <strong>Paymaster</strong>는 스마트 계정 거래의 가스비를 서비스나 제3자가 대신 내는 역할이고, <strong>세션키</strong>는 특정 기간·기능에만 쓸 수 있는 제한된 임시 권한입니다.<br><strong>예시:</strong> 게임 앱에서 사용자가 매번 서명하지 않아도 하루 동안 아이템 조합만 자동 승인하게 하고, 서비스가 가스비를 부담하는 구조를 만들 수 있습니다.</div></td></tr>
+            <tr class="gl-row"><td>재화 원장</td><td>포인트·응모권·교환 내역의 기준 장부</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>재화 원장</strong>은 사용자가 얼마를 받았고, 어디에 썼고, 언제 만료되며, 어떤 거래로 취소됐는지를 남기는 기준 장부입니다. 화면의 잔액은 원장을 계산해 보여 주는 결과일 뿐입니다.<br><strong>예시:</strong> 광고 미션으로 100포인트 지급, 이벤트로 응모권 1장 지급, 기프티콘 교환으로 5,000포인트 차감이 각각 원장 이벤트로 남아야 CS와 정산이 가능합니다.</div></td></tr>
+            <tr class="gl-row"><td>경품 응모 / 기프티콘 교환</td><td>응모권으로 당첨 기회를 얻기 / 포인트를 모바일 상품권으로 바꾸기</td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>경품 응모</strong>는 사용자가 응모권이나 포인트를 써서 추첨 대상이 되는 구조이고, <strong>기프티콘 교환</strong>은 앱 안 재화를 외부 모바일 상품권으로 바꾸는 구조입니다. 둘 다 UX보다 상태 관리와 고지가 먼저입니다.<br><strong>예시:</strong> 응모 완료, 당첨 대기, 당첨, 미당첨, 발송 실패, 재발송, 교환 취소 같은 상태가 빠지면 운영자가 사용자의 문의를 해결하기 어렵습니다.</div></td></tr>
             <tr class="gl-row"><td>DeFi / DeFi 프로토콜</td><td>은행·증권사 없이 스마트 계약으로 쓰는 금융 앱 묶음</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DeFi</strong>(탈중앙화 금융)는 월렛만 있으면 예치, 대출, 교환, 파생상품, 수익 전략에 접근할 수 있게 만든 금융 앱들의 묶음입니다. <strong>DeFi 프로토콜</strong>은 그 기능을 실제로 처리하는 스마트 계약 시스템입니다. 편리하지만 예금자보호가 아니며, 코드 버그·가격 급락·유동성 부족·청산 위험을 사용자가 직접 이해해야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DeFi</strong>(탈중앙화 금융)는 은행 앱처럼 예치·대출·교환·투자를 하되, 중개 회사 대신 스마트 계약이 핵심 기능을 처리하는 금융 앱 묶음입니다. <strong>DeFi 프로토콜</strong>은 그 기능을 실제로 실행하는 규칙과 계약 시스템입니다.<br><strong>예시:</strong> 은행 예금 대신 스테이블코인을 DeFi 금고에 맡겨 이자를 받거나, 거래소 계정 없이 지갑만 연결해 토큰을 교환하는 것이 DeFi 사용입니다. 예금자보호가 아니므로 손실 위험은 사용자가 직접 봐야 합니다.</div></td></tr>
             <tr class="gl-row"><td>DeFi Gateway</td><td>복잡한 DeFi 상품을 앱 안에서 쉽게 연결해 주는 진입 화면</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">DeFi Gateway는 사용자가 Morpho, Pendle, Vault 같은 이름을 모두 몰라도 예치·교환·수익 상품에 접근하도록 만든 <strong>중간 진입로</strong>입니다. 겉으로는 “USDT 맡기고 수익 받기”처럼 단순해 보이지만, 뒤에서는 여러 프로토콜·체인·위험 정책이 연결될 수 있습니다. 그래서 게이트웨이를 볼 때는 “누가 운용하나, 실제 자금은 어디로 가나, 출금 조건은 무엇인가”를 확인해야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">DeFi Gateway는 사용자가 Morpho, Pendle, Vault 같은 이름을 모두 몰라도 예치·교환·수익 상품에 접근하도록 만든 <strong>중간 진입로</strong>입니다. 겉으로는 단순한 버튼 하나처럼 보이지만, 뒤에서는 여러 프로토콜과 체인이 연결될 수 있습니다.<br><strong>예시:</strong> 앱에서 "USDT 예치하고 예상 연 5% 받기" 버튼을 누르면, 실제 자금은 여러 Vault나 대출시장으로 나뉘어 들어갈 수 있습니다. 누가 운용하는지, 출금은 즉시 되는지, 손실은 누가 부담하는지 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>스마트 컨트랙트 DIY / 유니파이 상품</td><td>계약 조건을 직접 조립하는 방식 / 멀티체인 DeFi 빌딩블록 상품군</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 컨트랙트 DIY</strong>는 개발자나 프로젝트가 템플릿·도구·직접 코딩으로 “어떤 조건이면 어떤 보상이 나가는가”를 직접 설계하는 방식입니다. 예를 들어 퀘스트 보상, 토큰 발행, 예치 금고, 자동 분배 규칙을 조합할 수 있습니다. <strong>유니파이(Unifi Protocol)</strong>는 비수탁·멀티체인 스마트 계약을 DeFi 개발용 빌딩블록으로 제공하는 프로토콜 사례입니다. 이름이 비슷한 네트워크 장비 브랜드 UniFi와는 다른 Web3/DeFi 문맥입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스마트 컨트랙트 DIY</strong>는 개발자나 프로젝트가 템플릿·도구·직접 코딩으로 "어떤 조건이면 어떤 보상이 나가는가"를 직접 설계하는 방식입니다. <strong>유니파이(Unifi Protocol)</strong>는 비수탁·멀티체인 스마트 계약을 DeFi 개발용 빌딩블록으로 제공하는 프로토콜 사례입니다.<br><strong>예시:</strong> "퀘스트를 완료한 지갑에만 토큰을 지급한다", "예치한 사람에게 매주 수익을 자동 분배한다" 같은 규칙을 조립하는 일이 스마트 컨트랙트 DIY에 해당합니다. 이름이 비슷한 네트워크 장비 브랜드 UniFi와는 다른 문맥입니다.</div></td></tr>
             <tr class="gl-row"><td>VASP</td><td>고객 대신 가상자산 교환·이전·보관을 제공하는 사업자</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>VASP</strong>(Virtual Asset Service Provider)는 거래소, 커스터디 지갑, 가상자산 이전·교환 서비스를 사업으로 제공하는 주체를 뜻합니다. 핵심은 “내 자산이나 이전을 누군가 사업자로 대신 처리해 주는가”입니다. 개인이 직접 쓰는 셀프 커스터디 월렛과 달리, VASP는 자금세탁방지, 고객확인, 신고·등록 같은 규제 의무와 연결됩니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>VASP</strong>(Virtual Asset Service Provider)는 거래소, 커스터디 지갑, 가상자산 이전·교환 서비스를 사업으로 제공하는 주체를 뜻합니다. 핵심은 "내 자산 보관이나 이전을 사업자가 대신 처리해 주는가"입니다.<br><strong>예시:</strong> 업비트·빗썸처럼 고객 계정을 만들고 코인을 사고팔게 해 주는 거래소는 VASP에 해당할 수 있습니다. 반면 개인이 혼자 설치해 쓰는 MetaMask 자체는 보통 사용자의 셀프 커스터디 도구로 이해합니다.</div></td></tr>
             <tr class="gl-row"><td>Kaia 체인</td><td>LINE·Kakao 계열 생태계가 합쳐진 EVM 호환 Layer 1 체인</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Kaia</strong>는 Klaytn과 Finschia 계열 생태계가 통합된 Layer 1 블록체인입니다. EVM과 호환되어 이더리움식 스마트 계약과 월렛 연결 경험을 활용할 수 있고, 아시아 지역의 결제·스테이블코인·온체인 금융 생태계를 목표로 합니다. 마이비의 XPLA처럼 “어떤 체인에 기록되는가”를 확인하듯, Kaia 기반 상품도 수수료 코인·지원 월렛·출금 경로를 봐야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Kaia</strong>는 Klaytn과 Finschia 계열 생태계가 통합된 Layer 1 블록체인입니다. EVM과 호환되어 이더리움식 스마트 계약과 월렛 연결 경험을 활용할 수 있고, 아시아 지역의 결제·스테이블코인·온체인 금융 생태계를 목표로 합니다.<br><strong>예시:</strong> Kaia 기반 수익 상품에 USDT를 맡긴다면, 단순히 "USDT 상품"만 볼 것이 아니라 어떤 체인에 기록되는지, 수수료 코인은 무엇인지, 어떤 월렛으로 출금할 수 있는지를 함께 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>자산 어그리게이터 / Vault</td><td>여러 수익처를 모아 자동 운용하는 금고형 스마트 계약</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>자산 어그리게이터</strong>는 여러 DeFi 수익처를 비교·연결해 주는 서비스이고, <strong>Vault</strong>(볼트)는 사용자가 맡긴 자산을 정해진 전략대로 운용하는 스마트 계약 금고입니다. 사용자는 버튼 하나로 예치하지만, 실제로는 대출시장, LP풀, 스테이킹, RWA 상품 등으로 자금이 배분될 수 있습니다. Yearn Finance와 Beefy Finance는 이런 볼트·자동 복리 전략을 대표하는 사례입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>자산 어그리게이터</strong>는 여러 DeFi 수익처를 비교·연결해 주는 서비스이고, <strong>Vault</strong>(볼트)는 사용자가 맡긴 자산을 정해진 전략대로 운용하는 스마트 계약 금고입니다. 사용자는 한 번 예치하지만, 실제로는 대출시장, LP풀, 스테이킹, RWA 상품 등으로 자금이 배분될 수 있습니다.<br><strong>예시:</strong> Yearn Finance나 Beefy Finance의 볼트에 토큰을 맡기면, 서비스가 보상을 재예치해 자동 복리처럼 운용할 수 있습니다. 편한 만큼 전략이 무엇인지 읽어야 합니다.</div></td></tr>
             <tr class="gl-row"><td>SuperEarn</td><td>Kaia 기반 스테이블코인 수익 상품 진입점</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>SuperEarn</strong>은 Kaia 생태계에서 USDT 같은 스테이블코인을 맡겨 큐레이션된 온체인 수익 전략에 접근하게 하는 상품입니다. 사용자는 하나의 예치 화면을 보지만, 뒤에서는 Morpho Vault, Pendle PT, Yield8 같은 여러 수익원이 조합될 수 있습니다. 이런 상품은 “간편함”이 장점인 만큼, 기초 자산·운용자·출금 대기·손실 가능성을 함께 읽어야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>SuperEarn</strong>은 Kaia 생태계에서 USDT 같은 스테이블코인을 맡겨 큐레이션된 온체인 수익 전략에 접근하게 하는 상품입니다. 사용자는 하나의 예치 화면을 보지만, 뒤에서는 여러 DeFi 수익원이 조합될 수 있습니다.<br><strong>예시:</strong> 사용자는 "USDT를 맡긴다"고 느끼지만, 실제 전략에는 Morpho Vault, Pendle PT, Yield8 같은 상품이 포함될 수 있습니다. 기초 자산, 운용 주체, 출금 대기, 손실 가능성을 함께 봐야 합니다.</div></td></tr>
             <tr class="gl-row"><td>Morpho / Pendle / Yield8</td><td>대출시장 / 수익 분리 거래 / 토큰화 사모신용 상품</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Morpho</strong>는 담보를 맡기고 빌리거나, 대출시장에 자금을 공급해 이자를 받는 DeFi 대출 인프라입니다. <strong>Pendle</strong>은 이자 나는 자산을 원금 성격과 미래 수익 성격으로 나눠 고정수익·수익률 거래를 가능하게 합니다. <strong>Yield8</strong>은 Kaia 생태계에서 언급되는 RWA·사모신용 기반 토큰화 상품으로, 온체인 토큰 뒤에 오프체인 자산과 법적 구조가 붙습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Morpho</strong>는 담보를 맡기고 빌리거나, 대출시장에 자금을 공급해 이자를 받는 DeFi 대출 인프라입니다. <strong>Pendle</strong>은 이자 나는 자산을 원금 성격과 미래 수익 성격으로 나눠 거래하게 합니다. <strong>Yield8</strong>은 Kaia 생태계에서 언급되는 RWA·사모신용 기반 토큰화 상품입니다.<br><strong>예시:</strong> Morpho는 "담보 맡기고 대출받기", Pendle은 "미래 이자만 따로 사고팔기", Yield8은 "현실의 사모신용 수익을 토큰으로 연결하기"에 가깝습니다. 난도가 높으므로 구조를 모르면 소액 실습도 피하는 편이 안전합니다.</div></td></tr>
             <tr class="gl-row"><td>스테이킹 / 레버리지 스테이킹</td><td>네트워크 보안에 자산을 묶고 보상 받기 / 빌린 돈까지 더해 수익·위험 확대</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스테이킹</strong>은 지분증명 체인에서 코인을 묶어 네트워크 검증에 참여하거나 위임하고 보상을 받는 구조입니다. <strong>레버리지 스테이킹</strong>은 맡긴 자산을 담보로 다시 빌려 더 많이 스테이킹하는 방식입니다. 수익률은 커질 수 있지만 가격이 흔들리면 청산·이자비용·연쇄 손실 위험도 함께 커집니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>스테이킹</strong>은 지분증명 체인에서 코인을 묶어 네트워크 검증에 참여하거나 위임하고 보상을 받는 구조입니다. <strong>레버리지 스테이킹</strong>은 맡긴 자산을 담보로 다시 빌려 더 많이 스테이킹하는 방식입니다.<br><strong>예시:</strong> 100만원어치 코인을 맡겨 보상을 받는 것이 일반 스테이킹이라면, 그 코인을 담보로 돈을 빌려 추가로 더 맡기는 것이 레버리지 스테이킹입니다. 수익률이 커질 수 있지만 가격 하락 시 청산과 이자비용 위험도 커집니다.</div></td></tr>
             <tr class="gl-row"><td>DEX LP풀 / Curve LP</td><td>탈중앙화 거래소에 유동성을 넣고 수수료·보상을 받는 포지션</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DEX LP풀</strong>은 두 개 이상의 토큰을 거래소 풀에 넣어 다른 사용자가 교환할 수 있게 해 주고, 그 대가로 수수료나 보상을 받는 구조입니다. <strong>Curve LP</strong>는 Curve의 풀에 유동성을 넣은 포지션을 말하며, 주로 스테이블코인이나 비슷한 가격의 자산 교환에 많이 쓰입니다. 단, 가격 괴리·풀 해킹·보상 토큰 하락 같은 위험은 남습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>DEX LP풀</strong>은 두 개 이상의 토큰을 거래소 풀에 넣어 다른 사용자가 교환할 수 있게 해 주고, 그 대가로 수수료나 보상을 받는 구조입니다. <strong>Curve LP</strong>는 Curve의 풀에 유동성을 넣은 포지션을 말하며, 비슷한 가격의 자산 교환에 많이 쓰입니다.<br><strong>예시:</strong> USDC와 USDT를 함께 풀에 넣으면 다른 사람이 USDC를 USDT로 바꿀 때 거래 수수료 일부를 받을 수 있습니다. 다만 한쪽 가격이 흔들리거나 풀이 해킹되면 손실이 날 수 있습니다.</div></td></tr>
             <tr class="gl-row"><td>담보대출 프로토콜 / RWA 펀드</td><td>담보 맡기고 빌리는 DeFi / 실물자산 수익을 토큰화한 상품</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>담보대출 프로토콜</strong>은 ETH, BTC, 스테이블코인 등을 담보로 맡기고 다른 자산을 빌리는 스마트 계약 시장입니다. 담보가치가 떨어지면 자동 청산될 수 있습니다. <strong>RWA 펀드</strong>는 부동산, 국채, 매출채권, 사모신용처럼 현실 세계 자산에서 나오는 수익을 토큰으로 연결한 상품입니다. 온체인 투명성은 늘 수 있지만, 실제 자산 보관·법적 권리·상환 지연은 오프체인 위험으로 남습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>담보대출 프로토콜</strong>은 ETH, BTC, 스테이블코인 등을 담보로 맡기고 다른 자산을 빌리는 스마트 계약 시장입니다. 담보가치가 떨어지면 자동 청산될 수 있습니다. <strong>RWA 펀드</strong>는 국채, 매출채권, 사모신용처럼 현실 세계 자산의 수익을 토큰으로 연결한 상품입니다.<br><strong>예시:</strong> ETH를 담보로 맡기고 USDC를 빌리는 것은 담보대출 프로토콜 사용입니다. 국채 이자를 토큰 보유자에게 나눠 주는 상품은 RWA에 가깝지만, 실제 자산 보관과 법적 권리는 오프체인에서 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>GALXE / 신규토큰 에어드랍</td><td>퀘스트·자격 검증 플랫폼 / 새 토큰을 홍보·보상 목적으로 배포</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>GALXE</strong>는 프로젝트가 퀘스트를 만들고 사용자의 온체인·오프체인 활동을 크리덴셜로 검증해 보상을 주는 플랫폼입니다. <strong>신규토큰 에어드랍</strong>은 새 프로젝트가 사용자 확보나 커뮤니티 보상을 위해 토큰을 배포하는 방식입니다. “무료”처럼 보이지만 피싱 링크, 과도한 권한 승인, 개인정보 연결, 보상 미지급 가능성을 확인해야 합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>GALXE</strong>는 프로젝트가 퀘스트를 만들고 사용자의 온체인·오프체인 활동을 크리덴셜로 검증해 보상을 주는 플랫폼입니다. <strong>신규토큰 에어드랍</strong>은 새 프로젝트가 사용자 확보나 커뮤니티 보상을 위해 토큰을 배포하는 방식입니다.<br><strong>예시:</strong> "공식 X 계정 팔로우, 지갑 연결, 특정 NFT 보유 확인" 같은 미션을 완료하면 OAT·포인트·allowlist·토큰 보상 자격을 받을 수 있습니다. 무료처럼 보여도 피싱 링크, 과도한 권한 승인, 개인정보 연결 범위를 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>Zora Rewards / Sweat Economy / StickK(Web2)</td><td>창작자 보상 / 걷기 보상 / 목표 달성 보증금 모델</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Zora Rewards</strong>는 온체인 콘텐츠·크리에이터 경제에서 창작자와 참여자에게 보상을 배분하는 모델입니다. <strong>Sweat Economy</strong>는 걷기 같은 신체 활동을 보상과 연결한 move-to-earn 계열입니다. <strong>StickK</strong>는 블록체인이 아닌 Web2 서비스지만, 목표를 정하고 돈을 걸어 실패 비용을 만드는 커밋먼트 계약 사례로 볼 수 있습니다. 셋 다 “행동을 경제적 보상으로 바꾼다”는 점에서 리워드 설계 비교에 유용합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Zora Rewards</strong>는 온체인 콘텐츠·크리에이터 경제에서 창작자와 참여자에게 보상을 배분하는 모델입니다. <strong>Sweat Economy</strong>는 걷기 같은 신체 활동을 보상과 연결한 move-to-earn 계열입니다. <strong>StickK</strong>는 블록체인이 아닌 Web2 서비스지만, 목표를 정하고 돈을 걸어 실패 비용을 만드는 커밋먼트 계약 사례로 볼 수 있습니다.<br><strong>예시:</strong> 콘텐츠를 만들거나 민팅에 참여해 보상을 받는 것은 Zora식 보상, 걸음 수에 따라 포인트를 받는 것은 Sweat식 보상, "운동 안 하면 기부금이 빠져나간다"는 구조는 StickK식 동기부여입니다.</div></td></tr>
             <tr class="gl-row"><td>온체인 로또 / P2P 제로섬</td><td>무작위 추첨형 스마트 계약 / 누군가의 이익이 다른 사람 손실이 되는 게임</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>온체인 로또</strong>는 추첨·당첨·지급 규칙을 스마트 계약으로 공개하는 복권형 서비스입니다. 규칙은 투명해질 수 있지만 기대수익이 플러스라는 뜻은 아닙니다. <strong>P2P 제로섬</strong>은 참가자끼리 돈을 걸고 결과에 따라 한쪽 이익이 다른 쪽 손실이 되는 구조입니다. 예측시장, 대결형 베팅, 일부 게임형 리워드에서 이런 성격이 나타납니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>온체인 로또</strong>는 추첨·당첨·지급 규칙을 스마트 계약으로 공개하는 복권형 서비스입니다. 규칙은 투명해질 수 있지만 기대수익이 플러스라는 뜻은 아닙니다. <strong>P2P 제로섬</strong>은 참가자끼리 돈을 걸고 결과에 따라 한쪽 이익이 다른 쪽 손실이 되는 구조입니다.<br><strong>예시:</strong> 100명이 1달러씩 내고 한 명이 90달러를 가져가는 게임은 온체인 로또에 가깝습니다. 예측시장처럼 "맞힌 사람의 이익이 틀린 사람의 손실에서 나온다"면 P2P 제로섬 성격이 있습니다.</div></td></tr>
             <tr class="gl-row"><td>거래 해시 / 블록 탐색기</td><td>거래 조회 번호 / 온체인 기록 검색 도구</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>거래 해시</strong>는 보낸 거래마다 붙는 고유 영수증 번호입니다. <strong>블록 탐색기</strong>는 그 번호를 넣으면 거래가 언제·얼마·어디로 처리됐는지 누구나 조회할 수 있는 공개 검색 사이트입니다(예: Etherscan). 송금이 실제로 됐는지 직접 확인할 때 씁니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>거래 해시</strong>는 보낸 거래마다 붙는 고유 영수증 번호입니다. <strong>블록 탐색기</strong>는 그 번호를 넣으면 거래가 언제·얼마·어디로 처리됐는지 누구나 조회할 수 있는 공개 검색 사이트입니다.<br><strong>예시:</strong> 친구가 "코인을 보냈다"고 하면 거래 해시를 받아 Etherscan 같은 탐색기에 붙여 넣어 실제 처리 여부와 받는 주소를 확인할 수 있습니다.</div></td></tr>
             <tr class="gl-row"><td>Polygon / pUSD</td><td>이더리움 호환 저수수료 체인 / Polymarket 담보 토큰(USDC 기반)</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Polygon</strong>은 이더리움과 호환되면서 수수료가 훨씬 싸고 빠른 블록체인입니다. <strong>pUSD</strong>는 Polymarket에서 베팅 담보로 쓰는 토큰으로, 가치가 1달러에 고정된 USDC를 기반으로 합니다. 가격 변동 없이 '현금처럼' 쓰기 위한 안정(스테이블) 토큰입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>Polygon</strong>은 이더리움과 호환되면서 수수료가 비교적 싸고 빠른 블록체인입니다. <strong>pUSD</strong>는 Polymarket에서 담보처럼 쓰는 달러 연동 토큰입니다. 둘 다 "어떤 네트워크에서 어떤 토큰을 쓰는가"를 구분해야 이해하기 쉽습니다.<br><strong>예시:</strong> Polymarket에 자금을 넣을 때는 이더리움 메인넷 ETH가 아니라 Polygon 쪽 입금 경로와 pUSD 잔액을 확인해야 합니다.</div></td></tr>
             <tr class="gl-row"><td>XPLA</td><td>마이비 트랜잭션·지갑이 처리되는 메인넷</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">마이비의 거래와 지갑이 실제로 처리되는 <strong>메인넷</strong>(독립된 블록체인)입니다. 사용자가 마이비 안에서 보상을 받거나 자산을 옮길 때, 그 기록이 이 XPLA 네트워크에 남습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">마이비의 거래와 지갑이 실제로 처리되는 <strong>메인넷</strong>(독립된 블록체인)입니다. 앱 화면에서는 포인트나 보상처럼 보여도, 뒤에서는 특정 체인의 거래 기록으로 남을 수 있습니다.<br><strong>예시:</strong> 마이비 안에서 보상을 받고 지갑 기능으로 자산을 옮긴다면, 그 처리 기록이 XPLA 네트워크에 남는 구조로 이해하면 됩니다.</div></td></tr>
             <tr class="gl-row"><td>SBT</td><td>양도 불가하도록 지갑에 귀속된 토큰(취향 뱃지 등)</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>SBT</strong>(소울바운드 토큰)는 한번 받으면 다른 사람에게 팔거나 넘길 수 없도록 내 지갑에 묶이는 토큰입니다. 매매 대상이 아니라 '이 사람의 자격·취향·이력'을 증명하는 뱃지·증명서 용도로 쓰입니다(예: 수료증, 취향 뱃지).</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>SBT</strong>(소울바운드 토큰)는 한번 받으면 다른 사람에게 팔거나 넘길 수 없도록 내 지갑에 묶이는 토큰입니다. 돈 받고 거래하는 자산보다 "이 사람이 어떤 자격이나 이력을 가졌는가"를 보여 주는 증명서에 가깝습니다.<br><strong>예시:</strong> 교육 수료증, 행사 참여 뱃지, 취향 설문 이력, 커뮤니티 멤버십 증명처럼 양도되면 의미가 흐려지는 기록에 쓸 수 있습니다.</div></td></tr>
             <tr class="gl-row"><td>MAU/DAU·리텐션</td><td>월간/일간 활성 사용자 수·재사용 비율</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>MAU</strong>는 한 달 동안, <strong>DAU</strong>는 하루 동안 앱을 실제로 쓴 사람 수입니다. <strong>리텐션</strong>(재방문율)은 새로 들어온 사용자가 며칠 뒤에도 다시 돌아오는 비율로, 앱이 얼마나 '계속 쓸 만한지'를 보여 주는 건강 지표입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>MAU</strong>는 한 달 동안, <strong>DAU</strong>는 하루 동안 앱을 실제로 쓴 사람 수입니다. <strong>리텐션</strong>(재방문율)은 새로 들어온 사용자가 며칠 뒤에도 다시 돌아오는 비율입니다. 다운로드 수보다 앱의 실제 건강도를 더 잘 보여 줍니다.<br><strong>예시:</strong> 앱 설치자가 100만 명이어도 오늘 쓰는 사람이 2만 명이면 DAU는 2만입니다. 신규 가입자 100명 중 30일 뒤 20명이 돌아오면 D30 리텐션은 20%입니다.</div></td></tr>
             <tr class="gl-row"><td>ARPDAU·CAC·LTV</td><td>활성 1명당 매출·신규 1명 확보 비용·1명 생애 가치</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>ARPDAU</strong>는 활성 사용자 1명이 하루에 만들어 주는 평균 매출입니다. <strong>CAC</strong>는 신규 사용자 1명을 데려오는 데 든 비용(주로 광고비), <strong>LTV</strong>는 한 사용자가 떠날 때까지 평생 만들어 주는 총 가치입니다. LTV가 CAC보다 커야 사업이 남습니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>ARPDAU</strong>는 활성 사용자 1명이 하루에 만들어 주는 평균 매출입니다. <strong>CAC</strong>는 신규 사용자 1명을 데려오는 데 든 비용이고, <strong>LTV</strong>는 한 사용자가 떠날 때까지 만들어 주는 총 가치입니다. LTV가 CAC보다 커야 사업이 남습니다.<br><strong>예시:</strong> 하루 매출이 100만원이고 DAU가 1만 명이면 ARPDAU는 100원입니다. 한 명을 데려오는 데 2,000원이 드는데 그 사용자가 평생 1,000원만 벌어 주면 성장할수록 손해입니다.</div></td></tr>
             <tr class="gl-row"><td>공헌이익</td><td>매출에서 보상·변동비를 뺀 실질 잔액</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">매출에서 사용자 보상·결제 수수료처럼 '팔 때마다 따라붙는 변동비'를 뺀 실질 잔액입니다. 여기서 다시 고정비(인건비·임대료 등)를 빼면 최종 이익이 됩니다. 리워드 앱은 보상이 곧 변동비라, 공헌이익 관리가 특히 중요합니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner">매출에서 사용자 보상·결제 수수료처럼 '팔 때마다 따라붙는 변동비'를 뺀 실질 잔액입니다. 여기서 다시 고정비(인건비·임대료 등)를 빼면 최종 이익이 됩니다. 리워드 앱은 보상이 곧 변동비라 공헌이익 관리가 특히 중요합니다.<br><strong>예시:</strong> 광고주에게 100원을 받고 사용자에게 70원 보상, 결제·운영 변동비로 10원이 나가면 공헌이익은 20원입니다. 반대로 보상만 110원이면 매출이 있어도 손해입니다.</div></td></tr>
             <tr class="gl-row"><td>타기팅·오퍼월·CPA</td><td>맞춤 광고·미션 목록 광고·행동 완료 시 과금</td></tr>
-            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>타기팅</strong>은 사용자 성향에 맞춰 광고를 골라 보여 주는 것입니다. <strong>오퍼월</strong>은 "앱 설치하면 포인트" 같은 미션 목록 형태의 광고 지면입니다. <strong>CPA</strong>는 단순 클릭이 아니라 가입·구매 같은 행동이 실제로 완료됐을 때만 광고비를 내는 과금 방식입니다.</div></td></tr>
+            <tr class="gl-detail"><td colspan="2"><div class="gl-inner"><strong>타기팅</strong>은 사용자 성향에 맞춰 광고를 골라 보여 주는 것입니다. <strong>오퍼월</strong>은 "앱 설치하면 포인트" 같은 미션 목록 형태의 광고 지면입니다. <strong>CPA</strong>는 단순 클릭이 아니라 가입·구매 같은 행동이 실제로 완료됐을 때만 광고비를 내는 과금 방식입니다.<br><strong>예시:</strong> 반려동물 관심자에게 사료 광고를 보여 주는 것은 타기팅, "쇼핑앱 가입하면 500포인트" 목록은 오퍼월, 실제 가입이 확인될 때 광고비를 받는 구조는 CPA입니다.</div></td></tr>
           </tbody>
         </table></div>
       </section>
@@ -1278,6 +1506,15 @@ table code{background:var(--subtle-2)}
           <li id="src-29">Yearn·Beefy·Curve 공식 문서 — <a href="https://docs.yearn.fi/getting-started/products/yvaults/overview" target="_blank" rel="noopener"><code>docs.yearn.fi</code></a> · <a href="https://docs.beefy.finance/beefy-products/vaults" target="_blank" rel="noopener"><code>docs.beefy.finance</code></a> · <a href="https://docs.curve.finance/user/dex/liquidity" target="_blank" rel="noopener"><code>docs.curve.finance</code></a></li>
           <li id="src-30">Zora·Sweatcoin·StickK 공식 문서/페이지 — <a href="https://docs.zora.co/coins" target="_blank" rel="noopener"><code>docs.zora.co</code></a> · <a href="https://sweatco.in/" target="_blank" rel="noopener"><code>sweatco.in</code></a> · <a href="https://www.stickk.com/tour" target="_blank" rel="noopener"><code>stickk.com</code></a></li>
           <li id="src-31">Unifi Protocol 공식 문서 — <a href="https://docs.unifiprotocol.com/" target="_blank" rel="noopener"><code>docs.unifiprotocol.com</code></a></li>
+          <li id="src-32">Ethereum.org 계정 추상화 및 EIP-7702·ERC-4337 — <a href="https://ethereum.org/roadmap/account-abstraction/" target="_blank" rel="noopener"><code>ethereum.org/account-abstraction</code></a> · <a href="https://eips.ethereum.org/EIPS/eip-7702" target="_blank" rel="noopener"><code>EIP-7702</code></a> · <a href="https://eips.ethereum.org/EIPS/eip-4337" target="_blank" rel="noopener"><code>ERC-4337</code></a></li>
+          <li id="src-33">월렛 연결·서명 표준 — <a href="https://eips.ethereum.org/EIPS/eip-1193" target="_blank" rel="noopener"><code>EIP-1193</code></a> · <a href="https://eips.ethereum.org/EIPS/eip-712" target="_blank" rel="noopener"><code>EIP-712</code></a> · <a href="https://eips.ethereum.org/EIPS/eip-4361" target="_blank" rel="noopener"><code>ERC-4361</code></a> · <a href="https://eips.ethereum.org/EIPS/eip-5792" target="_blank" rel="noopener"><code>EIP-5792</code></a></li>
+          <li id="src-34">FIDO Alliance Passkeys 및 W3C WebAuthn — <a href="https://www.passkeycentral.org/introduction-to-passkeys/how-passkeys-work" target="_blank" rel="noopener"><code>passkeycentral.org</code></a> · <a href="https://www.w3.org/TR/webauthn-3/" target="_blank" rel="noopener"><code>w3.org/webauthn</code></a></li>
+          <li id="src-35">금융위원회 가상자산 2단계 입법·스테이블코인 논의 — <a href="https://www.fsc.go.kr/no010101/84130" target="_blank" rel="noopener"><code>fsc.go.kr</code></a> · <a href="https://www.fsc.go.kr/no010102/84385" target="_blank" rel="noopener"><code>stablecoin brief</code></a></li>
+          <li id="src-36">금융위원회 전자금융거래법·선불전자지급수단 이용자 보호 — <a href="https://www.fsc.go.kr/no010101/82339" target="_blank" rel="noopener"><code>fsc.go.kr/prepaid</code></a> · <a href="https://www.fsc.go.kr/edu/news/83084" target="_blank" rel="noopener"><code>mobile gift certificates</code></a></li>
+          <li id="src-37">공정거래위원회·소비자원 신유형 상품권/모바일상품권 안내 — <a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=46429" target="_blank" rel="noopener"><code>ftc.go.kr</code></a> · <a href="https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/740/selectInfoCDMGCSLCDetail.do?infoId=A1079559" target="_blank" rel="noopener"><code>consumer.go.kr</code></a></li>
+          <li id="src-38">국가법령정보센터, 경품류 제공 관련 행정규칙 — <a href="https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2000000026806&chrClsCd=010202&lsId=37268" target="_blank" rel="noopener"><code>law.go.kr</code></a></li>
+          <li id="src-39">개인정보보호위원회 개인정보 처리방침 작성지침(2025.4.) — <a href="https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20806" target="_blank" rel="noopener"><code>privacy.go.kr</code></a></li>
+          <li id="src-40">국가법령정보센터, 위치정보의 보호 및 이용 등에 관한 법률 — <a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=277359" target="_blank" rel="noopener"><code>law.go.kr/location</code></a></li>
         </ol>
       </section>
 
@@ -1301,11 +1538,18 @@ table code{background:var(--subtle-2)}
     {id:'sec-06',       num:'06', label:'유형부터 구분', lv:'중급'},
     {id:'sec-07',       num:'07', label:'대표 서비스 6종', lv:'중급'},
     {id:'sec-08',       num:'08', label:'선택 · 이전 · 제도', lv:'중급'},
-    {id:'sec-partC',    num:'C',  label:'C부 · 리워드 시장', lv:'중급 고급', group:'C부 · 리워드 앱 시장'},
-    {id:'sec-09',       num:'09', label:'리워드 앱이란', lv:'초급'},
-    {id:'sec-10',       num:'10', label:'유형·수익·지표', lv:'중급'},
-    {id:'sec-11',       num:'11', label:'비교 · 기업 사례', lv:'중급'},
-    {id:'sec-12',       num:'12', label:'마이비 분석', lv:'고급'},
+    {id:'sec-partC',    num:'C',  label:'C부 · 실무 설계', lv:'중급', group:'C부 · 월렛 서비스기획'},
+    {id:'sec-09',       num:'09', label:'월렛 코어 기능', lv:'중급'},
+    {id:'sec-10',       num:'10', label:'최신 월렛 UX', lv:'중급'},
+    {id:'sec-11',       num:'11', label:'재화 정책', lv:'중급'},
+    {id:'sec-12',       num:'12', label:'경품 · 기프티콘', lv:'중급'},
+    {id:'sec-13',       num:'13', label:'데이터 흐름', lv:'중급'},
+    {id:'sec-14',       num:'14', label:'운영 · CS · 리스크', lv:'중급'},
+    {id:'sec-partD',    num:'D',  label:'D부 · 리워드 시장', lv:'중급 고급', group:'D부 · 리워드 앱 시장'},
+    {id:'sec-15',       num:'15', label:'리워드 앱이란', lv:'초급'},
+    {id:'sec-16',       num:'16', label:'유형·수익·지표', lv:'중급'},
+    {id:'sec-17',       num:'17', label:'비교 · 기업 사례', lv:'중급'},
+    {id:'sec-18',       num:'18', label:'마이비 분석', lv:'고급'},
     {id:'sec-summary',  num:'★',  label:'최종 요약', lv:'전체', group:'마무리'},
     {id:'sec-checklist',num:'✓',  label:'실행 체크리스트', lv:'전체'},
     {id:'sec-glossary', num:'＃',  label:'용어 사전', lv:'전체'},
