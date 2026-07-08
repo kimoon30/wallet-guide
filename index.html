@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>디지털 월렛 서비스기획 가이드 — 개념부터 코어 기능, 재화 정책, 리워드 운영까지</title>
-<meta name="description" content="월렛은 코인을 담는 앱이 아니라 블록체인 자산을 움직이는 키를 관리하는 도구입니다. 비전공 서비스기획자를 위해 월렛 개념, 코어 기능, 스마트 컨트랙트, 재화 정책, 경품 응모, 기프티콘 교환, 리워드 운영까지 정리한 실무 가이드.">
+<title>디지털 월렛 가이드 — 초보자 기본기부터 서비스기획·리워드 앱 분석까지</title>
+<meta name="description" content="월렛은 코인을 담는 앱이 아니라 블록체인 자산을 움직이는 키를 관리하는 도구입니다. 초보자 기본기, 월렛 서비스기획, 리워드 앱과 마이비 시장 분석까지 목적별로 읽을 수 있게 정리한 가이드.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -421,7 +421,7 @@ table code{background:var(--subtle-2)}
       <div class="brand">
         <div>
           <span class="bkicker">Digital Wallet</span>
-          <div class="btitle">서비스기획 가이드<br>2026</div>
+          <div class="btitle">월렛 가이드<br>2026</div>
         </div>
         <div class="brand-actions">
           <button class="share" id="shareBtn">Share</button>
@@ -467,17 +467,17 @@ table code{background:var(--subtle-2)}
             <rect x="28" y="32" width="8" height="8" fill="#fff"/>
           </svg>
         </h1>
-        <p class="lead">코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 <b>열쇠(키)를 관리하는 도구</b>입니다. 이 관점으로 핵심 개념과 대표 서비스, 그리고 서비스기획자가 실제로 정해야 하는 <b>코어 기능·재화 정책·경품 응모·기프티콘 교환·운영 리스크</b>까지 한 번에 정리합니다.</p>
+        <p class="lead">코인을 ‘담는 앱’이라는 오해에서 시작하지 않습니다. 월렛은 블록체인 위 내 자산을 움직일 <b>열쇠(키)를 관리하는 도구</b>입니다. 이 페이지는 초보자 기본기, 월렛 서비스기획, 리워드 앱·마이비 시장 분석을 한 화면에서 목적별로 읽을 수 있게 정리한 배포용 가이드입니다.</p>
 
         <div class="meta-chips">
           <span class="chip">확인 기준일 2026-07-07</span>
-          <span class="chip">대상 · 비전공 서비스기획자</span>
-          <span class="chip">난이도 · 초급 → 중급 → 고급</span>
-          <span class="chip">형식 · 실무 학습 리포트</span>
+          <span class="chip">대상 · 초보자 · 기획자 · 시장분석</span>
+          <span class="chip">난이도 · 입문 → 실무 → 심화</span>
+          <span class="chip">형식 · 목적별 학습 가이드</span>
         </div>
 
         <div class="stats">
-          <div class="stat"><div class="snum">18</div><div class="slabel">핵심 섹션</div></div>
+          <div class="stat"><div class="snum">19</div><div class="slabel">핵심 섹션</div></div>
           <div class="stat"><div class="snum">6</div><div class="slabel">대표 서비스</div></div>
           <div class="stat"><div class="snum">7</div><div class="slabel">리워드 사례</div></div>
           <div class="stat"><div class="snum">31</div><div class="slabel">검증 출처</div></div>
@@ -485,19 +485,19 @@ table code{background:var(--subtle-2)}
         </div>
 
         <div class="journey">
-          <h4>이 가이드를 읽는 법 — 4부 구성</h4>
-          <p>개념을 먼저 잡고, 서비스 유형을 구분한 뒤, 실무 정책 설계와 리워드 시장까지 들어갑니다. 파트별로 난이도와 실무성이 올라갑니다.</p>
+          <h4>이 가이드를 읽는 법 — 목적별 3개 경로</h4>
+          <p>처음 배우는 사람은 초보자 경로만 읽어도 충분합니다. 서비스기획자는 정책·원장·운영 기준으로, 시장분석 목적이라면 리워드 앱과 마이비 사례로 바로 이동하면 됩니다.</p>
           <div class="jtags">
-            <div class="jtag"><b>A부 · 기본 개념</b><span>초급</span></div>
-            <div class="jtag"><b>B부 · 서비스 비교</b><span>중급</span></div>
-            <div class="jtag"><b>C부 · 실무 설계</b><span>중급</span></div>
-            <div class="jtag"><b>D부 · 리워드 시장</b><span>중급–고급</span></div>
+            <div class="jtag"><b>초보자 경로</b><span>00 → 01~05 → 체크리스트</span></div>
+            <div class="jtag"><b>서비스기획 경로</b><span>00 → C부 → 체크리스트</span></div>
+            <div class="jtag"><b>시장분석 경로</b><span>00 → D부 → 마이비 분석</span></div>
+            <div class="jtag"><b>전체 통합 읽기</b><span>A부 → B부 → C부 → D부</span></div>
           </div>
         </div>
 
         <div class="callout note" style="margin-top:30px">
           <div class="co-head"><span class="co-ic">📌</span>참고</div>
-          <p>이 문서는 <b>월렛 서비스 이해와 초기 기획 판단을 위한 실무형 입문 가이드</b>입니다. 특정 코인·NFT·예측시장·수익상품의 투자 가치를 보장하지 않으며, 법률·규제·세무 항목은 실제 출시 전 전문가 검토가 필요합니다.</p>
+          <p>배포 화면에서는 내부 마크다운 파일명을 노출하지 않고, 독자가 목적에 맞는 경로를 바로 고를 수 있게 구성했습니다. 특정 코인·NFT·예측시장·수익상품의 투자 가치를 보장하지 않으며, 법률·규제·세무 항목은 실제 출시 전 전문가 검토가 필요합니다.</p>
         </div>
 
         <h3 style="margin-top:40px">핵심 포인트 4가지 — 먼저 이것만</h3>
@@ -508,6 +508,43 @@ table code{background:var(--subtle-2)}
           <div class="card"><span class="c-big">04</span><h4>기획자는 ‘정책과 원장’을 본다</h4><p>월렛 서비스는 화면보다 정책이 중요합니다. 적립·차감·응모·교환·취소·복구·CS가 모두 한 원장과 권한 흐름으로 이어집니다.</p></div>
         </div>
       </header>
+
+      <hr class="hr" style="margin-top:40px">
+
+      <!-- ============ GUIDE MAP ============ -->
+      <section id="sec-guide-map" class="section anchor" data-level="전체">
+        <div class="sec-head">
+          <div class="sec-num">00</div>
+          <div class="sh-body">
+            <h2>목적별 읽기 안내 <span class="badge lv-전체">전체</span></h2>
+            <div class="sec-sub">Choose Your Reading Path</div>
+          </div>
+        </div>
+        <p class="keymsg"><b>핵심 메시지</b> · 이 페이지는 하나의 통합 화면이지만, 모든 내용을 한 번에 읽을 필요는 없습니다. 지금 목적에 맞는 경로만 먼저 읽어도 됩니다.</p>
+        <div class="card-grid c2">
+          <div class="card">
+            <span class="c-big">초</span>
+            <h4>월렛을 처음 배우는 사람</h4>
+            <p><b>A부 01~05</b>와 <b>실행 체크리스트</b>를 먼저 읽습니다. 목표는 용어 암기가 아니라 위험한 행동을 피하는 판단 기준을 만드는 것입니다.</p>
+          </div>
+          <div class="card">
+            <span class="c-big">기</span>
+            <h4>월렛 기능을 기획하는 사람</h4>
+            <p><b>C부 실무 설계</b>로 이동해 키 관리 주체, 복구 방식, 재화 원장, 상태 머신, 운영·CS 기준을 확인합니다.</p>
+          </div>
+          <div class="card">
+            <span class="c-big">시</span>
+            <h4>리워드 앱과 마이비를 분석하는 사람</h4>
+            <p><b>D부 리워드 시장</b>으로 이동해 다운로드 수가 아니라 활성도, 데이터 품질, 보상비, 공헌이익 기준으로 판단합니다.</p>
+          </div>
+          <div class="card">
+            <span class="c-big">전</span>
+            <h4>전체를 검토하는 사람</h4>
+            <p><b>A부 → B부 → C부 → D부</b> 순서로 읽으면 개념, 서비스 유형, 실무 정책, 시장 분석까지 자연스럽게 이어집니다.</p>
+          </div>
+        </div>
+        <div class="summary"><span class="stag">읽기 기준</span><p>처음 보는 독자는 초보자 경로만으로 충분합니다. 기획·시장분석 내용은 필요할 때 확장해서 읽는 선택 영역입니다.</p></div>
+      </section>
 
       <hr class="hr" style="margin-top:40px">
 
@@ -772,6 +809,19 @@ table code{background:var(--subtle-2)}
           <div class="co-head"><span class="co-ic">⚠️</span>시드 문구는 어떤 상황에서도 입력하지 않습니다</div>
           <p>고객센터·에어드롭·오류 복구·지갑 동기화라는 말이 붙어도 시드 문구를 요구하면 <b>피싱</b>입니다. Phantom도 복구 문구를 누구와도 공유하지 말고 공식 앱·사이트만 쓰라고 안내합니다.<sup class="cite"><a href="#src-8" aria-label="출처 8">[8]</a></sup></p>
         </div>
+        <h3>서명 팝업에서 멈춰야 하는 문구</h3>
+        <p>아래 예시는 실제 서비스마다 표현이 조금씩 다를 수 있습니다. 핵심은 <b>내가 무엇에 동의하는지 설명할 수 있는가</b>입니다.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>예시 문구</th><th>초보자 판단</th></tr></thead>
+          <tbody>
+            <tr><td><code>Approve unlimited spending of USDT</code></td><td>거절. 무제한 승인일 수 있습니다.</td></tr>
+            <tr><td><code>Set approval for all NFTs</code></td><td>거절. NFT 전체 권한을 넘길 수 있습니다.</td></tr>
+            <tr><td><code>Enable blind signing</code></td><td>거절. 내용을 보지 못한 채 서명할 수 있습니다.</td></tr>
+            <tr><td><code>Sign this message to continue</code></td><td>내용이 불분명하면 거절합니다.</td></tr>
+            <tr><td><code>Send 0.01 ETH to 0x1234...abcd</code></td><td>주소, 수량, 수수료가 내가 요청한 내용과 맞는지 확인합니다.</td></tr>
+            <tr><td><code>Network fee: 0.0003 ETH</code></td><td>수수료 표시입니다. 전송 자산과 수수료 코인이 다를 수 있습니다.</td></tr>
+          </tbody>
+        </table></div>
         <h3>연결 해제 ≠ 승인 취소</h3>
         <div class="tbl-wrap"><table>
           <thead><tr><th>구분</th><th>무엇을 허용하나</th><th>취소 방법</th></tr></thead>
@@ -1528,6 +1578,7 @@ order_id / tx_hash / created_at / settled_at</pre></div>
 (function(){
   var items = [
     {id:'sec-intro',    num:'00', label:'소개', lv:'전체', group:'시작'},
+    {id:'sec-guide-map',num:'길', label:'목적별 읽기 안내', lv:'전체'},
     {id:'sec-partA',    num:'A',  label:'A부 · 기본 개념', lv:'초급', group:'A부 · 디지털 월렛 기본'},
     {id:'sec-01',       num:'01', label:'시작 전 가드레일', lv:'초급'},
     {id:'sec-02',       num:'02', label:'디지털 월렛이란', lv:'초급'},
